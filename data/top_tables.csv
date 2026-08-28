@@ -1,0 +1,31 @@
+﻿table_name,table_type,domain,estimated_records,field_count,primary_key_fields,index_count,nullable_fields,date_fields,geographic_fields,status_fields
+wp_postmeta,BASE TABLE,ระบบ WordPress,342346,4,1,2,2,0,0,0
+wp_posts,BASE TABLE,ระบบ WordPress,171073,23,1,5,0,4,0,3
+wp_usermeta,BASE TABLE,ผู้ใช้และสิทธิ์,138636,4,1,2,2,0,0,0
+wp_page_count,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,23285,4,1,0,3,0,0,0
+wp_stadiums,BASE TABLE,สนามและสถานที่กีฬา,21454,47,1,0,46,5,5,3
+wp_member_address,BASE TABLE,ผู้ใช้และสิทธิ์,19633,15,1,0,10,2,3,0
+wp_users,BASE TABLE,ผู้ใช้และสิทธิ์,9920,10,1,3,0,0,0,1
+wp_member_info,BASE TABLE,ผู้ใช้และสิทธิ์,9690,13,1,0,7,4,0,1
+wp_local_administration,BASE TABLE,ภูมิศาสตร์,7842,3,1,0,2,0,1,0
+wp_subdistricts,BASE TABLE,ภูมิศาสตร์,7369,8,1,0,7,0,3,0
+wp_member_education_and_occupation,BASE TABLE,ผู้ใช้และสิทธิ์,6257,17,1,0,13,2,1,0
+wp_events,BASE TABLE,กิจกรรมและเศรษฐกิจ,5971,42,1,0,41,5,5,1
+wp_actionscheduler_logs,BASE TABLE,ระบบ WordPress,4797,5,1,2,2,2,0,0
+wp_options,BASE TABLE,ระบบ WordPress,4709,4,1,2,0,0,0,0
+wp_course_training_register_detail,BASE TABLE,หลักสูตรและการฝึกอบรม,4490,5,1,0,4,0,0,0
+wp_science_center_indicator_value,BASE TABLE,วิทยาศาสตร์การกีฬา,3420,6,1,0,5,0,0,1
+wp_economic,BASE TABLE,กิจกรรมและเศรษฐกิจ,2991,36,1,0,35,0,1,0
+wp_request_access_admin,BASE TABLE,ผู้ใช้และสิทธิ์,2480,10,1,0,9,3,0,1
+wp_actionscheduler_actions,BASE TABLE,ระบบ WordPress,1603,14,1,10,7,2,0,1
+wp_districts,BASE TABLE,ภูมิศาสตร์,928,5,1,0,4,0,1,0
+wp_science_center_sub_indicator_value,BASE TABLE,วิทยาศาสตร์การกีฬา,912,6,1,0,5,0,0,1
+wp_training_center_indicator_value,BASE TABLE,หลักสูตรและการฝึกอบรม,832,6,1,0,5,0,0,1
+wp_stadium_sub_stadium,BASE TABLE,สนามและสถานที่กีฬา,810,4,1,0,3,0,0,0
+wp_project_activity,BASE TABLE,กิจกรรมและเศรษฐกิจ,800,6,1,0,5,0,0,0
+wp_training_center_sub_indicator_value,BASE TABLE,หลักสูตรและการฝึกอบรม,624,6,1,0,5,0,0,1
+wp_project,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,599,20,1,0,19,3,0,0
+wp_course_training_register_user,BASE TABLE,ผู้ใช้และสิทธิ์,445,14,1,0,13,3,0,2
+wp_competition_questionnaire_value,BASE TABLE,การแข่งขันและรางวัล,370,4,1,0,3,0,0,0
+wp_ministry,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,355,3,1,0,2,0,0,0
+wp_highlight,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,310,8,1,0,7,3,0,1

@@ -1,0 +1,215 @@
+﻿table_name,table_type,domain,estimated_records,field_count,primary_key_fields,index_count,nullable_fields,date_fields,geographic_fields,status_fields
+v_all_stadium,VIEW,สนามและสถานที่กีฬา,0,20,0,0,18,1,9,1
+wp_action_plan_master,BASE TABLE,แผนและยุทธศาสตร์,1,8,1,0,7,0,0,0
+wp_action_plan_minor,BASE TABLE,แผนและยุทธศาสตร์,6,5,1,0,4,0,0,0
+wp_action_plan_minor_topic,BASE TABLE,แผนและยุทธศาสตร์,5,5,1,0,4,0,0,0
+wp_action_plan_outcome,BASE TABLE,แผนและยุทธศาสตร์,46,15,1,0,14,0,0,0
+wp_actionscheduler_actions,BASE TABLE,ระบบ WordPress,1603,14,1,10,7,2,0,1
+wp_actionscheduler_claims,BASE TABLE,ระบบ WordPress,0,2,1,1,1,1,0,0
+wp_actionscheduler_groups,BASE TABLE,ระบบ WordPress,4,2,1,1,0,0,0,0
+wp_actionscheduler_logs,BASE TABLE,ระบบ WordPress,4797,5,1,2,2,2,0,0
+wp_activity_level,BASE TABLE,วิทยาศาสตร์การกีฬา,5,2,1,0,1,0,0,0
+wp_age_range,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,7,2,1,0,1,0,0,0
+wp_agency,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,232,3,1,0,2,0,0,0
+wp_agency_level,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,2,1,0,1,0,0,0
+wp_all_stadium_type,BASE TABLE,สนามและสถานที่กีฬา,6,2,1,0,1,0,0,0
+wp_area_unit,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,4,2,1,0,1,0,0,0
+wp_association,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,95,19,1,0,18,3,0,1
+wp_association_type,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_athletes,BASE TABLE,นักกีฬาและบุคลากร,97,26,1,0,25,4,1,1
+wp_certified,BASE TABLE,นักกีฬาและบุคลากร,3,2,1,0,1,0,0,0
+wp_cky_banners,BASE TABLE,ระบบ WordPress,2,9,1,0,0,2,0,1
+wp_cky_cookie_categories,BASE TABLE,ระบบ WordPress,5,11,1,1,1,2,0,0
+wp_cky_cookies,BASE TABLE,ระบบ WordPress,0,13,1,0,2,2,0,0
+wp_comment_event,BASE TABLE,กิจกรรมและเศรษฐกิจ,8,7,1,0,6,3,0,0
+wp_comment_event_reply,BASE TABLE,กิจกรรมและเศรษฐกิจ,0,8,1,0,7,3,0,0
+wp_comment_science_center,BASE TABLE,วิทยาศาสตร์การกีฬา,2,7,1,0,6,3,0,0
+wp_comment_science_center_reply,BASE TABLE,วิทยาศาสตร์การกีฬา,0,8,1,0,7,3,0,0
+wp_comment_stadium,BASE TABLE,สนามและสถานที่กีฬา,22,7,1,0,6,3,0,0
+wp_comment_stadium_reply,BASE TABLE,สนามและสถานที่กีฬา,2,8,1,0,7,3,0,0
+wp_comment_training_center,BASE TABLE,หลักสูตรและการฝึกอบรม,2,7,1,0,6,3,0,0
+wp_comment_training_center_reply,BASE TABLE,หลักสูตรและการฝึกอบรม,0,8,1,0,7,3,0,0
+wp_commentmeta,BASE TABLE,ระบบ WordPress,0,4,1,2,2,0,0,0
+wp_comments,BASE TABLE,ระบบ WordPress,0,15,1,5,0,2,0,0
+wp_competition_award_type,BASE TABLE,การแข่งขันและรางวัล,5,6,1,0,5,0,0,0
+wp_competition_level,BASE TABLE,การแข่งขันและรางวัล,3,2,1,0,1,0,0,0
+wp_competition_list,BASE TABLE,การแข่งขันและรางวัล,38,28,1,0,27,5,6,1
+wp_competition_medal,BASE TABLE,การแข่งขันและรางวัล,3,2,1,0,1,0,0,0
+wp_competition_questionnaire_form,BASE TABLE,การแข่งขันและรางวัล,10,4,1,0,3,0,0,0
+wp_competition_questionnaire_topic,BASE TABLE,การแข่งขันและรางวัล,2,2,1,0,1,0,0,0
+wp_competition_questionnaire_value,BASE TABLE,การแข่งขันและรางวัล,370,4,1,0,3,0,0,0
+wp_competition_results,BASE TABLE,การแข่งขันและรางวัล,29,37,1,0,36,3,3,1
+wp_competition_results_member,BASE TABLE,ผู้ใช้และสิทธิ์,40,5,1,0,4,0,0,0
+wp_competition_statistics_type,BASE TABLE,การแข่งขันและรางวัล,7,2,1,0,1,0,0,0
+wp_competition_type,BASE TABLE,การแข่งขันและรางวัล,16,3,1,0,2,0,0,0
+wp_country,BASE TABLE,ภูมิศาสตร์,249,3,1,0,2,0,0,0
+wp_course,BASE TABLE,หลักสูตรและการฝึกอบรม,4,21,1,0,20,3,0,1
+wp_course_condition,BASE TABLE,หลักสูตรและการฝึกอบรม,3,2,1,0,1,0,0,0
+wp_course_level,BASE TABLE,หลักสูตรและการฝึกอบรม,3,2,1,0,1,0,0,0
+wp_course_main_form,BASE TABLE,หลักสูตรและการฝึกอบรม,11,13,1,0,12,0,0,0
+wp_course_training,BASE TABLE,หลักสูตรและการฝึกอบรม,4,30,1,0,29,9,5,2
+wp_course_training_form,BASE TABLE,หลักสูตรและการฝึกอบรม,88,14,1,0,13,0,0,0
+wp_course_training_register_detail,BASE TABLE,หลักสูตรและการฝึกอบรม,4490,5,1,0,4,0,0,0
+wp_course_training_register_type,BASE TABLE,หลักสูตรและการฝึกอบรม,2,2,1,0,1,0,0,0
+wp_course_training_register_user,BASE TABLE,ผู้ใช้และสิทธิ์,445,14,1,0,13,3,0,2
+wp_course_training_status_register,BASE TABLE,หลักสูตรและการฝึกอบรม,4,3,1,0,2,0,0,0
+wp_course_training_status_training,BASE TABLE,หลักสูตรและการฝึกอบรม,5,3,1,0,2,0,0,0
+wp_course_training_type,BASE TABLE,หลักสูตรและการฝึกอบรม,2,2,1,0,1,0,0,0
+wp_course_tutor_type,BASE TABLE,นักกีฬาและบุคลากร,4,2,1,0,1,0,0,0
+wp_course_types,BASE TABLE,หลักสูตรและการฝึกอบรม,7,2,1,0,1,0,0,0
+wp_days,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,7,2,1,0,1,0,0,0
+wp_districts,BASE TABLE,ภูมิศาสตร์,928,5,1,0,4,0,1,0
+wp_economic,BASE TABLE,กิจกรรมและเศรษฐกิจ,2991,36,1,0,35,0,1,0
+wp_economic_attendee,BASE TABLE,กิจกรรมและเศรษฐกิจ,60,5,1,0,4,0,0,0
+wp_economic_organizer,BASE TABLE,กิจกรรมและเศรษฐกิจ,214,7,1,0,6,0,0,0
+wp_education_level,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,0,0,0,0
+wp_event_content_report,BASE TABLE,กิจกรรมและเศรษฐกิจ,0,9,1,0,8,3,0,1
+wp_event_content_report_topic,BASE TABLE,กิจกรรมและเศรษฐกิจ,4,2,1,0,1,0,0,0
+wp_event_green_heart,BASE TABLE,กิจกรรมและเศรษฐกิจ,141,33,1,0,32,3,0,0
+wp_event_level,BASE TABLE,กิจกรรมและเศรษฐกิจ,3,2,1,0,1,0,0,0
+wp_event_status,BASE TABLE,กิจกรรมและเศรษฐกิจ,3,2,1,0,1,0,0,0
+wp_events,BASE TABLE,กิจกรรมและเศรษฐกิจ,5971,42,1,0,41,5,5,1
+wp_expertise_level,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_facilitie,BASE TABLE,สนามและสถานที่กีฬา,24,5,1,0,4,0,0,0
+wp_facilitie_topic,BASE TABLE,สนามและสถานที่กีฬา,7,2,1,0,1,0,0,0
+wp_form_input_type,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,9,3,1,0,2,0,0,0
+wp_gender,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,2,2,1,0,1,0,0,0
+wp_green_heart_item,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,27,3,1,0,2,0,0,0
+wp_green_heart_sub_topic,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,8,4,1,0,3,0,0,0
+wp_green_heart_topic,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,4,3,1,0,2,0,0,0
+wp_group,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,222,6,1,0,3,3,0,0
+wp_highlight,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,310,8,1,0,7,3,0,1
+wp_highlight_status,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_income_range,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,10,2,1,0,1,0,0,0
+wp_links,BASE TABLE,ระบบ WordPress,0,13,1,1,0,1,0,0
+wp_local_administration,BASE TABLE,ภูมิศาสตร์,7842,3,1,0,2,0,1,0
+wp_main_purpose,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,4,3,1,0,2,0,0,0
+wp_manual_book,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,2,3,1,0,0,0,0,0
+wp_manual_onepage,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,1,3,1,0,0,0,0,0
+wp_manual_video,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,3,1,0,0,0,0,0
+wp_member_activity_history,BASE TABLE,ผู้ใช้และสิทธิ์,58,20,1,0,15,4,5,1
+wp_member_address,BASE TABLE,ผู้ใช้และสิทธิ์,19633,15,1,0,10,2,3,0
+wp_member_education_and_occupation,BASE TABLE,ผู้ใช้และสิทธิ์,6257,17,1,0,13,2,1,0
+wp_member_group,BASE TABLE,ผู้ใช้และสิทธิ์,0,3,1,0,2,0,0,0
+wp_member_info,BASE TABLE,ผู้ใช้และสิทธิ์,9690,13,1,0,7,4,0,1
+wp_ministry,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,355,3,1,0,2,0,0,0
+wp_open_api_info,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,29,9,1,0,8,0,0,0
+wp_open_api_key,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,29,6,1,0,5,1,0,1
+wp_options,BASE TABLE,ระบบ WordPress,4709,4,1,2,0,0,0,0
+wp_organization_type,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,0,2,1,0,1,0,0,0
+wp_owner_type,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,6,2,1,0,1,0,0,0
+wp_page_count,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,23285,4,1,0,3,0,0,0
+wp_postmeta,BASE TABLE,ระบบ WordPress,342346,4,1,2,2,0,0,0
+wp_posts,BASE TABLE,ระบบ WordPress,171073,23,1,5,0,4,0,3
+wp_potential_plan1_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan1_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan1_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan1_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,15,6,1,0,5,2,0,0
+wp_potential_plan_master,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,1,8,1,0,7,0,0,0
+wp_potential_plan_minor,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,4,5,1,0,4,0,0,0
+wp_potential_plan_outcome,BASE TABLE,แผนและยุทธศาสตร์,4,15,1,0,14,0,0,0
+wp_project,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,599,20,1,0,19,3,0,0
+wp_project_activity,BASE TABLE,กิจกรรมและเศรษฐกิจ,800,6,1,0,5,0,0,0
+wp_project_report,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,95,8,1,0,7,0,0,0
+wp_province,BASE TABLE,ภูมิศาสตร์,77,9,1,0,8,0,3,0
+wp_region,BASE TABLE,ภูมิศาสตร์,6,5,1,0,4,0,2,0
+wp_report_status_list,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_request_access_admin,BASE TABLE,ผู้ใช้และสิทธิ์,2480,10,1,0,9,3,0,1
+wp_science_center,BASE TABLE,วิทยาศาสตร์การกีฬา,72,56,1,0,55,5,5,9
+wp_science_center_content_report,BASE TABLE,วิทยาศาสตร์การกีฬา,0,9,1,0,8,3,0,1
+wp_science_center_content_report_topic,BASE TABLE,วิทยาศาสตร์การกีฬา,4,2,1,0,1,0,0,0
+wp_science_center_indicator,BASE TABLE,วิทยาศาสตร์การกีฬา,12,6,1,0,5,0,0,0
+wp_science_center_indicator_topic,BASE TABLE,วิทยาศาสตร์การกีฬา,2,2,1,0,1,0,0,0
+wp_science_center_indicator_value,BASE TABLE,วิทยาศาสตร์การกีฬา,3420,6,1,0,5,0,0,1
+wp_science_center_stadium,BASE TABLE,สนามและสถานที่กีฬา,0,4,1,0,3,0,0,0
+wp_science_center_sub_indicator,BASE TABLE,วิทยาศาสตร์การกีฬา,4,5,1,0,4,0,0,0
+wp_science_center_sub_indicator_value,BASE TABLE,วิทยาศาสตร์การกีฬา,912,6,1,0,5,0,0,1
+wp_service_provided_type,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_service_status,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_sport_category,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,162,3,1,0,2,0,0,0
+wp_sport_personal,BASE TABLE,นักกีฬาและบุคลากร,24,23,1,0,22,3,1,1
+wp_sport_plan1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan1_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan1_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,0
+wp_sport_plan1_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,1
+wp_sport_plan1_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan1_5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan1_6,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,20,10,1,0,9,2,0,0
+wp_sport_plan2_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan2_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan2_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,8,1,0,7,2,0,0
+wp_sport_plan2_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan2_5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,1,0
+wp_sport_plan3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,2,10,1,0,9,2,0,0
+wp_sport_plan3_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan3_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan3_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan3_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,10,9,1,0,8,2,0,0
+wp_sport_plan3_5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,0
+wp_sport_plan3_6,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,0
+wp_sport_plan3_7,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,1
+wp_sport_plan3_8,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,0
+wp_sport_plan3_9,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,1
+wp_sport_plan4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan4_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,5,1,0,4,2,0,0
+wp_sport_plan4_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan4_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan4_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan4_5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan4_6,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,10,1,0,9,2,0,0
+wp_sport_plan4_7,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan4_8,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5_1,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,8,1,0,7,2,0,0
+wp_sport_plan5_10,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,2
+wp_sport_plan5_2,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5_3,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan5_4,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,0,0
+wp_sport_plan5_5,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,7,1,0,6,2,1,0
+wp_sport_plan5_6,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5_7,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5_8,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan5_9,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan6,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,6,1,0,5,2,0,0
+wp_sport_plan7,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,5,8,1,0,7,2,0,0
+wp_sport_plan8,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,30,8,1,0,7,2,0,0
+wp_sport_types,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,167,3,1,0,2,0,0,0
+wp_stadium_content_report,BASE TABLE,สนามและสถานที่กีฬา,5,9,1,0,8,3,0,1
+wp_stadium_content_report_topic,BASE TABLE,สนามและสถานที่กีฬา,4,2,1,0,1,0,0,0
+wp_stadium_level,BASE TABLE,สนามและสถานที่กีฬา,6,2,1,0,1,0,0,0
+wp_stadium_owner_type,BASE TABLE,สนามและสถานที่กีฬา,6,2,1,0,1,0,0,0
+wp_stadium_sub_stadium,BASE TABLE,สนามและสถานที่กีฬา,810,4,1,0,3,0,0,0
+wp_stadium_surface,BASE TABLE,สนามและสถานที่กีฬา,13,2,1,0,1,0,0,0
+wp_stadium_types,BASE TABLE,สนามและสถานที่กีฬา,5,2,1,0,1,0,0,0
+wp_stadiums,BASE TABLE,สนามและสถานที่กีฬา,21454,47,1,0,46,5,5,3
+wp_sub_stadium_type,BASE TABLE,สนามและสถานที่กีฬา,2,2,1,0,1,0,0,0
+wp_subdistricts,BASE TABLE,ภูมิศาสตร์,7369,8,1,0,7,0,3,0
+wp_target_group,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,3,2,1,0,1,0,0,0
+wp_term_relationships,BASE TABLE,ระบบ WordPress,27,3,2,1,0,0,0,0
+wp_term_taxonomy,BASE TABLE,ระบบ WordPress,12,6,1,2,0,0,0,0
+wp_termmeta,BASE TABLE,ระบบ WordPress,0,4,1,2,2,0,0,0
+wp_terms,BASE TABLE,ระบบ WordPress,12,4,1,2,0,0,0,0
+wp_training_center,BASE TABLE,หลักสูตรและการฝึกอบรม,70,56,1,0,55,5,5,9
+wp_training_center_content_report,BASE TABLE,หลักสูตรและการฝึกอบรม,0,9,1,0,8,3,0,1
+wp_training_center_content_report_topic,BASE TABLE,หลักสูตรและการฝึกอบรม,4,2,1,0,1,0,0,0
+wp_training_center_indicator,BASE TABLE,หลักสูตรและการฝึกอบรม,10,6,1,0,5,0,0,0
+wp_training_center_indicator_topic,BASE TABLE,หลักสูตรและการฝึกอบรม,3,3,1,0,2,0,0,0
+wp_training_center_indicator_value,BASE TABLE,หลักสูตรและการฝึกอบรม,832,6,1,0,5,0,0,1
+wp_training_center_level,BASE TABLE,หลักสูตรและการฝึกอบรม,2,2,1,0,1,0,0,0
+wp_training_center_science_center,BASE TABLE,หลักสูตรและการฝึกอบรม,7,4,1,0,3,0,0,0
+wp_training_center_stadium,BASE TABLE,สนามและสถานที่กีฬา,18,4,1,0,3,0,0,0
+wp_training_center_sub_indicator,BASE TABLE,หลักสูตรและการฝึกอบรม,8,6,1,0,5,0,0,0
+wp_training_center_sub_indicator_value,BASE TABLE,หลักสูตรและการฝึกอบรม,624,6,1,0,5,0,0,1
+wp_training_center_sub_sub_indicator,BASE TABLE,หลักสูตรและการฝึกอบรม,2,5,1,0,4,0,0,0
+wp_training_center_sub_sub_indicator_value,BASE TABLE,หลักสูตรและการฝึกอบรม,156,6,1,0,5,0,0,1
+wp_um_metadata,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,0,4,1,3,2,0,0,0
+wp_usermeta,BASE TABLE,ผู้ใช้และสิทธิ์,138636,4,1,2,2,0,0,0
+wp_users,BASE TABLE,ผู้ใช้และสิทธิ์,9920,10,1,3,0,0,0,1
+wp_wpc_accesslocks,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,1,7,1,0,1,2,0,0
+wp_wpc_login_fails,BASE TABLE,ผู้ใช้และสิทธิ์,6,7,1,0,1,1,0,0
+wp_wpmailsmtp_debug_events,BASE TABLE,กิจกรรมและเศรษฐกิจ,109,5,1,0,2,1,0,0
+wp_wpmailsmtp_tasks_meta,BASE TABLE,ข้อมูลอ้างอิงและอื่น ๆ,2,4,1,0,0,1,0,0
