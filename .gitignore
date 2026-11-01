@@ -1,4 +1,10 @@
+.cursor/
+.playwright-cli/
+output/
+__pycache__/
+*.pyc
+*.log
 .DS_Store
 Thumbs.db
-output/
-tools/
+_site/
+.jekyll-cache/

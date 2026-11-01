@@ -3,291 +3,208 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <meta name="description" content="Sports Almanac Data Insight — วิเคราะห์ฐานข้อมูลสารานุกรมกีฬาประเทศไทย">
-  <title>SPORTS ALMANAC — DATA INSIGHT</title>
+  <script>
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  </script>
+  <meta name="description" content="Thailand Sports Almanac — สำรวจสนาม กิจกรรม และข้อมูลกีฬาไทยครบ 77 จังหวัด">
+  <meta name="theme-color" content="#0B1730">
+  <link rel="preload" as="image" href="assets/images/home-hero-editorial.webp" imagesrcset="assets/images/home-hero-editorial-900.webp 900w, assets/images/home-hero-editorial.webp 1536w" imagesizes="(max-width: 760px) 900px, 1536px">
+  <meta property="og:title" content="Thailand Sports Almanac">
+  <meta property="og:description" content="Every field. Every sport. Every province.">
+  <meta property="og:image" content="assets/images/home-hero-editorial.webp">
+  <title>Thailand Sports Almanac — Every Field, Every Province</title>
+  <link rel="icon" href="assets/images/logo-new-transparent.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site-nav.css?v=20260820-2">
+  <link rel="stylesheet" href="assets/cinematic.css?v=20260820-30">
+<link rel="stylesheet" href="assets/nation-map-light.css?v=20260820-43">
+  <link rel="stylesheet" href="assets/visitor-gateway.css?v=20260820-52">
+  <link rel="stylesheet" href="assets/design-language.css?v=20260820-4">
+  <link rel="stylesheet" href="assets/activity-modal.css?v=20260820-2">
+  <link rel="stylesheet" href="assets/login-modal.css?v=20260820-7">
+  <link rel="stylesheet" href="assets/site-foundation.css?v=20260820-11">
+    <link rel="stylesheet" href="assets/home.css?v=20261101-90">
 </head>
-<body>
-  <header class="masthead navbar navbar-expand-xl">
-    <a class="wordmark navbar-brand" href="#overview" data-route="overview"><img src="assets/images/logo.png" alt="Thailand Sports Almanac"></a>
-    <nav class="primary-nav" aria-label="เมนูหลัก">
-      <button class="active" data-route="overview">ภาพรวม</button>
-      <button data-route="stadiums">สนาม</button>
-      <button data-route="events">กิจกรรม</button>
-      <button data-route="competitions">ผลแข่งขัน</button>
-      <button data-route="centers">ศูนย์</button>
-      <button data-route="people">บุคลากร</button>
-      <button data-route="usage">ผู้ใช้งาน</button>
-      <button data-route="plans">แผน & KPI</button>
-      <button data-route="data">ข้อมูล</button>
+<body id="top" class="tpl-landing home-a home-b"><a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a><div id="loader" hidden></div>
+  <header class="nav-shell">
+    <a class="brand" href="#top" aria-label="Thailand Sports Almanac หน้าหลัก"><img src="assets/images/logo-white.png" alt="Thailand Sports Almanac" width="97" height="46"></a>
+    <nav class="desktop-nav" aria-label="เมนูหลัก">
+      <a class="nav-primary-link" href="#top" aria-current="page">หน้าหลัก</a>
+      <a class="nav-primary-link" href="abouts.html">เกี่ยวกับเรา</a>
+      <div class="nav-group">
+        <button class="nav-primary-link nav-dropdown-trigger" data-section="places" type="button" aria-expanded="false">สนาม <span>⌄</span></button>
+        <div class="nav-dropdown venue-dropdown">
+          <a href="venues.html?type=stadium">สนามกีฬา</a>
+          <a href="venues.html?type=multipurpose">อาคารอเนกประสงค์</a>
+          <a href="venues.html?type=public">ลานกีฬา / สวนสาธารณะ</a>
+          <a href="venues.html?type=fitness">ฟิตเนส / ยิม</a>
+          <a href="venues.html?type=training">ศูนย์ฝึกกีฬา</a>
+          <a href="venues.html?type=science">ศูนย์วิทยาศาสตร์การกีฬา</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-primary-link nav-dropdown-trigger" data-section="gateway-services" type="button" aria-expanded="false">ข่าวและกิจกรรม <span>⌄</span></button>
+        <div class="nav-dropdown compact-dropdown"><a href="#gateway-services">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-primary-link nav-dropdown-trigger" type="button" aria-expanded="false">ข้อมูลและสถิติ <span>⌄</span></button>
+        <div class="nav-dropdown compact-dropdown stats-dropdown">
+          <div class="nav-subgroup">
+            <b>แดชบอร์ด</b>
+            <a href="athletes.html">นักกีฬา / บุคลากร</a>
+            <a href="results.html">ผลการแข่งขัน</a>
+            <a href="overview.html">สรุปภาพรวม</a>
+            <a href="provinces.html">ข้อมูลรายจังหวัด</a>
+          </div>
+          <a href="courses.html">หลักสูตรอบรม</a>
+          <a href="#home-learning">คลังความรู้</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-primary-link nav-dropdown-trigger" data-section="footer" type="button" aria-expanded="false">ช่วยเหลือ <span>⌄</span></button>
+        <div class="nav-dropdown compact-dropdown"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div>
+      </div>
     </nav>
-    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดเมนู">MENU</button>
-    <div class="header-tag"><i></i><span>PROJECT CUTOFF<br><b>12 JUL 2026</b></span></div>
+    <div class="nav-actions"><a class="login" href="#login" data-login-open>เข้าสู่ระบบ</a><button class="menu-button" type="button" aria-label="เปิดเมนูหลัก" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button></div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a class="mobile-direct" href="#top" aria-current="page">หน้าหลัก</a>
+      <a class="mobile-direct" href="abouts.html">เกี่ยวกับเรา</a>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="places" type="button" aria-expanded="false">สนาม <span>＋</span></button><div class="mobile-submenu"><a href="venues.html?type=stadium">สนามกีฬา</a><a href="venues.html?type=multipurpose">อาคารอเนกประสงค์</a><a href="venues.html?type=public">ลานกีฬา / สวนสาธารณะ</a><a href="venues.html?type=fitness">ฟิตเนส / ยิม</a><a href="venues.html?type=training">ศูนย์ฝึกกีฬา</a><a href="venues.html?type=science">ศูนย์วิทยาศาสตร์การกีฬา</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="gateway-services" type="button" aria-expanded="false">ข่าวและกิจกรรม <span>＋</span></button><div class="mobile-submenu"><a href="#gateway-services">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" type="button" aria-expanded="false">ข้อมูลและสถิติ <span>＋</span></button><div class="mobile-submenu"><b>แดชบอร์ด</b><a class="nav-nested" href="athletes.html">นักกีฬา / บุคลากร</a><a class="nav-nested" href="results.html">ผลการแข่งขัน</a><a class="nav-nested" href="overview.html">สรุปภาพรวม</a><a class="nav-nested" href="provinces.html">ข้อมูลรายจังหวัด</a><a href="courses.html">หลักสูตรอบรม</a><a href="#home-learning">คลังความรู้</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="footer" type="button" aria-expanded="false">ช่วยเหลือ <span>＋</span></button><div class="mobile-submenu"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div></div>
+    </div>
   </header>
+  <div class="h-nav-swoosh" aria-hidden="true"><svg class="h-swoosh h-swoosh--nav" viewBox="0 0 1440 120" preserveAspectRatio="none"><path class="swoosh-main" d="M-40 92C260 18 520 112 790 62S1190 7 1480 72"/><path class="swoosh-accent" d="M-25 103C278 29 520 122 798 72S1195 18 1470 83"/></svg></div>
 
-  <main>
-    <section class="page active" data-page="overview">
-      <section class="overview-hero">
-        <img class="overview-hero-image" src="assets/images/hero-data-bg.png" alt="พื้นหลังโครงข่ายข้อมูลกีฬาไทย">
-        <div class="overview-hero-overlay"></div>
-        <div class="overview-hero-content container-fluid">
-          <div class="row align-items-end g-4">
-            <div class="col-xl-7">
-              <span class="hero-kicker"><i></i> NATIONAL SPORTS DATA · CUTOFF 12 JUL 2026</span>
-              <h1>ข้อมูลกีฬาไทย<br><em>พร้อมตัดสินใจ</em></h1>
-              <p>มองเห็นโครงสร้างกีฬา ความเหลื่อมล้ำเชิงพื้นที่ ความคืบหน้าตามแผน และความต้องการของผู้ใช้ จากหลักฐานในฐานข้อมูลจริง</p>
-              <div class="hero-actions"><button type="button" class="primary-action" data-scroll-target="executive-signals">ดูสัญญาณสำคัญ <span>↓</span></button><button class="ghost-action" data-route="plans">เปิดแผน & KPI</button></div>
-            </div>
-            <div class="col-xl-5">
-              <div class="hero-highlight-card">
-                <div><span>DATABASE COVERAGE</span><b>77</b><small>จังหวัดทั่วประเทศ</small></div>
-                <div class="hero-mini-chart" id="hero-mini-chart"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<main id="main">
+<section class="h-hero" id="motion-hero" aria-labelledby="motion-title">
+ <div class="h-hero-media" aria-hidden="true"><img src="assets/images/home-hero-editorial.webp" srcset="assets/images/home-hero-editorial-900.webp 900w, assets/images/home-hero-editorial.webp 1536w" sizes="(max-width: 760px) 900px, 1536px" alt="" fetchpriority="high" width="1536" height="1024"></div>
+ <div class="h-wrap h-hero-inner">
+  <div class="h-hero-top">
+   <div class="h-hero-copy">
+    <h1 id="motion-title">หาสนามใกล้บ้าน<br>เจอกิจกรรมที่ใช่</h1>
+    <p class="h-lead">ค้นหาสนาม กิจกรรม และหลักสูตรกีฬา<br>จากหน่วยงานทั่วประเทศ <span class="a-phrase">ในที่เดียว</span></p>
+   </div>
+   <div class="h-next">
+    <div class="h-next-label"><p>กิจกรรมเร็ว ๆ นี้</p><div class="h-dots" id="hero-next-dots" role="group" aria-label="เลือกกิจกรรม"></div></div>
+    <a class="h-next-card" id="hero-next" href="#events"><span class="h-date"><b>–</b><small>&nbsp;</small></span><span class="h-next-text"><b>กำลังโหลดกิจกรรม…</b><small>&nbsp;</small></span></a>
+   </div>
+  </div>
 
-      <section class="overview-body container-fluid">
-        <div class="overview-toolbar">
-          <div><span class="live-dot"></span><b>PROJECT SNAPSHOT</b><small>ใช้รายการที่สร้างและแก้ไขไม่เกิน 12 ก.ค. 2569</small></div>
-          <div class="overview-filter"><span>มุมมอง:</span><button class="active">ภาพรวมประเทศ</button><button data-route="stadiums">สถานที่กีฬา</button><button data-route="usage">ผู้ใช้งานระบบ</button></div>
-        </div>
-        <nav class="overview-story-rail" aria-label="ลำดับการวิเคราะห์หน้า Overview">
-          <button type="button" data-scroll-target="country-picture"><b>01</b><span>ขนาดและความครอบคลุม<small>ระบบมีข้อมูลอะไร</small></span></button>
-          <button type="button" data-scroll-target="comparison-lab"><b>02</b><span>โอกาสเชิงพื้นที่<small>จังหวัดไหนควรติดตาม</small></span></button>
-          <button type="button" data-scroll-target="time-freshness"><b>03</b><span>การเปลี่ยนแปลงตามเวลา<small>ข้อมูลเติบโตเมื่อไร</small></span></button>
-          <button type="button" data-scroll-target="data-readiness"><b>04</b><span>ความพร้อมใช้งาน<small>เชื่อถือได้เพียงใด</small></span></button>
-        </nav>
+  <form id="hero-search-form" class="h-search" role="search">
+   <div class="h-tabs" role="group" aria-label="ประเภทการค้นหา"><button type="button" data-search-kind="venues" aria-pressed="true">สนามกีฬา</button><button type="button" data-search-kind="events" aria-pressed="false">กิจกรรม</button><button type="button" data-search-kind="courses" aria-pressed="false">หลักสูตร</button></div>
+   <div class="h-search-row">
+    <label class="h-field h-field--grow" for="hero-venue-search"><span id="hero-search-label">ชนิดกีฬา หรือชื่อสนาม</span><span class="hero-search-box"><input name="q" id="hero-venue-search" type="search" placeholder="เช่น ฟุตบอล, สระว่ายน้ำ, สนามกีฬากลาง" autocomplete="off" aria-controls="hero-search-results" aria-expanded="false"></span></label>
+    <label class="h-field" for="home-province"><span>จังหวัด</span><select id="home-province"><option value="">ทุกจังหวัด</option></select></label>
+    <div class="h-search-actions"><button type="button" class="h-btn h-btn--outline" data-locate><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ใกล้ฉัน</button><button type="submit" class="h-btn h-btn--accent">ค้นหา</button></div>
+    <div id="hero-search-results" class="hero-search-results" role="listbox" aria-label="ผลการค้นหาข้อมูลกีฬา"></div>
+   </div>
+   <div class="h-try"><span>ลองค้นหา:</span><button type="button" data-term="วิ่ง">เดิน-วิ่ง</button><button type="button" data-term="ฟุตซอล">ฟุตซอล</button><button type="button" data-term="สระว่ายน้ำ">สระว่ายน้ำ</button><button type="button" data-term="ฟิตเนส">ฟิตเนส</button></div>
+  </form>
 
-        <section class="executive-signal-stage" id="executive-signals" aria-label="สัญญาณสำคัญสำหรับผู้บริหาร">
-          <div class="signal-intro signal-data-snapshot"><small>PROJECT DATA SNAPSHOT</small><strong id="signal-record-total">—</strong><h2>รายการข้อมูลหลัก</h2><div class="signal-data-breakdown"><span><b id="signal-stadium-total">—</b>สนามกีฬา</span><span><b id="signal-event-total">—</b>กิจกรรม</span><span><b id="signal-center-total">—</b>ศูนย์สนับสนุน</span></div><p>ข้อมูลที่สร้างและแก้ไขไม่เกิน 12 ก.ค. 2569</p></div>
-          <button class="signal-card infrastructure" data-route="centers"><span>INFRASTRUCTURE GAP</span><strong id="signal-center-gap">—</strong><h3>จังหวัดยังไม่มีศูนย์สนับสนุน</h3><p>เทียบจากจังหวัดที่มีศูนย์ฝึกหรือศูนย์วิทยาศาสตร์กีฬาอย่างน้อยหนึ่งแห่ง</p><i>เปิดแผนที่ศูนย์ ↗</i></button>
-          <button class="signal-card strategy" data-route="plans"><span>KPI READINESS</span><strong id="signal-kpi-gap">—</strong><h3>KPI ยังไม่มีสูตรคำนวณ</h3><p>ควรแยก KPI ที่นิยามแล้วออกจาก KPI ที่คำนวณผลได้จริง</p><i>ตรวจแผน & KPI ↗</i></button>
-          <button class="signal-card trust" data-route="people"><span>DATA TRUST</span><strong id="signal-athlete-gap">—</strong><h3>ระเบียนนักกีฬายังไม่มีจังหวัด</h3><p>ยังไม่ควรใช้ข้อมูลชุดนี้สรุปการกระจายนักกีฬาระดับประเทศ</p><i>ดูคุณภาพข้อมูล ↗</i></button>
-        </section>
+ </div>
+ <div class="h-stats-band">
+  <svg class="h-swoosh" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path class="swoosh-main" d="M-40 92C260 18 520 112 790 62S1190 7 1480 72"/><path class="swoosh-accent" d="M-25 103C278 29 520 122 798 72S1195 18 1470 83"/></svg>
+  <div class="h-wrap h-stats-inner">
+   <div class="h-stats-rail" aria-hidden="true"><span class="h-stats-mark"></span><b>สถิติ</b><small>พร้อมใช้</small></div>
+   <div class="h-stats" id="home-stats"><p>กำลังโหลดข้อมูลกีฬา…</p></div>
+   <div class="h-stats-signoff" aria-hidden="true"><strong>SPORTS</strong><span>FOR ALL</span></div>
+  </div>
+ </div>
+</section>
 
-        <section class="national-command" aria-label="ศูนย์บัญชาการข้อมูลกีฬาไทย">
-          <div class="command-copy"><small>NATIONAL DATA COMMAND</small><h2>โครงสร้างกีฬาทั้งประเทศ<br><em>บนภาพเดียว</em></h2><p>กรองแผนที่ตามจังหวัด หรือค้นหาจังหวัดเพื่อเปิด Province Profile และวิเคราะห์โครงสร้างกีฬาเชิงพื้นที่ทันที</p><div class="command-province-tools"><label><span>กรองจังหวัดบนแผนที่</span><select id="command-province-filter" aria-label="กรองจังหวัดบนแผนที่"><option value="">ทุกจังหวัด</option></select></label><form id="command-province-search-form"><label><span>ค้นหาเพื่อวิเคราะห์รายจังหวัด</span><input id="command-province-search" list="command-province-list" type="search" placeholder="เช่น เชียงใหม่ นครพนม…" autocomplete="off"></label><button type="submit">วิเคราะห์จังหวัด ↗</button></form><datalist id="command-province-list"></datalist><div class="command-province-status" id="command-province-status">แสดงข้อมูลทุกจังหวัด</div></div><div class="command-total"><span>ข้อมูลหลักในระบบ</span><strong id="command-record-total">—</strong><small>รายการจาก 7 ชุดข้อมูลหลัก</small></div></div>
-          <div id="overview-national-map" class="command-map"></div>
-          <div class="coverage-orbits">
-            <div class="orbit orbit-stadium"><span>สนาม</span><strong>77</strong><small>77 จังหวัด · 100%</small></div>
-            <div class="orbit orbit-training"><span>ศูนย์ฝึก</span><strong id="overview-training-provinces">—</strong><small id="overview-training-coverage">กำลังคำนวณ</small></div>
-            <div class="orbit orbit-science"><span>ศูนย์วิทย์</span><strong id="overview-science-provinces">—</strong><small id="overview-science-coverage">กำลังคำนวณ</small></div>
-          </div>
-        </section>
+<section class="h-assoc-strip" id="associations" aria-label="เครือข่ายสมาคมกีฬาแห่งประเทศไทย">
+ <div class="association-ticker">
+  <div class="association-ticker-track">
+   <div class="association-ticker-group"><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823014_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>ราชยานยนต์สมาคมแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823000_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากระดานโต้คลื่นแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822981_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากรีฑาแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822955_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟอาชีพแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822968_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822938_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากาบัดดี้แห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822921_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากีฬาไทยแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822875_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822909_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าโปโลแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822620_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคริกเก็ตแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822607_association.jpeg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคอร์ฟบอลแห่งประเทศไทย</b></span></div>
+   <div class="association-ticker-group" aria-hidden="true"><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823014_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>ราชยานยนต์สมาคมแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823000_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากระดานโต้คลื่นแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822981_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากรีฑาแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822955_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟอาชีพแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822968_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822938_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากาบัดดี้แห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822921_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากีฬาไทยแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822875_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822909_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าโปโลแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822620_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคริกเก็ตแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822607_association.jpeg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคอร์ฟบอลแห่งประเทศไทย</b></span></div>
+  </div>
+ </div>
+</section>
 
-        <section class="strategy-pulse" aria-label="สถานะการติดตามแผนพัฒนาการกีฬา">
-          <div class="strategy-pulse-copy"><small>STRATEGY PULSE · PLAN 2566–2570</small><h2>มีตัวชี้วัดครบ<br><em>แต่ความพร้อมยังไม่เท่ากัน</em></h2><p>ระบบเชื่อมข้อมูลผลรายปีครบทั้ง 46 KPI แล้ว แต่สูตร หน่วย เกณฑ์ และหน่วยงานรับผิดชอบยังต้องตรวจแยกกันก่อนสรุปผลสัมฤทธิ์</p><button data-route="plans">เปิด Strategic KPI Explorer ↗</button></div>
-          <div class="strategy-pulse-score"><span>KPI CATALOG</span><strong>46</strong><small>ตัวชี้วัด</small></div>
-          <div class="strategy-readiness-grid" id="overview-strategy-readiness"></div>
-        </section>
+<section class="h-section" id="sports" aria-labelledby="sports-title">
+ <div class="h-wrap">
+  <div class="h-head"><h2 id="sports-title">เลือกกีฬาที่คุณชอบ</h2><a class="h-link" id="sports-all" href="venues.html">ดูทุกชนิดกีฬา</a></div>
+  <div class="h-sports"><a class="h-sport h-sport--football" href="venues.html?q=ฟุตบอล"><img class="h-sport-bg" src="assets/images/sports-v4/football.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg><span><b>ฟุตบอล</b><small><span data-sport-count="ฟุตบอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--swim" href="venues.html?q=ว่ายน้ำ"><img class="h-sport-bg" src="assets/images/sports-v4/swimming.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="15" cy="6" r="2"/><path d="M5 12l4-4 3 2 3-1"/></svg><span><b>ว่ายน้ำ</b><small><span data-sport-count="ว่ายน้ำ">–</span> สนาม</small></span></a><a class="h-sport h-sport--futsal" href="venues.html?q=วอลเลย์บอล"><img class="h-sport-bg" src="assets/images/sports-v4/volleyball.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3c2.5 3 3 7.5 1 11M3.6 9.5c3.7-.6 8 .9 10.4 4.5M7 19.5c1-3.6 3.8-6.6 7.6-7.8"/></svg><span><b>วอลเลย์บอล</b><small><span data-sport-count="วอลเลย์บอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--basket" href="venues.html?q=บาสเกตบอล"><img class="h-sport-bg" src="assets/images/sports-v4/basketball.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/></svg><span><b>บาสเกตบอล</b><small><span data-sport-count="บาสเกตบอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--badminton" href="venues.html?q=แบดมินตัน"><img class="h-sport-bg" src="assets/images/sports-v4/badminton.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L15 9"/><circle cx="17.5" cy="6.5" r="3.5"/><circle cx="7" cy="5" r="1.5"/></svg><span><b>แบดมินตัน</b><small><span data-sport-count="แบดมินตัน">–</span> สนาม</small></span></a><a class="h-sport h-sport--more" href="venues.html"><img class="h-sport-bg" src="assets/images/sports-v4/athletics.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span><b>กีฬาอื่น ๆ</b><small>ฟุตซอล ตะกร้อ เปตอง กรีฑา…</small></span></a></div>
+ </div>
+</section>
 
-        <div class="overview-section-head" id="country-picture"><div><span>01 / ภาพรวมประเทศ</span><h2>ระบบกีฬาไทยมีข้อมูลอะไร</h2></div><p>เริ่มจากขนาดข้อมูลและความครอบคลุม ก่อนพิจารณาว่าพื้นที่ใดมีความพร้อมหรือยังมีช่องว่าง</p></div>
-        <div class="row g-3 dashboard-row">
-          <div class="col-xl-8"><article class="modern-card tall"><div class="modern-card-head"><div><span>CONTENT UNIVERSE</span><h3>ขนาดข้อมูลแต่ละหมวด</h3><p>จำนวนรายการจริงจากตารางหลัก</p></div><span class="source-badge">DATABASE</span></div><div id="overview-content-chart" class="echart"></div></article></div>
-          <div class="col-xl-4"><article class="modern-card tall dark-card"><div class="modern-card-head"><div><span>PLATFORM REACH</span><h3>การเข้าถึงระบบ</h3><p>GA4 และ Internal Counter</p></div><span class="source-badge light">GA4</span></div><div id="overview-reach-chart" class="echart"></div><div class="chart-foot"><b>34,914</b><span>Sessions จาก Google Organic</span></div></article></div>
-        </div>
+<section class="h-section h-section--map" id="nation" aria-labelledby="map-title">
+ <div class="h-wrap">
+  <div class="h-map map-intro" id="map-intro">
+   <div class="map-focus-backdrop" aria-hidden="true"></div>
+   <div class="motion-map-panel">
+    <div class="h-map-copy"><h2 id="map-title">สนามกีฬาในจังหวัดของคุณ</h2><p>แตะจังหวัดบนแผนที่ หรือพิมพ์ชื่อ เพื่อดูจำนวนสนามแยกตามประเภท</p></div>
+    <form class="province-search" id="province-search-form" role="search">
+     <label for="province-search-input">ค้นหาจังหวัด</label>
+     <span class="h-province-input"><input id="province-search-input" list="province-search-options" type="search" placeholder="เช่น เชียงใหม่" autocomplete="off"><button type="submit">ค้นหา</button></span>
+     <datalist id="province-search-options"></datalist>
+    </form>
+    <canvas id="hero-map-canvas" aria-label="แผนที่ประเทศไทยจากจุดพิกัดสนามกีฬา"></canvas>
+    <div class="map-type-legend" aria-hidden="true"><span><i class="pin-football"></i>ฟุตบอล</span><span><i class="pin-court"></i>กีฬาคอร์ท</span><span><i class="pin-fitness"></i>ฟิตเนส / ยิม</span><span><i class="pin-water"></i>กีฬาทางน้ำ</span><span><i class="pin-general"></i>ลานกีฬา / ทั่วไป</span><span><i class="pin-other"></i>ประเภทอื่น</span></div>
+    <div class="province-category-network" id="province-category-network" aria-label="ประเภทสถานที่กีฬาในพื้นที่ที่เลือก">
+     <div class="national-facility-total" aria-live="polite"><small>ภาพรวมทั้งประเทศ</small><strong id="national-facility-total">0</strong><span>สถานที่กีฬาที่มีพิกัดบนแผนที่</span></div>
+     <div class="h-bars">
+      <button class="province-category-card category-stadium" data-province-category="stadium" type="button"><span>สนามกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+      <button class="province-category-card category-public" data-province-category="public" type="button"><span>ลานกีฬา / สวนสาธารณะ</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+      <button class="province-category-card category-fitness" data-province-category="fitness" type="button"><span>ฟิตเนส / ยิม</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+      <button class="province-category-card category-multipurpose" data-province-category="multipurpose" type="button"><span>อาคารอเนกประสงค์</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+      <button class="province-category-card category-training" data-province-category="training" type="button"><span>ศูนย์ฝึกกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+      <button class="province-category-card category-science" data-province-category="science" type="button"><span>ศูนย์วิทยาศาสตร์การกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
+     </div>
+     <a class="h-btn h-btn--accent h-map-cta" href="provinces.html">ดูข้อมูลรายจังหวัดแบบละเอียด</a>
+    </div>
+    <div class="province-map-tooltip" id="province-map-tooltip" role="status"><strong></strong><span></span></div>
+    <aside class="province-detail" id="province-detail" aria-live="polite" aria-hidden="true">
+     <button class="province-detail-close" type="button" aria-label="ปิดข้อมูลจังหวัด">×</button>
+     <small>จังหวัดที่เลือก</small>
+     <h3 id="province-detail-name">เลือกจังหวัดบนแผนที่</h3>
+     <p id="province-detail-region">ข้อมูลสนามกีฬาในจังหวัด</p>
+     <div class="province-detail-kpis"><div><strong id="province-detail-total">0</strong><span>สนามทั้งหมด</span></div><div><strong id="province-detail-sports">0</strong><span>ประเภทกีฬา</span></div><div><strong id="province-detail-districts">—</strong><span>อำเภอ / เขต</span></div></div>
+     <div class="province-sports" id="province-sports"></div>
+     <button class="province-detail-link" id="province-detail-link" type="button">ดูสนามทั้งหมดในจังหวัด</button>
+    </aside>
+   </div>
+  </div>
+ </div>
+</section>
 
-        <div class="row g-3 dashboard-row">
-          <div class="col-xl-6"><article class="modern-card"><div class="modern-card-head"><div><span>PROVINCE COVERAGE</span><h3 id="overview-stadium-coverage-title">สนามกีฬาตามข้อมูลก่อน cutoff</h3><p>ครอบคลุม 100% ของจังหวัดทั้งหมด · กราฟแสดงจำนวนจริงรายจังหวัด</p></div><div class="rank-switch" data-rank-switch="overviewProvince"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="overview-province-chart" class="echart medium"></div></article></div>
-          <div class="col-xl-6"><article class="modern-card"><div class="modern-card-head"><div><span>SPORT TYPE MIX</span><h3>ชนิดกีฬาที่มีสนามและกิจกรรมรองรับ</h3><p>เปรียบเทียบจำนวนจริงตามชนิดกีฬา</p></div><span class="source-badge">TOP 8 TYPES</span></div><div id="overview-sport-chart" class="echart medium"></div></article></div>
-        </div>
+<section class="h-section" id="events" aria-labelledby="events-title">
+ <div class="h-wrap">
+  <div class="h-head"><div><h2 id="events-title">กิจกรรมที่กำลังจะมาถึง</h2><p>แสดงเฉพาะกิจกรรมที่ยังไม่จบ เรียงตามวันที่จัด</p></div><div class="h-pills" id="event-months" role="group" aria-label="เลือกเดือน"></div></div>
+  <div class="h-events" id="home-events" aria-live="polite"><p class="h-empty">กำลังโหลดกิจกรรม…</p></div>
+ </div>
+</section>
 
-        <div class="overview-section-head" id="comparison-lab"><div><span>02 / เปรียบเทียบเชิงพื้นที่</span><h2>จังหวัดไหนพร้อมกว่า และเพราะอะไร</h2></div><p>เปรียบเทียบจังหวัดแบบตัวต่อตัว และค้นหาพื้นที่ที่มีสนามมากแต่กิจกรรมหรือศูนย์สนับสนุนน้อย</p></div>
-        <section class="comparison-command">
-          <div class="comparison-controls"><div><small>PROVINCE A</small><select id="compare-province-a"></select></div><button id="compare-swap" type="button" aria-label="สลับจังหวัด">⇄</button><div><small>PROVINCE B</small><select id="compare-province-b"></select></div></div>
-          <div id="province-comparison-visual" class="comparison-visual"></div>
-          <div id="province-comparison-insight" class="comparison-insight"></div>
-        </section>
-        <div class="row g-3 dashboard-row">
-          <div class="col-xl-8"><article class="modern-card"><div class="modern-card-head"><div><span>OPPORTUNITY QUADRANT</span><h3>สนามเทียบกิจกรรมรายจังหวัด</h3><p>มุมขวาล่างคือจังหวัดที่มีสนามมาก แต่กิจกรรมต่ำกว่าค่ากลาง</p></div><span class="source-badge">77 PROVINCES</span></div><div id="overview-opportunity-chart" class="echart large"></div></article></div>
-          <div class="col-xl-4"><article class="modern-card"><div class="modern-card-head"><div><span>PRIORITY AREAS</span><h3>พื้นที่ที่ควรพิจารณาก่อน</h3><p>คำนวณจากสนาม กิจกรรม และศูนย์สนับสนุนในฐานข้อมูล</p></div></div><div id="overview-priority-list" class="priority-list"></div></article></div>
-        </div>
-        <article class="modern-card ecosystem-card"><div class="modern-card-head"><div><span>SPORTS ECOSYSTEM MATRIX</span><h3>กีฬาแต่ละชนิดมีข้อมูลรองรับครบแค่ไหน</h3><p>เปรียบเทียบจำนวนสนาม กิจกรรม ผลการแข่งขัน นักกีฬา และบุคลากร โดยไม่สร้างความสัมพันธ์ที่ไม่มีอยู่จริงในฐานข้อมูล</p></div><span class="source-badge">ACTUAL COUNTS</span></div><div id="sports-ecosystem-matrix" class="ecosystem-matrix"></div><p class="chart-evidence">แหล่งข้อมูล: stadiums, events, competition_results, athletes และ sport_personal · คลิกแถวกีฬาเพื่อเปิดหน้าที่เกี่ยวข้อง</p></article>
+<section class="h-section h-section--white" id="places" aria-labelledby="places-title">
+ <div class="h-wrap">
+  <div class="h-head"><div><h2 id="places-title">สนามใกล้คุณ</h2><p id="venue-status">อนุญาตให้ใช้ตำแหน่ง เพื่อเรียงสนามจากใกล้ไปไกล</p></div><div class="h-head-actions"><div class="h-rail-nav"><button type="button" id="venue-prev" aria-label="สนามก่อนหน้า">←</button><button type="button" id="venue-next" aria-label="สนามถัดไป">→</button></div><button type="button" class="h-btn h-btn--accent" data-locate><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ใช้ตำแหน่งของฉัน</button></div></div>
+  <div class="h-venues" id="home-venues" tabindex="0" aria-roledescription="carousel" aria-label="สนามกีฬา"><p class="h-empty">กำลังโหลดสนาม…</p></div>
+ </div>
+</section>
 
-        <div class="overview-section-head" id="time-freshness"><div><span>03 / เวลาและความสดใหม่</span><h2>ข้อมูลเติบโตเมื่อไร</h2></div><p>เส้นเวลาเปรียบเทียบการเพิ่มข้อมูลสนามและกิจกรรม พร้อมจุดสูงสุดและวันที่อัปเดตล่าสุด</p></div>
-        <div class="row g-3 dashboard-row">
-          <div class="col-xl-8"><article class="modern-card"><div class="modern-card-head growth-card-head"><div><span>DATA GROWTH</span><h3>รายการที่เพิ่มเข้าสู่ระบบรายเดือน</h3><p id="overview-growth-range">กำลังโหลดช่วงข้อมูล</p></div><div class="growth-filter" aria-label="กรองช่วงเดือน"><label><span>จากเดือน</span><select id="growth-month-start" aria-label="เดือนเริ่มต้น"></select></label><label><span>ถึงเดือน</span><select id="growth-month-end" aria-label="เดือนสิ้นสุด"></select></label><button id="growth-month-reset" type="button">ดูทั้งหมด</button></div></div><div id="overview-growth-chart" class="echart large"></div></article></div>
-          <div class="col-xl-4"><article class="modern-card freshness-card"><div class="modern-card-head"><div><span>KEY MILESTONES</span><h3>หมุดหมายสำคัญ</h3></div></div><div class="freshness-list"><div><time>07 MAR 2025</time><b>เริ่มข้อมูลสนาม</b><span>จุดเริ่มต้นของข้อมูลที่ใช้วิเคราะห์</span></div><div><time>20 NOV 2025</time><b>374 สนามในวันเดียว</b><span>วันที่เพิ่มสนามสูงสุด</span></div><div class="hot"><time>JUN 2026</time><b>เดือนที่ข้อมูลโตสูงสุด</b><span>สนาม 3,580 · กิจกรรม 1,192</span></div><div><time>12 JUL 2026</time><b>Project cutoff</b><span>ไม่ใช้รายการที่สร้างหรือแก้ไขหลังวันนี้</span></div></div></article></div>
-        </div>
+<section class="h-section" id="home-learning" aria-labelledby="courses-title">
+ <div class="h-wrap h-split">
+  <div class="h-split-intro"><h2 id="courses-title">หลักสูตรสำหรับบุคลากรกีฬา</h2><p>พัฒนาทักษะผู้ฝึกสอน ผู้ตัดสิน และบุคลากรกีฬา จากเครือข่ายกีฬาไทย</p><a class="h-link" href="courses.html">ดูหลักสูตรทั้งหมด</a></div>
+  <div class="h-courses" id="training-course-grid"><p class="h-empty">กำลังโหลดหลักสูตร…</p></div>
+ </div>
+</section>
 
-        <div class="overview-section-head" id="data-readiness"><div><span>04 / ความพร้อมของข้อมูล</span><h2>ข้อมูลพร้อมใช้แค่ไหน</h2></div><p>คุณภาพข้อมูลแต่ละโดเมนมีความต่างกัน โดยเฉพาะข้อมูลจังหวัดและเพศของนักกีฬา</p></div>
-        <div class="row g-3 dashboard-row">
-          <div class="col-xl-7"><article class="modern-card quality-card"><div class="modern-card-head"><div><span>QUALITY SCORECARD</span><h3>ข้อมูลครบและข้อมูลที่ยังขาดกี่แถว</h3><p>แต่ละแถวแสดงจำนวนจริง: มีข้อมูลครบ / ขาดข้อมูล / จำนวนทั้งหมด โดยไม่ใช้เปอร์เซ็นต์เป็นตัวเลขหลัก</p></div><span class="source-badge warn">ACTUAL ROWS</span></div><div id="overview-quality-chart" class="quality-scoreboard"></div></article></div>
-          <div class="col-xl-5"><article class="modern-card image-insight"><img src="assets/images/stadium-2.jpg" alt="สนามกีฬาจาก Sports Almanac"><div class="image-insight-copy"><span>KEY INSIGHT</span><h3>สนามพร้อมใช้เชิงพื้นที่<br>แต่ข้อมูลสิ่งแวดล้อมยังขาด</h3><p>ตรวจจำนวนพิกัดจริงได้ใน Scorecard ขณะที่ 19,488 แห่งไม่ระบุ Environment</p><button data-route="stadiums">ดูคุณภาพข้อมูลสนาม ↗</button></div></article></div>
-        </div>
+</main>
 
-        <aside class="data-alert-band" aria-label="ประเด็นคุณภาพข้อมูลที่ต้องตรวจสอบ">
-          <div class="alert-code">!</div>
-          <div><small>DECISION SAFEGUARD</small><h3>ตรวจสอบวันที่กิจกรรมก่อนใช้วางแผนเชิงนโยบาย</h3><p id="overview-event-date-safeguard">กำลังตรวจสอบกิจกรรมตาม project cutoff…</p></div>
-          <button data-route="events">เปิดตารางกิจกรรม ↗</button>
-        </aside>
-
-        <section class="data-trust-ribbon" aria-label="สถานะความน่าเชื่อถือของข้อมูล"><div><small>DATA TRUST · PROJECT CUTOFF</small><h3>ใช้ข้อมูลได้ เมื่ออ่านข้อจำกัดไปพร้อมกัน</h3></div><div><b>12 ก.ค. 2569</b><span>วันตัดข้อมูลโครงการ</span></div><div><b id="trust-invalid-event-dates">—</b><span>วันที่กิจกรรมไม่สมบูรณ์</span></div><div><b>94 ระเบียน</b><span>นักกีฬาไม่มีจังหวัด</span></div><div><b>17 KPI</b><span>ยังไม่มีสูตร</span></div></section>
-
-        <div class="overview-section-head"><div><span>05 / ROW-LEVEL EVIDENCE</span><h2>ตรวจข้อมูลจริงรายแถว</h2></div><p>เลือกตาราง กรองข้อมูล และตรวจสอบหลักฐานที่อยู่เบื้องหลังตัวเลขบน Dashboard</p></div>
-        <section class="public-table-hub compact-hub">
-          <div class="public-table-selector">
-            <div><small>AVAILABLE PUBLIC DATA</small><h3>เลือกตารางที่ต้องการตรวจสอบ</h3></div>
-            <select id="overview-table-select" aria-label="เลือกตารางข้อมูลในหน้าภาพรวม"></select>
-          </div>
-          <div id="overview-table-context" class="table-context"></div>
-          <div id="overview-public-table-view" class="embedded-data-section"></div>
-        </section>
-      </section>
-    </section>
-
-    <section class="page province-analysis-page" data-page="province">
-      <div class="province-analysis-toolbar"><button id="province-analysis-back" type="button">← กลับหน้าภาพรวม</button><label><span>เปลี่ยนจังหวัด</span><select id="province-analysis-select"></select></label></div>
-      <nav class="province-story-nav" aria-label="หัวข้อการวิเคราะห์จังหวัด"><button type="button" data-scroll-target="province-summary">ภาพรวมจังหวัด</button><button type="button" data-scroll-target="district-intelligence">รายอำเภอ</button><button type="button" data-scroll-target="province-activity">กิจกรรม</button><button type="button" data-scroll-target="province-results">ผลและรางวัล</button><button type="button" data-scroll-target="province-quality-section">คุณภาพข้อมูล</button><button type="button" data-scroll-target="province-data">ข้อมูลจริง</button></nav>
-      <section class="province-analysis-hero" id="province-summary">
-        <div class="province-identity"><small>PROVINCE SPORTS INTELLIGENCE · CUTOFF 12 JUL 2026</small><h1 id="province-analysis-name">จังหวัด</h1><p id="province-analysis-summary">กำลังประมวลผลข้อมูลกีฬาในระดับจังหวัด</p><div id="province-analysis-core" class="province-core-stats"></div></div>
-        <div class="province-map-wrap"><div id="province-analysis-map" class="province-analysis-map"></div><div id="province-map-note" class="province-map-note"></div></div>
-        <div id="province-insight-stack" class="province-insight-stack"></div>
-      </section>
-      <div id="province-analysis-kpis" class="metric-strip province-metric-strip"></div>
-      <section class="district-intelligence" id="district-intelligence">
-        <div class="district-intelligence-head">
-          <div><small>DISTRICT SPORTS INTELLIGENCE</small><h2>เจาะสถิติกีฬารายอำเภอ</h2><p>เปรียบเทียบความพร้อมของสนาม กิจกรรม ศูนย์สนับสนุน และการแข่งขันภายในจังหวัดจากข้อมูลจริงก่อน cutoff</p></div>
-          <label><span>เลือกอำเภอเพื่อดูรายละเอียด</span><select id="province-district-select"></select></label>
-        </div>
-        <div id="province-district-overview" class="district-overview-strip"></div>
-        <div class="district-intelligence-grid">
-          <article class="district-compare-card"><header><div><small>ALL DISTRICTS</small><h3>โครงสร้างและกิจกรรมทุกอำเภอ</h3></div><span>คลิกแท่งเพื่อเลือกอำเภอ</span></header><div id="province-district-chart" class="echart district-chart"></div></article>
-          <article class="district-balance-card"><header><div><small>SUPPLY × ACTIVITY</small><h3>สมดุลสนามกับกิจกรรม</h3></div><span>ขนาดจุด = ศูนย์สนับสนุน</span></header><div id="province-district-balance" class="echart district-chart"></div></article>
-          <article class="district-focus-card"><div id="province-district-focus" class="district-focus"></div><div id="province-district-sport" class="echart district-sport-chart"></div></article>
-        </div>
-        <div class="district-scorecard-wrap"><div class="district-scorecard-head"><div><small>DISTRICT SCORECARD</small><h3>รายละเอียดทุกอำเภอในจังหวัด</h3></div><span id="province-district-table-note"></span></div><div class="district-scorecard-scroll"><table class="district-scorecard"><thead><tr><th>อันดับ</th><th>อำเภอ</th><th>สนาม</th><th>กิจกรรม</th><th>กิจกรรมต่อ 100 สนาม</th><th>ศูนย์สนับสนุน</th><th>การแข่งขัน</th><th>ชนิดกีฬา</th><th>กีฬาหลัก</th><th>สถานะ</th></tr></thead><tbody id="province-district-table"></tbody></table></div></div>
-      </section>
-      <div class="analysis-grid province-analysis-grid">
-        <article class="panel"><div class="panel-title"><div><small>SPORT MIX</small><h3>ชนิดกีฬาที่จังหวัดรองรับ</h3><p>จำนวนสนามและกิจกรรมตามชนิดกีฬา</p></div></div><div id="province-sport-chart" class="echart large"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>SUPPORT INFRASTRUCTURE</small><h3>ศูนย์สนับสนุนกีฬา</h3><p>ศูนย์ฝึกเทียบศูนย์วิทยาศาสตร์กีฬา</p></div></div><div id="province-center-chart" class="donut-wrap"></div></article>
-        <article class="panel wide" id="province-activity"><div class="panel-title"><div><small>ช่วงเวลากิจกรรม</small><h3>กิจกรรมกีฬาตามช่วงเวลา</h3><p>นับจากวันเริ่มกิจกรรมที่บันทึกในจังหวัด · ชี้จุดเพื่อดูรายการย่อ หรือคลิกเพื่อดูรายละเอียด</p></div><span id="province-event-date-note">EVENT START DATE</span></div><div id="province-event-timeline" class="echart large"></div><div id="province-event-details" class="province-event-details"></div></article>
-        <article class="panel wide activity-calendar-panel"><div class="panel-title"><div><small>PROVINCE EVENT CALENDAR</small><h3>ปฏิทินกิจกรรมภายในจังหวัด</h3><p>แสดงกิจกรรมเฉพาะจังหวัดที่เลือกตลอดช่วงวันเริ่ม–สิ้นสุด</p></div><span>DAILY VIEW</span></div><div id="province-event-calendar" class="activity-calendar"></div></article>
-        <article class="panel wide province-results-panel" id="province-results"><div class="panel-title"><div><small>ผลการแข่งขันและรางวัล</small><h3>ผลการแข่งขันและรางวัลระดับจังหวัด</h3><p>แยกผลของการแข่งขันที่จัดในจังหวัดออกจากผลงานที่ผู้แทนจังหวัดได้รับ</p></div><span>รองรับข้อมูลในอนาคต</span></div><div id="province-result-summary" class="province-result-summary"></div><div class="province-result-layout"><div id="province-result-chart" class="echart large"></div><div id="province-result-evidence" class="province-result-evidence"></div></div></article>
-        <article class="panel" id="province-quality-section"><div class="panel-title"><div><small>คุณภาพข้อมูล</small><h3>ความพร้อมของข้อมูลเชิงพื้นที่</h3><p>แสดงจำนวนจริงของรายการที่มีและไม่มีพิกัดใช้งานได้</p></div></div><div id="province-quality" class="quality-scoreboard"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>COMPETITION RECORD</small><h3>การแข่งขันในจังหวัด</h3><p>รายการแข่งขันที่ระบุจังหวัดตรงกับพื้นที่นี้</p></div></div><div id="province-competition-list" class="province-competition-list"></div></article>
-      </div>
-      <section class="province-data-hub" id="province-data"><div class="public-table-selector"><div><small>หลักฐานระดับรายการ</small><h2 id="province-table-heading">ข้อมูลจริงของจังหวัด</h2><p>เลือกดูรายละเอียดแต่ละชุดข้อมูล โดยคง filter จังหวัดไว้ตลอด</p></div><div id="province-data-tabs" class="subtabs"></div></div><div id="province-table-view" class="embedded-data-section"></div></section>
-    </section>
-
-    <section class="page" data-page="stadiums">
-      <div class="page-hero"><span class="giant-letter">S</span><div><span class="section-no">STADIUM INTELLIGENCE</span><h1>สนามกีฬา<br><mark>ทั่วประเทศไทย</mark></h1><p>วิเคราะห์ความครอบคลุม พื้นที่ ชนิดกีฬา เจ้าของ และคุณภาพข้อมูลสถานที่</p></div></div>
-      <div id="stadium-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel map-panel"><div class="panel-title"><div><small>GEO DISTRIBUTION</small><h3>พิกัดสนามจริงบนแผนที่ประเทศไทย</h3></div><span id="stadium-map-count">กำลังคำนวณ…</span></div><div class="map-filter-bar"><label>จังหวัด<select id="stadium-map-province"></select></label><label>ชนิดกีฬา<select id="stadium-map-sport"></select></label><button id="stadium-map-reset" type="button">ล้างตัวกรอง</button></div><div class="geo-stage" id="stadium-map"><div class="map-loader">กำลังอ่านพิกัด…</div></div></article>
-        <article class="panel"><div class="panel-title"><div><small>PROVINCE RANKING · 25 PROVINCES</small><h3>เปรียบเทียบจำนวนสนามรายจังหวัด</h3></div><div class="rank-switch" data-rank-switch="stadium"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button><button data-mode="zero">ไม่มีข้อมูล</button></div></div><div id="stadium-province-bars" class="rank-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>SPORT TYPE MIX</small><h3>จำนวนสนามตามชนิดกีฬา</h3></div><div class="rank-switch" data-rank-switch="stadiumSport"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="stadium-sport-bars" class="rank-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>OWNERSHIP</small><h3>ประเภทเจ้าของสนาม</h3></div></div><div id="stadium-owner" class="donut-wrap"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>ACTIVITY UTILIZATION PROXY</small><h3>กิจกรรมต่อสนาม 100 แห่งรายจังหวัด</h3><p>ดัชนีเปรียบเทียบระดับจังหวัด ไม่ใช่อัตราใช้สนามจริง เพราะกิจกรรมยังไม่มี Foreign Key ถึงสนาม</p></div><span>OPPORTUNITY GAP</span></div><div id="stadium-activity-index" class="echart large"></div></article>
-      </div>
-      <div class="data-section" data-dataset="stadiums"></div>
-    </section>
-
-    <section class="page" data-page="events">
-      <div class="page-hero"><span class="giant-letter">E</span><div><span class="section-no">EVENT INTELLIGENCE</span><h1>กิจกรรมกีฬา<br><mark>เคลื่อนไหวทั้งปี</mark></h1><p>แยกอดีต กำลังจัด และกิจกรรมในอนาคต พร้อมวิเคราะห์พื้นที่ กีฬา และระดับงาน</p></div></div>
-      <div id="event-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel wide"><div class="panel-title"><div><small>EVENT CALENDAR</small><h3>จำนวนกิจกรรมตามเดือนเริ่มต้น</h3></div><span>2007—2027</span></div><div id="event-timeline" class="line-stage"></div></article>
-        <article class="panel wide activity-calendar-panel"><div class="panel-title"><div><small>INTERACTIVE CALENDAR</small><h3>ปฏิทินกิจกรรมกีฬาทั่วประเทศ</h3><p>แสดงกิจกรรมตลอดช่วงวันเริ่ม–สิ้นสุด · เลือกเดือนและกดวันที่เพื่อดูรายละเอียด</p></div><span>ACTUAL EVENT DATES</span></div><div id="event-calendar" class="activity-calendar"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>SPORT RANKING</small><h3>ชนิดกิจกรรมกีฬา</h3></div><div class="rank-switch" data-rank-switch="eventSport"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="event-sport-bars" class="rank-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>EVENT LEVEL</small><h3>ระดับกิจกรรม</h3></div></div><div id="event-level" class="donut-wrap"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>PROVINCE COMPARISON</small><h3>จังหวัดที่มีกิจกรรมมากที่สุดและน้อยที่สุด</h3></div><div class="rank-switch" data-rank-switch="event"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button><button data-mode="zero">ไม่มีข้อมูล</button></div></div><div id="event-province-compare" class="echart large"></div></article>
-      </div>
-      <div class="data-section" data-dataset="events"></div>
-    </section>
-
-    <section class="page" data-page="competitions">
-      <div class="page-hero"><span class="giant-letter">C</span><div><span class="section-no">COMPETITION & RESULTS</span><h1>การแข่งขัน<br><mark>และผลลัพธ์</mark></h1><p>ช่วงเวลาจัดการแข่งขัน ระดับ กีฬา ผู้ชนะ และความครบถ้วนของผลรางวัล</p></div></div>
-      <div id="competition-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel wide"><div class="panel-title"><div><small>COMPETITION CALENDAR</small><h3>จำนวนการแข่งขันตามเดือนเริ่มต้น</h3><p>ชี้แท่งเพื่อดูชื่อรายการทั้งหมดในเดือนนั้น</p></div><span>38 COMPETITIONS</span></div><div id="competition-timeline" class="echart large"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>RESULT SPORTS</small><h3>ผลการแข่งขันตามกีฬา</h3></div><div class="rank-switch" data-rank-switch="resultSport"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="result-sport-bars" class="rank-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>AWARD COVERAGE</small><h3>ชนิดรางวัลและจำนวนผลที่บันทึก</h3></div><span>29 RESULTS</span></div><div id="medal-quality" class="echart medium"></div><p id="award-note" class="award-note"></p></article>
-        <article class="panel wide"><div class="panel-title"><div><small>RESULT COMPLETION FUNNEL</small><h3>จากรายการแข่งขันสู่ผลลัพธ์ที่สมบูรณ์</h3><p>ทุกขั้นนับเป็นจำนวน “การแข่งขัน” หน่วยเดียวกัน โดยรวมแถวผลตาม competition_id ก่อน</p></div></div><div id="competition-result-funnel" class="echart large"></div><p id="competition-funnel-evidence" class="chart-evidence"></p></article>
-      </div>
-      <div class="tabbed-data"><div class="subtabs"><button class="active" data-subtable="competition_list">รายการแข่งขัน</button><button data-subtable="competition_results">ผลการแข่งขัน</button></div><div class="data-section" data-dataset="competition_list"></div></div>
-    </section>
-
-    <section class="page" data-page="centers">
-      <div class="page-hero"><span class="giant-letter">X</span><div><span class="section-no">SPORTS INFRASTRUCTURE</span><h1>ศูนย์ฝึก &<br><mark>วิทยาศาสตร์กีฬา</mark></h1><p>เปรียบเทียบความครอบคลุมและความพร้อมของโครงสร้างพื้นฐานสนับสนุนนักกีฬา</p></div></div>
-      <div id="center-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel wide map-panel"><div class="panel-title"><div><small>THAILAND INFRASTRUCTURE MAP</small><h3>ศูนย์ฝึกและวิทยาศาสตร์กีฬาบนแผนที่ประเทศไทย</h3></div><span id="center-map-summary">ศูนย์ตามข้อมูลก่อน cutoff</span></div><div class="geo-stage thailand-map" id="center-map"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>PROVINCE COVERAGE</small><h3>จำนวนโครงสร้างกีฬาครบทั้ง 77 จังหวัด</h3><p>สนาม ศูนย์ฝึก และศูนย์วิทยาศาสตร์ แสดงเป็นจำนวนจริงรายจังหวัด</p></div><span>77 PROVINCES</span></div><div id="center-coverage-summary" class="coverage-summary"></div><div id="center-coverage-chart" class="echart coverage-chart"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>INFRASTRUCTURE NEED SCORE</small><h3>จังหวัดที่มีความต้องการศูนย์สนับสนุน</h3><p>คะแนน 0–100 จากสนาม 35% กิจกรรม 35% และช่องว่างศูนย์เทียบกับความต้องการ 30%</p></div><div class="rank-switch" data-rank-switch="centerNeed"><button class="active" data-mode="top">สูงที่สุด</button><button data-mode="bottom">ต่ำที่สุด</button></div></div><div id="center-need-chart" class="echart large"></div><p class="chart-evidence">คะแนนใช้ Min–Max normalization ภายใน 77 จังหวัด · ใช้เพื่อจัดลำดับตรวจสอบ ไม่ใช่ข้อสรุปด้านงบประมาณ</p></article>
-      </div>
-      <div class="tabbed-data"><div class="subtabs"><button class="active" data-subtable="training_center">ศูนย์ฝึกกีฬา</button><button data-subtable="science_center">ศูนย์วิทยาศาสตร์</button></div><div class="data-section" data-dataset="training_center"></div></div>
-    </section>
-
-    <section class="page" data-page="people">
-      <div class="page-hero"><span class="giant-letter">P</span><div><span class="section-no">PEOPLE & TALENT</span><h1>นักกีฬา<br><mark>และบุคลากร</mark></h1><p>สำรวจชนิดกีฬา ระดับ การกระจายตัว และช่องว่างคุณภาพข้อมูลบุคคล</p></div></div>
-      <div id="people-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel wide"><div class="panel-title"><div><small>SPORT PROFILE</small><h3>นักกีฬาแยกตามชนิดกีฬา</h3></div></div><div id="athlete-sport-bars" class="rank-bars two-col"></div></article>
-        <article class="panel warning-panel"><span class="warning-icon">!</span><small>DATA QUALITY ALERT</small><h3>จังหวัดไม่พร้อมวิเคราะห์</h3><strong>96.91%</strong><p>ข้อมูลนักกีฬา 94 จาก 97 รายไม่มีจังหวัดที่ใช้งานได้ และ 84.54% ไม่ระบุเพศ</p></article>
-        <article class="panel wide"><div class="panel-title"><div><small>TALENT SUPPORT GAP</small><h3>นักกีฬาเทียบบุคลากรตามชนิดกีฬา</h3><p>เปรียบเทียบเฉพาะชนิดกีฬาที่ระบุได้ ไม่ใช้จังหวัดที่ข้อมูลขาดในการจัดอันดับ</p></div><div class="rank-switch" data-rank-switch="peopleSport"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="people-sport-compare" class="echart large"></div></article>
-      </div>
-      <div class="tabbed-data"><div class="subtabs"><button class="active" data-subtable="athletes">นักกีฬา</button><button data-subtable="sport_personal">บุคลากรกีฬา</button></div><div class="data-section" data-dataset="athletes"></div></div>
-    </section>
-
-    <section class="page" data-page="usage">
-      <div class="page-hero acid-hero"><span class="giant-letter">G</span><div><span class="section-no">GOOGLE ANALYTICS + INTERNAL COUNTER</span><h1>ผู้ใช้กำลัง<br><mark>สนใจอะไร</mark></h1><p>ข้อมูล GA4 จริงช่วง 1 มกราคม 2025 ถึง 13 กรกฎาคม 2026 รวมกับยอดชมเนื้อหาภายในระบบ</p></div></div>
-      <div id="usage-kpis" class="metric-strip"></div>
-      <div class="analysis-grid">
-        <article class="panel wide"><div class="panel-title"><div><small>ACQUISITION</small><h3>แหล่งที่มาของ Session</h3></div><span>GA4 EXPORT</span></div><div id="source-bars" class="h-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>DEVICE</small><h3>อุปกรณ์ที่ใช้งาน</h3></div></div><div id="device-donut" class="donut-wrap"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>COUNTRY</small><h3>ผู้ใช้ตามประเทศ</h3></div><div class="rank-switch" data-rank-switch="country"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="country-bars" class="rank-bars"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>INTERNAL CONTENT</small><h3>ยอดดูตามประเภทข้อมูล</h3></div></div><div id="page-type" class="donut-wrap"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>ORGANIC SEARCH</small><h3>คำค้นหาที่นำผู้ใช้เข้าสู่ระบบ</h3></div><span>SEARCH CONSOLE</span></div><div id="query-table" class="mini-table"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>SEARCH OPPORTUNITY</small><h3>คำค้นหาที่แสดงผลสูงแต่ยังได้รับคลิกต่ำ</h3><p>เปรียบเทียบ Impression, Click และ CTR เพื่อหาเนื้อหาที่ควรปรับปรุง</p></div><span>DEMAND GAP</span></div><div id="search-opportunity-chart" class="echart large"></div></article>
-      </div>
-      <div class="data-section" data-dataset="page_count"></div>
-    </section>
-
-    <section class="page" data-page="plans">
-      <div class="page-hero plan-hero"><span class="giant-letter">K</span><div><span class="section-no">NATIONAL SPORTS DEVELOPMENT PLAN</span><h1>แผนพัฒนากีฬา<br><mark>และตัวชี้วัด</mark></h1><p>เชื่อมแผนหลัก ประเด็นการพัฒนา ตัวชี้วัด 46 รายการ และข้อมูลผลรายปีจากฐานข้อมูลจริง</p></div></div>
-      <div id="plan-kpis" class="metric-strip"></div>
-      <div class="analysis-grid plan-analysis-grid">
-        <article class="panel wide"><div class="panel-title"><div><small>STRATEGY MAP</small><h3>โครงสร้างประเด็นการพัฒนาและตัวชี้วัด</h3><p>ขนาดของแต่ละส่วนแทนจำนวน KPI คลิกเพื่อกรองรายการใน KPI Explorer</p></div><span>PLAN 2566–2570</span></div><div id="plan-sunburst" class="echart large"></div><p class="chart-evidence">โครงสร้าง: wp_action_plan_master → wp_action_plan_minor · ใช้ชื่อหมวดจาก wp_action_plan_minor_topic โดยจับคู่ csvId → wp_action_plan_outcome</p></article>
-        <article class="panel"><div class="panel-title"><div><small>KPI READINESS</small><h3>ความพร้อมของนิยามตัวชี้วัด</h3><p>นับจำนวนจริงของ KPI ที่มีข้อมูลสำคัญ ไม่ใช้คะแนนเปอร์เซ็นต์รวม</p></div></div><div id="plan-readiness" class="quality-scoreboard"></div></article>
-        <article class="panel"><div class="panel-title"><div><small>ISSUE COVERAGE</small><h3>KPI และแถวข้อมูลตามประเด็น</h3><p>เปรียบเทียบจำนวนตัวชี้วัดกับปริมาณข้อมูลที่บันทึกจริง</p></div></div><div id="plan-issue-bars" class="echart medium"></div></article>
-        <article class="panel wide kpi-explorer-card"><div class="panel-title"><div><small>KPI EXPLORER</small><h3>สำรวจค่ารายปีของตัวชี้วัด</h3><p>เลือกประเด็น KPI และค่าที่ต้องการดู โดยแสดงชื่อ field จริงเพื่อป้องกันการตีความเกินข้อมูล</p></div></div><div class="kpi-explorer-tools"><label><span>ประเด็นการพัฒนา</span><select id="kpi-issue-select"></select></label><label><span>ตัวชี้วัด</span><select id="kpi-select"></select></label><label><span>ค่าที่แสดง</span><select id="kpi-metric-select"></select></label></div><div id="kpi-detail" class="kpi-detail"></div><div id="kpi-trend-chart" class="echart large"></div><p id="kpi-chart-evidence" class="chart-evidence"></p></article>
-        <article class="panel wide"><div class="panel-title"><div><small>YEAR COVERAGE</small><h3>จำนวน KPI ที่มีข้อมูลในแต่ละปี</h3><p>Heatmap แสดงความพร้อมของข้อมูลรายปีแยกตามประเด็น ไม่ได้หมายถึงผลสัมฤทธิ์ของแผน</p></div><span>2566–2570</span></div><div id="plan-year-heatmap" class="echart large"></div></article>
-        <article class="panel wide"><div class="panel-title"><div><small>SELECTED SOURCE TABLE</small><h3>ข้อมูลจริงของ KPI ที่เลือก</h3><p>แสดงทุก field จากตารางต้นทาง พร้อมเลื่อนแนวนอนสำหรับตารางที่มีหลายคอลัมน์</p></div><span id="kpi-raw-source">—</span></div><div id="kpi-raw-table" class="kpi-raw-table"></div></article>
-      </div>
-      <div id="plan-catalog-table" class="data-section"></div>
-    </section>
-
-    <section class="page" data-page="data">
-      <div class="page-hero"><span class="giant-letter">D</span><div><span class="section-no">DATABASE EXPLORER</span><h1>ข้อมูลจริง<br><mark>ทุกโครงสร้าง</mark></h1><p>สำรวจโครงสร้างจาก SQL source snapshot · จำนวน Rows ในหน้านี้เป็น metadata ของไฟล์ต้นทาง ส่วนกราฟและตารางวิเคราะห์ใช้ cutoff 12 ก.ค. 2569</p></div></div>
-      <section class="public-table-hub">
-        <div class="public-table-selector">
-          <div><small>ROW-LEVEL DATA</small><h2>เลือกดูข้อมูลจริงในรูปแบบตาราง</h2><p>แสดงเฉพาะชุดข้อมูลที่ผ่านการคัดฟิลด์สำหรับเผยแพร่ โดยไม่รวมรหัสผ่าน Token อีเมล และข้อมูลอ่อนไหว</p></div>
-          <select id="public-table-select" aria-label="เลือกตารางข้อมูลจริง"></select>
-        </div>
-        <div id="public-table-context" class="table-context"></div>
-        <div id="public-table-view" class="embedded-data-section"></div>
-      </section>
-      <div class="catalogue-heading"><small>SCHEMA CATALOGUE</small><h2>โครงสร้างฐานข้อมูลทั้งหมด</h2><p>ตารางด้านล่างแสดง Schema และจำนวนแถวเท่านั้น ตารางที่ไม่ได้ Export จะไม่แสดงข้อมูลรายแถว</p></div>
-      <div class="explorer-tools"><label><span>SEARCH</span><input id="inventory-search" type="search" placeholder="ค้นหาชื่อตารางหรือ Domain…"></label><select id="inventory-domain"><option value="">ทุก Domain</option></select><b id="inventory-count">—</b></div>
-      <div class="analysis-grid data-analysis-grid"><article class="panel wide"><div class="panel-title"><div><small>DOMAIN COMPARISON</small><h3>จำนวนตารางและปริมาณข้อมูลแยกตาม Domain</h3><p>เปรียบเทียบขนาดโครงสร้างกับจำนวนแถว เพื่อเห็น Domain ที่ใหญ่แต่มีตารางน้อยหรือกระจายหลายตาราง</p></div><div class="rank-switch" data-rank-switch="domain"><button class="active" data-mode="top">มากที่สุด</button><button data-mode="bottom">น้อยที่สุด</button></div></div><div id="domain-comparison-chart" class="echart large"></div></article></div>
-      <div class="explorer-layout"><article class="panel table-card"><div class="table-scroll"><table><thead><tr><th>Table</th><th>Domain</th><th>Rows</th><th>Fields</th><th>PK</th><th></th></tr></thead><tbody id="inventory-body"></tbody></table></div><div id="inventory-pages" class="pager"></div></article><aside class="schema-drawer" id="schema-drawer"><span>SCHEMA DETAIL</span><h3>เลือกตารางเพื่อดู Field</h3><p>รายละเอียดคอลัมน์ ชนิดข้อมูล Nullable และ Primary Key จาก SQL dump จริง</p></aside></div>
-    </section>
-  </main>
-
-  <footer><div class="footer-mark">SA</div><div><b>SPORTS ALMANAC · DATA INSIGHT</b><span>ฐานข้อมูลต้นทาง: sports_almanac_db_2026-08-11.sql · ข้อมูลระบบหลักใช้ cutoff 12 ก.ค. 2569 · ข้อมูล GA4 เป็นข้อยกเว้นและใช้ export ถึง 13 ก.ค. 2569 · เขตจังหวัด: geoBoundaries · เขตอำเภอ ADM2: Royal Thai Survey Department/OCHA ROAP ผ่าน geoBoundaries (CC BY 3.0 IGO)</span></div><a href="#overview" data-route="overview">BACK TO TOP ↑</a></footer>
-  <div class="loading-screen" id="loading"><strong>SA</strong><span>LOADING REAL DATA</span></div>
-  <div class="toast" id="toast" hidden></div>
-  <aside class="province-profile" id="province-profile" aria-hidden="true"><button class="province-profile-close" id="province-profile-close" type="button" aria-label="ปิดรายละเอียด">×</button><span>PROVINCE PROFILE</span><h2 id="province-profile-name">จังหวัด</h2><p id="province-profile-benchmark"></p><div id="province-profile-kpis" class="province-profile-kpis"></div><div id="province-profile-sports" class="province-profile-sports"></div><button id="province-profile-open" class="province-profile-open" type="button">เปิดการวิเคราะห์จังหวัดนี้ ↗</button></aside>
-  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/echarts.min.js"></script>
-  <script src="assets/app.js"></script>
-</body>
-</html>
+<footer id="footer" class="h-footer">
+ <div class="h-wrap">
+  <div class="h-footer-grid">
+   <div class="h-footer-brand"><p class="h-footer-name">THAILAND SPORTS ALMANAC</p><p>สำนักงานปลัดกระทรวงการท่องเที่ยวและกีฬา<br>เลขที่ 4 ถนนราชดำเนินนอก กรุงเทพมหานคร 10100</p><a href="mailto:sportsalmanac@mots.go.th">sportsalmanac@mots.go.th</a></div>
+   <nav aria-label="สำรวจ"><b>สำรวจ</b><a href="venues.html">ค้นหาสนาม</a><a href="activities.html">ปฏิทินกิจกรรม</a><a href="provinces.html">ข้อมูลรายจังหวัด</a></nav>
+   <nav aria-label="ข้อมูล"><b>ข้อมูล</b><a href="dashboard.html">ข้อมูลและสถิติ</a><a href="results.html">ผลการแข่งขัน</a><a href="courses.html">หลักสูตรอบรม</a></nav>
+   <nav aria-label="ช่วยเหลือ"><b>ช่วยเหลือ</b><a href="abouts.html">เกี่ยวกับเรา</a><a href="contact.html">ติดต่อเรา</a><a href="#login" data-login-open>เข้าสู่ระบบ</a></nav>
+  </div>
+  <div class="h-footer-bottom"><span>© 2569 Thailand Sports Almanac</span><span id="data-updated">&nbsp;</span></div>
+ </div>
+</footer>
+<script src="assets/activity-modal.js?v=20260820-2"></script><script src="assets/login-modal.js?v=20260820-7"></script><script src="assets/cinematic.js?v=20261101-5"></script><script src="assets/home.js?v=20261101-90"></script></body></html>
