@@ -1,0 +1,74 @@
+/* Shared site header for the inner pages, matching the home page:
+   a full-width 55px navy bar with the white logo, compact links, a white login button,
+   frosted navy once the page scrolls, and the blue/lime swoosh tucked behind its bottom edge.
+   Loaded last so it overrides the older floating-pill header styles. */
+:root{
+ --sh-navy:#0B1730;--sh-active:#1A2C55;--sh-line:#1E3160;
+ --sh-text:#C9D3E6;--sh-white:#FFFFFF;--sh-accent:#C8F169;--sh-blue:#1A73FF;
+ --sh-wrap:1200px;--sh-pad:24px;--sh-height:55px
+}
+
+html body .nav-shell,html body .nav-shell.is-scrolled{
+ position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:1500;
+ display:flex;align-items:center;justify-content:space-between;gap:16px;
+ width:100%!important;max-width:none!important;height:var(--sh-height)!important;min-height:var(--sh-height)!important;
+ margin:0!important;padding:0 max(var(--sh-pad),calc((100vw - var(--sh-wrap))/2))!important;
+ border:0!important;border-bottom:1px solid var(--sh-line)!important;border-radius:0!important;
+ background:var(--sh-navy)!important;color:var(--sh-white);box-shadow:none!important;
+ transform:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+ font-family:'IBM Plex Sans Thai',system-ui,sans-serif;transition:background .3s,box-shadow .3s
+}
+html body .nav-shell.is-scrolled{
+ background:rgba(11,23,48,.84)!important;border-bottom-color:rgba(255,255,255,.08)!important;
+ box-shadow:0 10px 30px -12px rgba(3,10,30,.5)!important;
+ -webkit-backdrop-filter:blur(16px) saturate(160%)!important;backdrop-filter:blur(16px) saturate(160%)!important
+}
+html body .nav-shell .brand{display:flex;align-items:center;width:auto;min-width:0;padding:0;background:none}
+html body .nav-shell .brand img{width:auto!important;height:36px!important;max-width:none;padding:0;border-radius:0;background:none;object-fit:contain}
+html body .nav-shell .brand span{display:none}
+html body .nav-shell .desktop-nav{gap:2px}
+html body .nav-shell .nav-primary-link{
+ padding:6px 12px!important;border-radius:7px!important;background:transparent;box-shadow:none!important;
+ color:var(--sh-text)!important;font-family:'IBM Plex Sans Thai',system-ui,sans-serif!important;
+ font-size:14px!important;font-weight:500;line-height:1.5;opacity:1!important;transform:none!important
+}
+html body .nav-shell .nav-primary-link>span{font-size:11px;margin-left:2px;opacity:.7}
+html body .nav-shell .nav-primary-link:hover,
+html body .nav-shell .nav-primary-link[aria-expanded=true],
+html body .nav-shell .nav-primary-link[aria-current]{background:var(--sh-active)!important;color:var(--sh-white)!important}
+html body .nav-shell .nav-primary-link:after{display:none!important}
+html body .nav-shell .nav-actions .login{
+ display:inline-flex!important;align-items:center;gap:8px;min-height:34px;padding:0 14px!important;
+ border:0!important;border-radius:7px!important;background:var(--sh-white)!important;color:var(--sh-navy)!important;
+ font-family:'IBM Plex Sans Thai',system-ui,sans-serif!important;font-size:13px!important;font-weight:600;white-space:nowrap;box-shadow:none!important
+}
+html body .nav-shell .nav-actions .login:hover{background:var(--sh-accent)!important}
+html body .nav-shell .nav-actions .login span,html body .mobile-login span{display:none}
+html body .nav-shell .menu-button{color:var(--sh-white)}
+html body .nav-shell .menu-button i{background:currentColor}
+html body .nav-shell .nav-dropdown{font-family:'IBM Plex Sans Thai',system-ui,sans-serif}
+html body .nav-shell .mobile-menu{background:#FFFFFF!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;font-family:'IBM Plex Sans Thai',system-ui,sans-serif}
+
+/* Swoosh behind the header's bottom edge; it sits in the page, so it scrolls away. */
+.site-nav-swoosh{position:absolute;left:0;right:0;top:calc(var(--sh-height) - 34px);z-index:1400;height:64px;pointer-events:none}
+.site-nav-swoosh svg{display:block;width:100%;height:100%;overflow:visible}
+.site-nav-swoosh path{fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round}
+.site-nav-swoosh .swoosh-main{stroke:var(--sh-blue);stroke-width:2.25;stroke-dasharray:14 8;opacity:.85;animation:site-swoosh 11s linear infinite}
+.site-nav-swoosh .swoosh-accent{stroke:var(--sh-accent);stroke-width:1.75;stroke-dasharray:3 12;opacity:.95;animation:site-swoosh 14s linear infinite reverse}
+@keyframes site-swoosh{to{stroke-dashoffset:-220}}
+
+@media(min-width:1101px){html body .nav-shell .desktop-nav{display:flex}html body .nav-shell .menu-button{display:none}}
+@media(max-width:1200px){html body .nav-shell .nav-primary-link{padding-inline:9px!important;font-size:13px!important}}
+@media(max-width:1100px){
+ html body .nav-shell .desktop-nav{display:none}
+ html body .nav-shell .menu-button{display:flex}
+ html body .nav-shell .nav-actions{margin-left:auto}
+ html body .nav-shell .mobile-menu{top:var(--sh-height)!important}
+ html body .nav-shell .mobile-menu.open{display:block;max-height:calc(100dvh - 70px);overflow-y:auto}
+}
+@media(max-width:760px){
+ :root{--sh-pad:16px}
+ html body .nav-shell .brand img{height:32px!important}
+ html body .nav-shell .nav-actions .login{padding-inline:12px!important;font-size:12.5px!important}
+}
+@media(prefers-reduced-motion:reduce){.site-nav-swoosh path{animation:none}}
