@@ -169,6 +169,8 @@
  addEventListener('scroll',syncNav,{passive:true});syncNav();
  const heroMedia=$('.h-hero-media');
  if(heroMedia&&!motion.matches){let ticking=false;addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const y=Math.min(scrollY,900);heroMedia.style.transform=`translate3d(0,${y*.22}px,0)`;ticking=false;});},{passive:true});}
+ const watermark=$('.h-watermark');
+ if(watermark&&!motion.matches){let wmTick=false;const moveWm=()=>{const r=watermark.parentElement.getBoundingClientRect(),p=(innerHeight-r.top)/(innerHeight+r.height);watermark.style.setProperty('--wm-x',`${Math.round((Math.min(Math.max(p,0),1)-.5)*-260)}px`);wmTick=false;};addEventListener('scroll',()=>{if(!wmTick){wmTick=true;requestAnimationFrame(moveWm);}},{passive:true});moveWm();}
  const revealTargets='.h-head,.h-split-intro,.h-sport,#map-intro,.h-feature,.h-event,.h-event-list>.h-btn,#home-venues,.h-course,.h-footer-grid>*';
  const revealIO='IntersectionObserver'in window&&!motion.matches?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){const el=e.target;el.classList.add('is-in');revealIO.unobserve(el);setTimeout(()=>el.classList.remove('rv','is-in'),1600);}}),{rootMargin:'0px 0px -8% 0px',threshold:.05}):null;
  function reveal(){
