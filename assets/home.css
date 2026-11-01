@@ -120,9 +120,9 @@ body.home-b{margin:0;background:var(--page);color:var(--ink);font-size:16px;line
 .hero-search-result small{grid-column:1;font-size:13px;color:var(--muted)}
 .hero-search-result:hover,.hero-search-result:focus{background:var(--chip-blue)}
 
-/* Stats ribbon: a blue band with a diagonal top edge and two flowing lines, overlapping the hero photo. */
+/* Stats ribbon: a navy-to-blue band (continuing the header colour) with a diagonal top edge and two flowing lines, overlapping the hero photo. */
 .h-stats-band{position:relative;isolation:isolate;margin-top:-34px;padding:40px 0 10px;color:var(--on-navy)}
-.h-stats-band:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,#0D4FD6 0%,#1761F6 48%,#1A73FF 100%);clip-path:polygon(0 26%,64% 26%,100% 0,100% 100%,0 100%)}
+.h-stats-band:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,var(--navy) 0%,#112A5C 32%,#1550C8 68%,#1A73FF 100%);clip-path:polygon(0 26%,64% 26%,100% 0,100% 100%,0 100%)}
 .h-stats-band:after{content:'';position:absolute;inset:26% 0 auto;height:1px;z-index:-1;background:linear-gradient(90deg,#ffffff14,#ffffff6b,#ffffff14);pointer-events:none}
 .h-swoosh{position:absolute;left:0;right:0;top:-26px;z-index:1;width:100%;height:72px;overflow:visible;pointer-events:none}
 .h-swoosh path{fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round}
@@ -314,6 +314,8 @@ img.h-feature-img{transition:transform .8s var(--ease)}
 .h-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
 .home-b .h-footer-name{margin:0;font-size:18px;font-weight:700;color:var(--on-navy)}
 .h-footer-brand p{margin:10px 0 0;font-size:14px;line-height:1.7}
+.h-footer-brand .h-footer-contact{display:flex;flex-wrap:wrap;gap:4px 18px}
+.h-footer-brand .h-footer-contact a{margin:0;color:var(--on-navy-2);text-decoration:none!important}
 .h-footer-brand a{display:inline-block;margin-top:10px;font-size:14px;color:var(--accent);text-decoration:underline!important;text-underline-offset:3px}
 .h-footer nav{display:flex;flex-direction:column;gap:10px;font-size:14px}
 .h-footer nav b{font-size:15px;color:var(--on-navy)}
