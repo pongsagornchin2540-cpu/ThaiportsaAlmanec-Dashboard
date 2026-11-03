@@ -1,0 +1,46 @@
+/* Home header owns its layout; the legacy nav-shell capsule/animation does not apply. */
+#tsa-home-header{
+ position:sticky;top:0;left:0;right:0;bottom:auto;z-index:1500;
+ display:flex;align-items:center;justify-content:space-between;gap:20px;
+ box-sizing:border-box;width:100%;max-width:none;height:72px;min-height:72px;
+ margin:0;padding:0 max(var(--gutter,44px),calc((100% - 1280px)/2));
+ border:0;border-bottom:1px solid #203854;border-radius:0;background:#071322;color:#fff;
+ box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;overflow:visible;
+ transform:none!important;translate:none!important;rotate:none!important;scale:none!important;
+ animation:none!important;transition:none!important;
+}
+#tsa-home-header .brand{display:block;flex:none;width:auto;min-width:0;margin:0}
+#tsa-home-header .brand img{display:block;width:97px;height:46px;object-fit:contain}
+#tsa-home-header .desktop-nav{
+ position:absolute;left:50%;top:50%;right:auto;bottom:auto;transform:translate(-50%,-50%);
+ display:flex;align-items:center;justify-content:center;gap:4px;flex:none;
+ width:max-content;max-width:none;margin:0;padding:0;animation:none;
+}
+#tsa-home-header .nav-primary-link{display:flex;align-items:center;min-height:44px;padding:8px 12px;border:0;border-radius:24px;background:transparent;color:#d7e4f7;font-family:var(--font,inherit);font-size:14px;font-weight:400;white-space:nowrap}
+#tsa-home-header .nav-primary-link[aria-current=page]{color:#b8f529;background:#1a3358}
+#tsa-home-header .nav-primary-link:hover{color:#b8f529}
+#tsa-home-header .nav-primary-link:after{display:none}
+#tsa-home-header .nav-actions{display:flex;align-items:center;gap:12px;flex:none;width:auto;margin-left:auto}
+#tsa-home-header .nav-actions .login{display:inline-flex!important;align-items:center;min-height:44px;padding:10px 18px;border:0;border-radius:10px;background:#fff;color:#071322;font-size:14px;white-space:nowrap}
+#tsa-home-header .menu-button{display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:44px;height:44px;border:1px solid #ffffff4d;border-radius:10px;background:transparent;color:#fff}
+#tsa-home-header .menu-button i{display:block;width:18px;height:2px;background:#fff}
+#tsa-home-header .mobile-menu{top:72px;left:0;right:0;width:100%;max-height:calc(100dvh - 72px);overflow:auto;overscroll-behavior:contain;border-radius:0;background:#fff;color:#0b1730;padding:12px max(16px,calc((100% - 720px)/2));border:0;border-top:1px solid #e2ebf4;box-shadow:0 16px 36px #0b173026;backdrop-filter:none}
+#tsa-home-header .mobile-menu :is(.mobile-direct,.mobile-accordion-trigger){font-family:var(--font);font-size:16px;font-weight:600;line-height:1.5;min-height:48px;padding:11px 14px;color:#17263d;border-radius:8px;background:transparent}
+#tsa-home-header .mobile-menu :is(.mobile-direct,.mobile-accordion-trigger):hover,#tsa-home-header .mobile-accordion.open>.mobile-accordion-trigger{background:#eaf5ff;color:#0873c7}
+#tsa-home-header .mobile-menu .mobile-direct[aria-current=page]{background:#efffce;color:#0b1730}
+#tsa-home-header .mobile-accordion-trigger>span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#eaf5ff;color:#0873c7;font-size:20px;line-height:1}
+#tsa-home-header .mobile-submenu{padding-inline:14px 4px}
+#tsa-home-header .mobile-submenu a{font-size:14px;line-height:1.6;min-height:44px;padding:10px 16px;color:#304863;border-left:2px solid #d9eafa}
+#tsa-home-header .mobile-submenu a:hover{color:#0873c7;background:#eaf5ff}
+#tsa-home-header .mobile-submenu b{font-size:12px;font-weight:700;letter-spacing:0;color:#516b86;padding:12px 16px 6px;border-left:2px solid #d9eafa}
+#tsa-home-header .mobile-menu .mobile-login{display:flex;align-items:center;justify-content:space-between;min-height:48px;margin:10px 0 4px;padding:12px 16px;border-radius:8px;background:#0b1730;color:#fff;font-size:15px;font-weight:600}
+#tsa-home-header :focus-visible{outline:3px solid #7cddff;outline-offset:3px}
+@media(max-width:1180px){#tsa-home-header{gap:12px}#tsa-home-header .nav-primary-link{padding-inline:8px;font-size:13px}}
+@media(max-width:1040px){#tsa-home-header .desktop-nav{display:none}#tsa-home-header .menu-button{display:flex}}
+@media(max-width:690px){
+ #tsa-home-header{height:64px;min-height:64px;padding-inline:16px}
+ #tsa-home-header .brand img{width:80px;height:38px}
+ #tsa-home-header .nav-actions{gap:8px}
+ #tsa-home-header .nav-actions .login{font-size:13px;padding-inline:12px}
+ #tsa-home-header .mobile-menu{top:64px;max-height:calc(100dvh - 64px)}
+}

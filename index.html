@@ -9,34 +9,65 @@
   </script>
   <meta name="description" content="Thailand Sports Almanac — สำรวจสนาม กิจกรรม และข้อมูลกีฬาไทยครบ 77 จังหวัด">
   <meta name="theme-color" content="#0B1730">
-  <link rel="preload" as="image" href="assets/images/home-hero-editorial.webp" imagesrcset="assets/images/home-hero-editorial-900.webp 900w, assets/images/home-hero-editorial.webp 1536w" imagesizes="(max-width: 760px) 900px, 1536px">
+
   <meta property="og:title" content="Thailand Sports Almanac">
   <meta property="og:description" content="Every field. Every sport. Every province.">
-  <meta property="og:image" content="assets/images/home-hero-editorial.webp">
+  <meta property="og:image" content="assets/premium-v4/hero/Hero-01-enhanced.png">
   <title>Thailand Sports Almanac — Every Field, Every Province</title>
-  <link rel="icon" href="assets/images/logo-new-transparent.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/premium-v4/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/site-nav.css?v=20260820-2">
-  <link rel="stylesheet" href="assets/cinematic.css?v=20260820-30">
-<link rel="stylesheet" href="assets/nation-map-light.css?v=20260820-43">
-  <link rel="stylesheet" href="assets/visitor-gateway.css?v=20260820-52">
-  <link rel="stylesheet" href="assets/design-language.css?v=20260820-4">
   <link rel="stylesheet" href="assets/activity-modal.css?v=20260820-2">
   <link rel="stylesheet" href="assets/login-modal.css?v=20260820-7">
-  <link rel="stylesheet" href="assets/site-foundation.css?v=20260820-11">
-    <link rel="stylesheet" href="assets/home.css?v=20261101-99">
+
+<link rel="preload" as="image" href="assets/premium-v4/hero/Hero-01-enhanced.png" media="(min-width:691px)">
+<link rel="preload" as="image" href="assets/premium-v4/hero/Hero-01-enhanced.png" media="(max-width:690px)">
+<link rel="stylesheet" href="assets/home-premium.css?v=20261103-premium-v4-final">
+<link rel="stylesheet" href="assets/home-premium-integration.css?v=20261103-search-layer-10">
+<link rel="stylesheet" href="assets/home-header.css?v=20261103-compact-4">
+<link rel="stylesheet" href="assets/home-hero-effects.css?v=20261103-pointer-light-9">
 </head>
-<body id="top" class="tpl-landing home-a home-b"><a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a><div id="loader" hidden></div>
-  <header class="nav-shell">
+<body id="top" class="tpl-landing tsa-premium"><a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a><div id="loader" hidden></div><div class="tsa-home-progress" aria-hidden="true"></div><!-- Icon sprite (line icons, inherit currentColor) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-stadium" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="8" rx="9" ry="3.2"/><path d="M3 8v7c0 1.8 4 3.2 9 3.2s9-1.4 9-3.2V8"/><path d="M7.5 10.6v7.1M16.5 10.6v7.1M12 11.2v7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c0 1.4 2.5 2.9 5.5 2.9s5.5-1.5 5.5-2.9V11M21.5 9v5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-chev-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m12 7.5 4 2.9-1.5 4.7h-5L8 10.4z"/><path d="M12 3v4.5M16 10.4l4.4-1.5M14.5 15.1l2.8 3.8M9.5 15.1l-2.8 3.8M8 10.4 3.6 8.9"/></symbol>
+    <symbol id="i-swim" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c1.7 0 1.7-1.3 3.3-1.3s1.7 1.3 3.4 1.3 1.6-1.3 3.3-1.3 1.7 1.3 3.3 1.3 1.7-1.3 3.4-1.3S20.3 17 22 17M2 21c1.7 0 1.7-1.3 3.3-1.3s1.7 1.3 3.4 1.3 1.6-1.3 3.3-1.3 1.7 1.3 3.3 1.3 1.7-1.3 3.4-1.3S20.3 21 22 21"/><circle cx="16.5" cy="6.5" r="2"/><path d="m5 13 4.5-4.5 3 2.5 3-1.5"/></symbol>
+    <symbol id="i-futsal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="1.5"/><path d="M12 5v14"/><circle cx="12" cy="12" r="2.6"/><path d="M2.5 9.5h2.5v5H2.5M21.5 9.5H19v5h2.5"/></symbol>
+    <symbol id="i-basket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.7 5.7c3.2 3.2 3.2 9.4 0 12.6M18.3 5.7c-3.2 3.2-3.2 9.4 0 12.6"/></symbol>
+    <symbol id="i-shuttle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="3"/><path d="m9.2 14.8 7.3-7.3M9.2 14.8l-1-6.3 6.3 1M14.8 9.2 21 3M8.5 8.5 13 4M15.5 15.5 20 11"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-park" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21v-6M5 15h6l-3-9zM17 21v-8M14 13h6l-3-9zM3 21h18"/></symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 10v4M6.5 7.5v9M17.5 7.5v9M21 10v4M6.5 12h11"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6M5 10v10h14V10M10 20v-5h4v5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3"/></symbol>
+    <symbol id="i-atom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="1.8"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9-9.4C1.9 7 4.1 4 7.3 4c2 0 3.6 1.2 4.7 2.8C13.1 5.2 14.7 4 16.7 4 19.9 4 22.1 7 21 10.6 19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20h16M7 16v-4M11 16V8M15 16v-6M19 16V5"/></symbol>
+    <symbol id="i-run" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="14.5" cy="4.5" r="2"/><path d="m8 21 3-6 3 2.5V22M6.5 11.5l3-3.5 4 1 2.5 3.5 3 .5M11 15l2-6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.4 0 4 1.5 4.5 4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.9 7.5-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 7.2v4.3M12 11.5 6.6 16.4M12 11.5l5.4 4.9"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-4 3.8-6.2 7.5-6.2s6.7 2.2 7.5 6.2"/></symbol>
+  </defs>
+</svg>
+
+  <header id="tsa-home-header" class="tsa-home-header">
     <a class="brand" href="#top" aria-label="Thailand Sports Almanac หน้าหลัก"><img src="assets/images/logo-white.png" alt="Thailand Sports Almanac" width="97" height="46"></a>
     <nav class="desktop-nav" aria-label="เมนูหลัก">
       <a class="nav-primary-link" href="#top" aria-current="page">หน้าหลัก</a>
       <a class="nav-primary-link" href="abouts.html">เกี่ยวกับเรา</a>
       <div class="nav-group">
         <button class="nav-primary-link nav-dropdown-trigger" data-section="places" type="button" aria-expanded="false">สนาม <span>⌄</span></button>
-        <div class="nav-dropdown venue-dropdown">
+        <div class="nav-dropdown venue-dropdown" aria-hidden="true">
           <a href="venues.html?type=stadium">สนามกีฬา</a>
           <a href="venues.html?type=multipurpose">อาคารอเนกประสงค์</a>
           <a href="venues.html?type=public">ลานกีฬา / สวนสาธารณะ</a>
@@ -47,11 +78,11 @@
       </div>
       <div class="nav-group">
         <button class="nav-primary-link nav-dropdown-trigger" data-section="events" type="button" aria-expanded="false">ข่าวและกิจกรรม <span>⌄</span></button>
-        <div class="nav-dropdown compact-dropdown"><a href="#events">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div>
+        <div class="nav-dropdown compact-dropdown" aria-hidden="true"><a href="#events">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div>
       </div>
       <div class="nav-group">
         <button class="nav-primary-link nav-dropdown-trigger" type="button" aria-expanded="false">ข้อมูลและสถิติ <span>⌄</span></button>
-        <div class="nav-dropdown compact-dropdown stats-dropdown">
+        <div class="nav-dropdown compact-dropdown stats-dropdown" aria-hidden="true">
           <div class="nav-subgroup">
             <b>แดชบอร์ด</b>
             <a href="athletes.html">นักกีฬา / บุคลากร</a>
@@ -65,147 +96,176 @@
       </div>
       <div class="nav-group">
         <button class="nav-primary-link nav-dropdown-trigger" data-section="footer" type="button" aria-expanded="false">ช่วยเหลือ <span>⌄</span></button>
-        <div class="nav-dropdown compact-dropdown"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div>
+        <div class="nav-dropdown compact-dropdown" aria-hidden="true"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div>
       </div>
     </nav>
     <div class="nav-actions"><a class="login" href="#login" data-login-open>เข้าสู่ระบบ</a><button class="menu-button" type="button" aria-label="เปิดเมนูหลัก" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button></div>
     <div class="mobile-menu" id="mobile-menu">
       <a class="mobile-direct" href="#top" aria-current="page">หน้าหลัก</a>
       <a class="mobile-direct" href="abouts.html">เกี่ยวกับเรา</a>
-      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="places" type="button" aria-expanded="false">สนาม <span>＋</span></button><div class="mobile-submenu"><a href="venues.html?type=stadium">สนามกีฬา</a><a href="venues.html?type=multipurpose">อาคารอเนกประสงค์</a><a href="venues.html?type=public">ลานกีฬา / สวนสาธารณะ</a><a href="venues.html?type=fitness">ฟิตเนส / ยิม</a><a href="venues.html?type=training">ศูนย์ฝึกกีฬา</a><a href="venues.html?type=science">ศูนย์วิทยาศาสตร์การกีฬา</a></div></div>
-      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="events" type="button" aria-expanded="false">ข่าวและกิจกรรม <span>＋</span></button><div class="mobile-submenu"><a href="#events">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div></div>
-      <div class="mobile-accordion"><button class="mobile-accordion-trigger" type="button" aria-expanded="false">ข้อมูลและสถิติ <span>＋</span></button><div class="mobile-submenu"><b>แดชบอร์ด</b><a class="nav-nested" href="athletes.html">นักกีฬา / บุคลากร</a><a class="nav-nested" href="results.html">ผลการแข่งขัน</a><a class="nav-nested" href="overview.html">สรุปภาพรวม</a><a class="nav-nested" href="provinces.html">ข้อมูลรายจังหวัด</a><a href="courses.html">หลักสูตรอบรม</a><a href="#home-learning">คลังความรู้</a></div></div>
-      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="footer" type="button" aria-expanded="false">ช่วยเหลือ <span>＋</span></button><div class="mobile-submenu"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="places" type="button" aria-expanded="false">สนาม <span>＋</span></button><div class="mobile-submenu" aria-hidden="true"><a href="venues.html?type=stadium">สนามกีฬา</a><a href="venues.html?type=multipurpose">อาคารอเนกประสงค์</a><a href="venues.html?type=public">ลานกีฬา / สวนสาธารณะ</a><a href="venues.html?type=fitness">ฟิตเนส / ยิม</a><a href="venues.html?type=training">ศูนย์ฝึกกีฬา</a><a href="venues.html?type=science">ศูนย์วิทยาศาสตร์การกีฬา</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="events" type="button" aria-expanded="false">ข่าวและกิจกรรม <span>＋</span></button><div class="mobile-submenu" aria-hidden="true"><a href="#events">ข่าวประกาศ</a><a href="activities.html">ปฏิทินกิจกรรม</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" type="button" aria-expanded="false">ข้อมูลและสถิติ <span>＋</span></button><div class="mobile-submenu" aria-hidden="true"><b>แดชบอร์ด</b><a class="nav-nested" href="athletes.html">นักกีฬา / บุคลากร</a><a class="nav-nested" href="results.html">ผลการแข่งขัน</a><a class="nav-nested" href="overview.html">สรุปภาพรวม</a><a class="nav-nested" href="provinces.html">ข้อมูลรายจังหวัด</a><a href="courses.html">หลักสูตรอบรม</a><a href="#home-learning">คลังความรู้</a></div></div>
+      <div class="mobile-accordion"><button class="mobile-accordion-trigger" data-section="footer" type="button" aria-expanded="false">ช่วยเหลือ <span>＋</span></button><div class="mobile-submenu" aria-hidden="true"><a href="#footer">คู่มือใช้งาน</a><a href="#footer">คำถามที่พบบ่อย (FAQ)</a><a href="contact.html">ติดต่อเรา</a></div></div>
     </div>
   </header>
-  <div class="h-nav-swoosh" aria-hidden="true"><svg class="h-swoosh h-swoosh--nav" viewBox="0 0 1440 120" preserveAspectRatio="none"><path class="swoosh-main" d="M-40 92C260 18 520 112 790 62S1190 7 1480 72"/><path class="swoosh-accent" d="M-25 103C278 29 520 122 798 72S1195 18 1470 83"/></svg></div>
-
 <main id="main">
-<section class="h-hero" id="motion-hero" aria-labelledby="motion-title">
- <div class="h-hero-media" aria-hidden="true"><img src="assets/images/home-hero-editorial.webp" srcset="assets/images/home-hero-editorial-900.webp 900w, assets/images/home-hero-editorial.webp 1536w" sizes="(max-width: 760px) 900px, 1536px" alt="" fetchpriority="high" width="1536" height="1024"></div>
- <div class="h-wrap h-hero-inner">
-  <div class="h-hero-top">
-   <div class="h-hero-copy">
-    <h1 id="motion-title">หาสนามใกล้บ้าน<br>เจอกิจกรรมที่ใช่</h1>
-    <p class="h-lead">ค้นหาสนาม กิจกรรม และหลักสูตรกีฬา<br>จากหน่วยงานทั่วประเทศ <span class="a-phrase">ในที่เดียว</span></p>
-   </div>
-   <div class="h-next">
-    <div class="h-next-label"><p>กิจกรรมเร็ว ๆ นี้</p><div class="h-dots" id="hero-next-dots" role="group" aria-label="เลือกกิจกรรม"></div></div>
-    <a class="h-next-card" id="hero-next" href="#events"><span class="h-date"><b>–</b><small>&nbsp;</small></span><span class="h-next-text"><b>กำลังโหลดกิจกรรม…</b><small>&nbsp;</small></span></a>
-   </div>
-  </div>
-
-  <form id="hero-search-form" class="h-search" role="search">
-   <div class="h-tabs" role="group" aria-label="ประเภทการค้นหา"><button type="button" data-search-kind="venues" aria-pressed="true">สนามกีฬา</button><button type="button" data-search-kind="events" aria-pressed="false">กิจกรรม</button><button type="button" data-search-kind="courses" aria-pressed="false">หลักสูตร</button></div>
-   <div class="h-search-row">
-    <label class="h-field h-field--grow" for="hero-venue-search"><span id="hero-search-label">ชนิดกีฬา หรือชื่อสนาม</span><span class="hero-search-box"><input name="q" id="hero-venue-search" type="search" placeholder="เช่น ฟุตบอล, สระว่ายน้ำ, สนามกีฬากลาง" autocomplete="off" aria-controls="hero-search-results" aria-expanded="false"></span></label>
-    <label class="h-field" for="home-province"><span>จังหวัด</span><select id="home-province"><option value="">ทุกจังหวัด</option></select></label>
-    <div class="h-search-actions"><button type="button" class="h-btn h-btn--outline" data-locate><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ใกล้ฉัน</button><button type="submit" class="h-btn h-btn--accent">ค้นหา</button></div>
-    <div id="hero-search-results" class="hero-search-results" role="listbox" aria-label="ผลการค้นหาข้อมูลกีฬา"></div>
-   </div>
-   <div class="h-try"><span>ลองค้นหา:</span><button type="button" data-term="วิ่ง">เดิน-วิ่ง</button><button type="button" data-term="ฟุตซอล">ฟุตซอล</button><button type="button" data-term="สระว่ายน้ำ">สระว่ายน้ำ</button><button type="button" data-term="ฟิตเนส">ฟิตเนส</button></div>
-  </form>
-
- </div>
- <div class="h-stats-band">
-  <svg class="h-swoosh" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path class="swoosh-main" d="M-40 92C260 18 520 112 790 62S1190 7 1480 72"/><path class="swoosh-accent" d="M-25 103C278 29 520 122 798 72S1195 18 1470 83"/></svg>
-  <div class="h-wrap h-stats-inner">
-   <div class="h-stats-rail" aria-hidden="true"><span class="h-stats-mark"></span><b>สถิติ</b><small>พร้อมใช้</small></div>
-   <div class="h-stats" id="home-stats"><p>กำลังโหลดข้อมูลกีฬา…</p></div>
-   <div class="h-stats-signoff" aria-hidden="true"><strong>SPORTS</strong><span>FOR ALL</span></div>
-  </div>
- </div>
-</section>
-
-<section class="h-assoc-strip" id="associations" aria-label="เครือข่ายสมาคมกีฬาแห่งประเทศไทย">
- <div class="association-ticker">
-  <div class="association-ticker-track">
-   <div class="association-ticker-group"><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823014_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>ราชยานยนต์สมาคมแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823000_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากระดานโต้คลื่นแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822981_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากรีฑาแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822955_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟอาชีพแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822968_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822938_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากาบัดดี้แห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822921_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากีฬาไทยแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822875_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822909_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าโปโลแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822620_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคริกเก็ตแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822607_association.jpeg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคอร์ฟบอลแห่งประเทศไทย</b></span></div>
-   <div class="association-ticker-group" aria-hidden="true"><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823014_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>ราชยานยนต์สมาคมแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747823000_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากระดานโต้คลื่นแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822981_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากรีฑาแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822955_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟอาชีพแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822968_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากอล์ฟแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822938_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากาบัดดี้แห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822921_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬากีฬาไทยแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822875_association.jpg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822909_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาขี่ม้าโปโลแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822620_association.png" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคริกเก็ตแห่งประเทศไทย</b></span><span class="association-chip"><img src="https://sports-almanac.go.th/wp-content/uploads/2025/05/1747822607_association.jpeg" alt="" loading="lazy" decoding="async" width="44" height="44"><b>สมาคมกีฬาคอร์ฟบอลแห่งประเทศไทย</b></span></div>
-  </div>
- </div>
-</section>
-
-<section class="h-section" id="sports" aria-labelledby="sports-title">
- <div class="h-wrap">
-  <div class="h-head"><h2 id="sports-title">เลือกกีฬาที่คุณชอบ</h2><a class="h-link" id="sports-all" href="venues.html">ดูทุกชนิดกีฬา</a></div>
-  <div class="h-sports"><a class="h-sport h-sport--football" href="venues.html?q=ฟุตบอล"><img class="h-sport-bg" src="assets/images/sports-v4/football.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg><span><b>ฟุตบอล</b><small><span data-sport-count="ฟุตบอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--swim" href="venues.html?q=ว่ายน้ำ"><img class="h-sport-bg" src="assets/images/sports-v4/swimming.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="15" cy="6" r="2"/><path d="M5 12l4-4 3 2 3-1"/></svg><span><b>ว่ายน้ำ</b><small><span data-sport-count="ว่ายน้ำ">–</span> สนาม</small></span></a><a class="h-sport h-sport--futsal" href="venues.html?q=วอลเลย์บอล"><img class="h-sport-bg" src="assets/images/sports-v4/volleyball.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3c2.5 3 3 7.5 1 11M3.6 9.5c3.7-.6 8 .9 10.4 4.5M7 19.5c1-3.6 3.8-6.6 7.6-7.8"/></svg><span><b>วอลเลย์บอล</b><small><span data-sport-count="วอลเลย์บอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--basket" href="venues.html?q=บาสเกตบอล"><img class="h-sport-bg" src="assets/images/sports-v4/basketball.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 3 3 9.8 0 12.8M18.4 5.6c-3 3-3 9.8 0 12.8"/></svg><span><b>บาสเกตบอล</b><small><span data-sport-count="บาสเกตบอล">–</span> สนาม</small></span></a><a class="h-sport h-sport--badminton" href="venues.html?q=แบดมินตัน"><img class="h-sport-bg" src="assets/images/sports-v4/badminton.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L15 9"/><circle cx="17.5" cy="6.5" r="3.5"/><circle cx="7" cy="5" r="1.5"/></svg><span><b>แบดมินตัน</b><small><span data-sport-count="แบดมินตัน">–</span> สนาม</small></span></a><a class="h-sport h-sport--more" href="venues.html"><img class="h-sport-bg" src="assets/images/sports-v4/athletics.webp" alt="" loading="lazy" decoding="async"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span><b>กีฬาอื่น ๆ</b><small>ฟุตซอล ตะกร้อ เปตอง กรีฑา…</small></span></a></div>
- </div>
-</section>
-
-<section class="h-section h-section--map" id="nation" aria-labelledby="map-title">
- <div class="h-wrap">
-  <div class="h-map map-intro" id="map-intro">
-   <div class="map-focus-backdrop" aria-hidden="true"></div>
-   <div class="motion-map-panel">
-    <div class="h-map-copy"><h2 id="map-title">สนามกีฬาในจังหวัดของคุณ</h2><p>แตะจังหวัดบนแผนที่ หรือพิมพ์ชื่อ เพื่อดูจำนวนสนามแยกตามประเภท</p></div>
-    <form class="province-search" id="province-search-form" role="search">
-     <label for="province-search-input">ค้นหาจังหวัด</label>
-     <span class="h-province-input"><input id="province-search-input" list="province-search-options" type="search" placeholder="เช่น เชียงใหม่" autocomplete="off"><button type="submit">ค้นหา</button></span>
-     <datalist id="province-search-options"></datalist>
-    </form>
-    <canvas id="hero-map-canvas" aria-label="แผนที่ประเทศไทยจากจุดพิกัดสนามกีฬา"></canvas>
-    <div class="map-type-legend" aria-hidden="true"><span><i class="pin-football"></i>ฟุตบอล</span><span><i class="pin-court"></i>กีฬาคอร์ท</span><span><i class="pin-fitness"></i>ฟิตเนส / ยิม</span><span><i class="pin-water"></i>กีฬาทางน้ำ</span><span><i class="pin-general"></i>ลานกีฬา / ทั่วไป</span><span><i class="pin-other"></i>ประเภทอื่น</span></div>
-    <div class="province-category-network" id="province-category-network" aria-label="ประเภทสถานที่กีฬาในพื้นที่ที่เลือก">
-     <div class="national-facility-total" aria-live="polite"><small>ภาพรวมทั้งประเทศ</small><strong id="national-facility-total">0</strong><span>สถานที่กีฬาที่มีพิกัดบนแผนที่</span></div>
-     <div class="h-bars">
-      <button class="province-category-card category-stadium" data-province-category="stadium" type="button"><span>สนามกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-      <button class="province-category-card category-public" data-province-category="public" type="button"><span>ลานกีฬา / สวนสาธารณะ</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-      <button class="province-category-card category-fitness" data-province-category="fitness" type="button"><span>ฟิตเนส / ยิม</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-      <button class="province-category-card category-multipurpose" data-province-category="multipurpose" type="button"><span>อาคารอเนกประสงค์</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-      <button class="province-category-card category-training" data-province-category="training" type="button"><span>ศูนย์ฝึกกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-      <button class="province-category-card category-science" data-province-category="science" type="button"><span>ศูนย์วิทยาศาสตร์การกีฬา</span><strong>0</strong><small>แห่งในพื้นที่</small></button>
-     </div>
-     <a class="h-btn h-btn--accent h-map-cta" href="provinces.html">ดูข้อมูลรายจังหวัดแบบละเอียด</a>
+  <!-- HERO -->
+  <section class="hero h-hero" id="motion-hero" aria-labelledby="motion-title">
+    <div class="hero-visual-clip" aria-hidden="true">
+    <div class="hero-bg h-hero-media"></div>
+    <div class="hero-light-effects" aria-hidden="true">
+      <div class="hero-flare"></div>
+      <div class="hero-stadium-glow"></div>
+      <div class="hero-light-particles"><i></i><i></i><i></i><i></i></div>
+      <div class="hero-pointer-light"></div>
     </div>
-    <div class="province-map-tooltip" id="province-map-tooltip" role="status"><strong></strong><span></span></div>
-    <aside class="province-detail" id="province-detail" aria-live="polite" aria-hidden="true">
-     <button class="province-detail-close" type="button" aria-label="ปิดข้อมูลจังหวัด">×</button>
-     <small>จังหวัดที่เลือก</small>
-     <h3 id="province-detail-name">เลือกจังหวัดบนแผนที่</h3>
-     <p id="province-detail-region">ข้อมูลสนามกีฬาในจังหวัด</p>
-     <div class="province-detail-kpis"><div><strong id="province-detail-total">0</strong><span>สนามทั้งหมด</span></div><div><strong id="province-detail-sports">0</strong><span>ประเภทกีฬา</span></div><div><strong id="province-detail-districts">—</strong><span>อำเภอ / เขต</span></div></div>
-     <div class="province-sports" id="province-sports"></div>
-     <button class="province-detail-link" id="province-detail-link" type="button">ดูสนามทั้งหมดในจังหวัด</button>
-    </aside>
-   </div>
-  </div>
- </div>
-</section>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-top">
+        <div class="hero-copy h-hero-copy">
+          <p class="eyebrow eyebrow-lime hero-eyebrow"><span class="slash"></span> ฐานข้อมูลกีฬาแห่งชาติ</p>
+          <h1 id="motion-title">หาสนามกีฬา<br />กิจกรรม และหลักสูตรกีฬา<br />ทั่วประเทศไทย</h1>
+          <p class="hero-lead">ค้นหา ติดตาม และเข้าร่วมกิจกรรมกีฬาได้ในที่เดียว<br class="desktop-only" /> สำหรับประชาชน นักกีฬา และหน่วยงานทุกระดับ</p>
+          <div id="premium-hero-featured" aria-live="polite"></div>
+        </div>
+      </div>
 
-<section class="h-section" id="events" aria-labelledby="events-title">
- <div class="h-wrap">
-  <div class="h-head"><div><h2 id="events-title">กิจกรรมที่กำลังจะมาถึง</h2><p>แสดงเฉพาะกิจกรรมที่ยังไม่จบ เรียงตามวันที่จัด</p></div><div class="h-pills" id="event-months" role="group" aria-label="เลือกเดือน"></div></div>
-  <div class="h-events" id="home-events" aria-live="polite"><p class="h-empty">กำลังโหลดกิจกรรม…</p></div>
- </div>
-</section>
+      <form class="search-panel h-search" id="hero-search-form" role="search">
+        <div class="search-tabs h-tabs" role="group" aria-label="ประเภทข้อมูลที่ต้องการค้นหา">
+          <button type="button" class="search-tab active" data-search-kind="venues" aria-pressed="true"><svg width="18" height="18" aria-hidden="true"><use href="#i-stadium"/></svg> สนามกีฬา</button>
+          <button type="button" class="search-tab" data-search-kind="events" aria-pressed="false"><svg width="18" height="18" aria-hidden="true"><use href="#i-calendar"/></svg> กิจกรรม</button>
+          <button type="button" class="search-tab" data-search-kind="courses" aria-pressed="false"><svg width="18" height="18" aria-hidden="true"><use href="#i-cap"/></svg> หลักสูตร</button>
+        </div>
+        <div class="search-fields h-search-row">
+          <label class="search-label search-keyword h-field"><span id="hero-search-label">ค้นหาสนามกีฬา</span><span class="search-input-wrap"><svg width="19" height="19" aria-hidden="true"><use href="#i-search"/></svg><input type="search" name="q" id="hero-venue-search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="hero-search-results" placeholder="เช่น สนามฟุตบอล, สระว่ายน้ำ, สนามบาสเกตบอล" autocomplete="off" /></span></label>
+          <label class="search-label province-select-label h-field"><span>จังหวัด</span><span class="select-wrap"><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg><select name="province" id="home-province"><option value="">ทุกจังหวัด</option></select><svg class="chev" width="18" height="18" aria-hidden="true"><use href="#i-chev-down"/></svg></span></label>
+          <button class="nearby-search" type="button" data-locate><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg> ใกล้ฉัน</button>
+          <button class="search-button" type="submit"><svg width="18" height="18" aria-hidden="true"><use href="#i-search"/></svg> ค้นหา</button>
+        </div>
+        <div id="hero-search-results" class="hero-search-results" role="listbox" aria-label="ผลการค้นหาข้อมูลกีฬา"></div>
+        <div class="search-suggestions"><span>ยอดนิยม:</span><button type="button" data-term="ฟุตบอล">ฟุตบอล</button><button type="button" data-term="ฟุตซอล">ฟุตซอล</button><button type="button" data-term="สระว่ายน้ำ">สระว่ายน้ำ</button><button type="button" data-term="แบดมินตัน">แบดมินตัน</button><button type="button" data-term="สนามวิ่ง">สนามวิ่ง</button></div>
+      </form>
 
-<section class="h-section h-section--white" id="places" aria-labelledby="places-title">
- <div class="h-wrap">
-  <div class="h-head"><div><h2 id="places-title">สนามใกล้คุณ</h2><p id="venue-status">อนุญาตให้ใช้ตำแหน่ง เพื่อเรียงสนามจากใกล้ไปไกล</p></div><div class="h-head-actions"><div class="h-rail-nav"><button type="button" id="venue-prev" aria-label="สนามก่อนหน้า">←</button><button type="button" id="venue-next" aria-label="สนามถัดไป">→</button></div><button type="button" class="h-btn h-btn--accent" data-locate><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ใช้ตำแหน่งของฉัน</button></div></div>
-  <div class="h-venues" id="home-venues" tabindex="0" aria-roledescription="carousel" aria-label="สนามกีฬา"><p class="h-empty">กำลังโหลดสนาม…</p></div>
- </div>
-</section>
+      <!-- home-stats:start -->
+<div class="hero-stats h-stats" id="home-stats" aria-label="ภาพรวมข้อมูลกีฬาไทย"><a class="hero-stat" href="venues.html"><svg class="stat-icon" width="20" height="20" aria-hidden="true"><use href="#i-stadium"/></svg><span class="stat-text"><strong data-count="21454">21,454</strong><span>สนามและสถานที่กีฬา</span><small>20,704 แห่งมีพิกัด</small></span></a><a class="hero-stat" href="#events"><svg class="stat-icon" width="20" height="20" aria-hidden="true"><use href="#i-calendar"/></svg><span class="stat-text"><strong data-count="5971">5,971</strong><span>กิจกรรมที่บันทึกในระบบ</span><small>23 กิจกรรมกำลังจะจัด</small></span></a><a class="hero-stat" href="#sports"><svg class="stat-icon" width="20" height="20" aria-hidden="true"><use href="#i-basket"/></svg><span class="stat-text"><strong data-count="104">104</strong><span>ชนิดกีฬา</span></span></a><a class="hero-stat" href="#nation"><svg class="stat-icon" width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg><span class="stat-text"><strong data-count="77">77</strong><span>จังหวัดครอบคลุมทั่วประเทศ</span></span></a></div>
+<script type="application/json" id="home-stats-summary">{"venues":21454,"mapped":20704,"events":5971,"sports":104,"provinces":77,"starts":{"2026-08-20":1,"2026-08-21":2,"2026-08-22":5,"2026-08-24":2,"2026-08-29":2,"2026-08-30":4,"2026-09-01":3,"2026-09-02":1,"2026-09-05":2,"2026-09-06":2,"2026-09-12":1,"2026-09-19":1,"2026-09-27":2,"2026-10-01":1,"2026-10-08":1,"2026-10-17":2,"2026-10-24":3,"2026-10-26":1,"2026-10-27":1,"2026-10-30":1,"2026-11-01":6,"2026-11-08":1,"2026-11-12":1,"2026-11-17":1,"2026-11-21":1,"2026-12-01":2,"2026-12-04":1,"2026-12-11":1,"2026-12-15":1,"2026-12-17":1,"2026-12-19":1,"2026-12-20":1,"2026-12-23":1,"2026-12-25":1,"2027-01-10":1,"2027-01-30":1,"2027-02-19":1,"2027-03-02":1,"2027-03-13":1,"2027-04-07":1,"2027-04-09":1,"2027-06-20":1,"2027-08-08":1}}</script>
+<!-- home-stats:end -->
+    </div>
+  </section>
 
-<section class="h-section h-section--watermark" id="home-learning" aria-labelledby="courses-title">
- <div class="h-watermark" aria-hidden="true">SPORTS</div>
- <div class="h-wrap h-split">
-  <div class="h-split-intro"><h2 id="courses-title">หลักสูตรสำหรับบุคลากรกีฬา</h2><p>พัฒนาทักษะผู้ฝึกสอน ผู้ตัดสิน และบุคลากรกีฬา จากเครือข่ายกีฬาไทย</p><a class="h-link" href="courses.html">ดูหลักสูตรทั้งหมด</a></div>
-  <div class="h-courses" id="training-course-grid"><p class="h-empty">กำลังโหลดหลักสูตร…</p></div>
- </div>
-</section>
+  <!-- SPORTS -->
+  <section class="section sports-section" id="sports" aria-labelledby="sports-title">
+    <div class="container">
+      <div class="section-heading h-head">
+        <div class="heading-inline"><h2 id="sports-title"><span class="title-slash"></span>เลือกสนามจากกีฬาที่คุณชอบ</h2><p>ค้นหาสนาม กิจกรรม และหลักสูตรตามกีฬาที่สนใจ</p></div>
+        <a class="section-link" id="sports-all" href="venues.html">ดูทั้งหมด 104 ชนิดกีฬา <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="sports-grid">
+        <a class="h-sport sport-tile green" href="venues.html?q=ฟุตบอล"><span class="sport-visual" aria-hidden="true"></span><span class="sport-body"><svg class="sport-glyph" width="22" height="22" aria-hidden="true"><use href="#i-ball"/></svg><b class="sport-name">ฟุตบอล</b><span class="sport-count"><span data-sport-count="ฟุตบอล">–</span> สนาม</span></span></a>
+        <a class="h-sport sport-tile blue" href="venues.html?q=ว่ายน้ำ"><span class="sport-visual" aria-hidden="true"></span><span class="sport-body"><svg class="sport-glyph" width="22" height="22" aria-hidden="true"><use href="#i-swim"/></svg><b class="sport-name">ว่ายน้ำ</b><span class="sport-count"><span data-sport-count="ว่ายน้ำ">–</span> สนาม</span></span></a>
+        <a class="h-sport sport-tile indigo" href="venues.html?q=ฟุตซอล"><span class="sport-visual" aria-hidden="true"></span><span class="sport-body"><svg class="sport-glyph" width="22" height="22" aria-hidden="true"><use href="#i-futsal"/></svg><b class="sport-name">ฟุตซอล</b><span class="sport-count"><span data-sport-count="ฟุตซอล">–</span> สนาม</span></span></a>
+        <a class="h-sport sport-tile orange" href="venues.html?q=บาสเกตบอล"><span class="sport-visual" aria-hidden="true"></span><span class="sport-body"><svg class="sport-glyph" width="22" height="22" aria-hidden="true"><use href="#i-basket"/></svg><b class="sport-name">บาสเกตบอล</b><span class="sport-count"><span data-sport-count="บาสเกตบอล">–</span> สนาม</span></span></a>
+        <a class="h-sport sport-tile violet" href="venues.html?q=แบดมินตัน"><span class="sport-visual" aria-hidden="true"></span><span class="sport-body"><svg class="sport-glyph" width="22" height="22" aria-hidden="true"><use href="#i-shuttle"/></svg><b class="sport-name">แบดมินตัน</b><span class="sport-count"><span data-sport-count="แบดมินตัน">–</span> สนาม</span></span></a>
+        <a class="h-sport sport-tile all-sports" href="venues.html"><svg class="plus-sign" width="34" height="34" aria-hidden="true"><use href="#i-plus"/></svg><span class="sport-body"><b class="sport-name">กีฬาอื่น ๆ</b><span class="sport-count">รวมทุกชนิดกีฬา<br />และกิจกรรม</span></span></a>
+      </div>
+    </div>
+  </section>
 
-</main>
+  <!-- PROVINCE / NATION -->
+  <section class="province-section" id="nation" aria-labelledby="province-title">
+    <div class="province-section-bg" aria-hidden="true"></div>
+    <div class="container province-content">
+      <div class="section-heading section-heading-dark">
+        <div><h2 id="province-title"><span class="title-slash"></span>สนามกีฬาในจังหวัดของคุณ</h2><p>แสดงข้อมูลสนามกีฬาและกิจกรรมกีฬา เพื่อค้นหาและวางแผนการออกกำลังกายในพื้นที่</p></div>
+        <label class="province-top-select"><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg><select id="map-province" disabled aria-label="เลือกจังหวัด"><option value="">ภาพรวมทั่วประเทศ</option></select><svg width="18" height="18" aria-hidden="true"><use href="#i-chev-down"/></svg></label>
+      </div>
+      <div class="province-grid">
+        <div class="thailand-map">
+          <div class="map-hud">
+            <nav class="map-crumb" aria-label="ระดับพื้นที่บนแผนที่"><button type="button" id="map-crumb-home" class="crumb-home">ประเทศไทย</button><span id="map-crumb-province" hidden></span><span id="map-crumb-district" hidden></span></nav>
+            <button type="button" id="map-reset" class="map-reset" aria-label="ดูทั้งประเทศ" hidden><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg> <span>ดูทั้งประเทศ</span></button>
+          </div>
+          <svg id="th-map" aria-busy="true" class="th-map" viewBox="0 0 520 760" role="group" aria-labelledby="th-map-title"><title id="th-map-title">แผนที่ประเทศไทย แบ่งตามจังหวัดและอำเภอ — เลือกจังหวัดเพื่อซูมดูอำเภอ/เขต</title></svg>
+          <div class="map-tip" id="map-tip" role="status" aria-live="polite" hidden></div>
+          <p class="map-hint" id="map-hint"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg> แตะจังหวัดบนแผนที่ หรือเลือกจากรายการด้านบน</p>
+          <noscript><img src="assets/premium-v4/map-thailand.webp" alt="" width="600" height="750" /></noscript>
+        </div>
+        <div class="province-data-card">
+          <div class="scope-national" id="scope-national">
+          <span class="micro-label" id="scope-label">สนามกีฬาในพื้นที่</span>
+          <div class="main-value"><span id="facility-count">—</span><small>แห่ง</small></div>
+          <p class="data-note" id="scope-note">สถานที่กีฬาที่มีพิกัดบนแผนที่ ทั่วประเทศ</p>
+          <div class="bar-list" aria-label="จำนวนสถานที่กีฬาแยกตามหมวด">
+            <a class="bar-item" data-category="stadium" href="venues.html?type=stadium"><svg width="20" height="20" aria-hidden="true"><use href="#i-stadium"/></svg><div><div class="bar-row"><span>สนามกีฬา</span><b>—</b></div><div class="bar-track"><i style="--w:100%"></i></div></div></a>
+            <a class="bar-item" data-category="public" href="venues.html?type=public"><svg width="20" height="20" aria-hidden="true"><use href="#i-park"/></svg><div><div class="bar-row"><span>ลานกีฬา / สวนสาธารณะ</span><b>—</b></div><div class="bar-track"><i style="--w:20.3%"></i></div></div></a>
+            <a class="bar-item" data-category="fitness" href="venues.html?type=fitness"><svg width="20" height="20" aria-hidden="true"><use href="#i-dumbbell"/></svg><div><div class="bar-row"><span>ฟิตเนส / ยิม</span><b>—</b></div><div class="bar-track"><i style="--w:2.56%"></i></div></div></a>
+            <a class="bar-item" data-category="multipurpose" href="venues.html?type=multipurpose"><svg width="20" height="20" aria-hidden="true"><use href="#i-building"/></svg><div><div class="bar-row"><span>อาคารอเนกประสงค์</span><b>—</b></div><div class="bar-track"><i style="--w:2.32%"></i></div></div></a>
+            <a class="bar-item" data-category="training" href="venues.html?type=training"><svg width="20" height="20" aria-hidden="true"><use href="#i-target"/></svg><div><div class="bar-row"><span>ศูนย์ฝึกกีฬา</span><b>—</b></div><div class="bar-track"><i style="--w:1.09%"></i></div></div></a>
+            <a class="bar-item" data-category="science" href="venues.html?type=science"><svg width="20" height="20" aria-hidden="true"><use href="#i-atom"/></svg><div><div class="bar-row"><span>ศูนย์วิทยาศาสตร์การกีฬา</span><b>—</b></div><div class="bar-track"><i style="--w:0.5%"></i></div></div></a>
+          </div>
+          </div>
+          <div class="scope-province" id="scope-province" hidden>
+            <span class="micro-label">จังหวัดที่เลือก</span>
+            <h3 class="prov-name" id="prov-name">—</h3>
+            <div class="prov-kpis">
+              <div><strong id="prov-district-count">0</strong><span id="prov-district-label">อำเภอ</span></div>
+              <div><strong id="prov-venues">—</strong><span>สนามกีฬา</span></div>
+              <div><strong id="prov-area">—</strong><span>ตร.กม. (ประมาณ)</span></div>
+            </div>
+            <p class="data-note" id="prov-note">จำนวนสนามรายจังหวัด/อำเภอ รอเชื่อม API ของระบบ</p>
+            <p class="district-head" id="district-head">อำเภอทั้งหมด</p>
+            <div class="district-list" id="district-list" role="list"></div>
+            <a class="prov-link" id="prov-link" href="venues.html">ดูสนามกีฬาในจังหวัดนี้ <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="province-details-action">
+          <a class="lime-cta" href="provinces.html"><svg width="18" height="18" aria-hidden="true"><use href="#i-chart"/></svg> ดูข้อมูลและสถิติจังหวัดแบบละเอียด <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <small class="province-map-credit">ขอบเขตแผนที่: <a href="https://github.com/chingchai/OpenGISData-Thailand" target="_blank" rel="noopener noreferrer">OpenGISData-Thailand</a> · CC BY 4.0 · ปรับให้เรียบง่าย</small>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer id="footer" class="h-footer">
- <div class="h-wrap">
-  <div class="h-footer-grid">
-   <div class="h-footer-brand"><p class="h-footer-name">THAILAND SPORTS ALMANAC</p><p>สำนักงานปลัดกระทรวงการท่องเที่ยวและกีฬา<br>เลขที่ 120 หมู่ 3 ศูนย์ราชการเฉลิมพระเกียรติฯ 80 พรรษา<br>อาคาร C ถนนแจ้งวัฒนะ แขวงทุ่งสองห้อง เขตหลักสี่<br>กรุงเทพมหานคร 10210</p><p class="h-footer-contact"><a href="tel:021425858">โทร 0-2142-5858</a><span>โทรสาร 0-2142-5902</span></p><a href="mailto:sportsalmanac@mots.go.th">sportsalmanac@mots.go.th</a></div>
-   <nav aria-label="สำรวจ"><b>สำรวจ</b><a href="venues.html">ค้นหาสนาม</a><a href="activities.html">ปฏิทินกิจกรรม</a><a href="provinces.html">ข้อมูลรายจังหวัด</a></nav>
-   <nav aria-label="ข้อมูล"><b>ข้อมูล</b><a href="dashboard.html">ข้อมูลและสถิติ</a><a href="results.html">ผลการแข่งขัน</a><a href="courses.html">หลักสูตรอบรม</a></nav>
-   <nav aria-label="ช่วยเหลือ"><b>ช่วยเหลือ</b><a href="abouts.html">เกี่ยวกับเรา</a><a href="contact.html">ติดต่อเรา</a><a href="#login" data-login-open>เข้าสู่ระบบ</a></nav>
-  </div>
-  <div class="h-footer-bottom"><span>© 2569 Thailand Sports Almanac</span><span id="data-updated">&nbsp;</span></div>
+  <!-- EVENTS -->
+  <section class="section events-section" id="events" aria-labelledby="events-title"><div class="container">
+    <div class="section-heading h-head">
+      <div><h2 id="events-title"><span class="title-slash"></span>กิจกรรมที่กำลังจะมาถึง</h2><p>เข้าร่วมกิจกรรมกีฬา การแข่งขัน และมหกรรมกีฬาทั่วประเทศ</p></div>
+      <div class="month-filters h-pills" id="event-months" role="group" aria-label="เลือกเดือนกิจกรรม"></div>
+    </div>
+    <div class="events-layout h-events" id="home-events" aria-live="polite"><p>กำลังโหลดกิจกรรม…</p></div>
+  </div></section>
+
+  <!-- VENUES -->
+  <section class="section venues-section" id="places" aria-labelledby="places-title"><div class="container">
+    <div class="section-heading h-head">
+      <div><h2 id="places-title"><span class="title-slash"></span>สำรวจสนามกีฬา</h2><p id="venue-status" role="status">เลือกสนามที่คุณสนใจ หรือใช้ตำแหน่งเพื่อค้นหาสนามใกล้คุณ</p></div>
+      <div class="premium-venue-actions"><button type="button" id="venue-prev" class="premium-rail-button" aria-label="สนามก่อนหน้า">←</button><button type="button" id="venue-next" class="premium-rail-button" aria-label="สนามถัดไป">→</button><button type="button" data-locate class="location-pill"><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg> ใช้ตำแหน่งของฉัน</button></div>
+    </div>
+    <div class="venue-grid h-venues" id="home-venues" data-ui tabindex="0" aria-roledescription="carousel" aria-label="สนามกีฬา"><p>กำลังโหลดสนาม…</p></div>
+  </div></section>
+
+  <!-- COURSES -->
+  <section class="courses-section" id="home-learning" aria-labelledby="courses-title"><div class="courses-bg" aria-hidden="true"></div><div class="container courses-layout">
+    <div class="courses-intro h-split-intro">
+      <h2 id="courses-title"><span class="title-slash"></span>หลักสูตรสำหรับ<br />บุคลากรกีฬา</h2>
+      <p>พัฒนาทักษะ ความรู้ และศักยภาพด้านการกีฬา สำหรับผู้ฝึกสอน ผู้ตัดสิน และบุคลากรทางการกีฬา</p>
+      <a class="course-outline-btn" href="courses.html">ดูหลักสูตรทั้งหมด <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="h-courses" id="training-course-grid"><p>กำลังโหลดหลักสูตร…</p></div>
+  </div></section>
+
+  <section class="assoc-section" id="associations" aria-label="สมาคมกีฬา">
+    <div class="association-ticker" id="association-ticker" aria-label="เครือข่ายสมาคมกีฬาแห่งประเทศไทย">
+      <div class="association-ticker-track" id="association-track"><div class="association-ticker-group"><a class="association-chip" href="http://localhost:8080/index.php/associations/2"><span class="assoc-logo" data-initial="ย"><img src="assets/premium-v4/associations/association-1.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>ราชยานยนต์สมาคมแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/3"><span class="assoc-logo" data-initial="ก"><img src="assets/premium-v4/associations/association-4.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากระดานโต้คลื่นแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/4"><span class="assoc-logo" data-initial="ก"><img src="assets/premium-v4/associations/association-9.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากรีฑาแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/6"><span class="assoc-logo" data-initial="ก"><img src="assets/premium-v4/associations/association-14.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากอล์ฟอาชีพแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/5"><span class="assoc-logo" data-initial="ก"><img src="assets/premium-v4/associations/association-13.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากอล์ฟแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/7"><span class="assoc-logo" data-initial="ก"><img src="assets/premium-v4/associations/association-10.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากาบัดดี้แห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/8"><span class="assoc-logo" data-initial="ท"><img src="assets/premium-v4/associations/association-15.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬากีฬาไทยแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/10"><span class="assoc-logo" data-initial="ข"><img src="assets/premium-v4/associations/association-12.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาขี่ม้าแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/9"><span class="assoc-logo" data-initial="ข"><img src="assets/premium-v4/associations/association-11.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาขี่ม้าโปโลแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/13"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-2.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคนตาบอดแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/14"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-3.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคนพิการทางปัญญาแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/15"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-16.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคนพิการทางสมองแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/16"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-17.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคนพิการแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/17"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-18.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคนหูหนวกแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/18"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-19.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคริกเก็ตแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/19"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-20.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคอร์ฟบอลแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/20"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-21.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคาราเต้แห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/21"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-5.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคิกบ็อกซิ่งแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/22"><span class="assoc-logo" data-initial="ค"><img src="assets/premium-v4/associations/association-22.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาคูราชแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/24"><span class="assoc-logo" data-initial="ง"><img src="assets/premium-v4/associations/association-6.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬางัดข้อแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/25"><span class="assoc-logo" data-initial="จ"><img src="assets/premium-v4/associations/association-23.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาจักรยานแห่งประเทศไทย ในพระบรมราชูปถัมภ์</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/26"><span class="assoc-logo" data-initial="จ"><img src="assets/premium-v4/associations/association-7.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาจานร่อนแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/28"><span class="assoc-logo" data-initial="ช"><img src="assets/premium-v4/associations/association-8.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาชักกะเย่อแห่งประเทศไทย</b></a><a class="association-chip" href="http://localhost:8080/index.php/associations/31"><span class="assoc-logo" data-initial="ซ"><img src="assets/premium-v4/associations/association-24.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /></span><b>สมาคมกีฬาซอฟท์บอลแห่งประเทศไทย</b></a></div></div>
+    </div>
+  </section>
+<noscript><p class="container">เปิด JavaScript เพื่อใช้การค้นหาและแผนที่ หรือดู <a href="venues.html">รายการสนาม</a> · <a href="activities.html">กิจกรรม</a> · <a href="courses.html">หลักสูตร</a></p></noscript></main><footer id="footer" class="h-footer footer">
+ <div class="container">
+  <div class="footer-identity"><a class="footer-logo" href="#top" aria-label="Thailand Sports Almanac กลับด้านบน"><img src="assets/images/logo-white.png" alt="Thailand Sports Almanac" width="80" height="38" loading="lazy"></a><span>ฐานข้อมูลกีฬาแห่งชาติ</span><a class="footer-back" href="#top">กลับด้านบน <span aria-hidden="true">↑</span></a></div>
+  <nav class="footer-links" aria-label="ลิงก์ท้ายเว็บไซต์"><a href="venues.html">ค้นหาสนามกีฬา</a><a href="activities.html">ปฏิทินกิจกรรม</a><a href="courses.html">หลักสูตรอบรม</a><a href="http://localhost:8080/index.php/associations">สมาคมกีฬา</a><a href="overview.html">ข้อมูลและสถิติ</a><a href="provinces.html">ข้อมูลรายจังหวัด</a><a href="abouts.html">เกี่ยวกับเรา</a><a href="contact.html">ติดต่อเรา</a><a href="#login" data-login-open>เข้าสู่ระบบ</a></nav>
+  <address class="footer-office-address">สำนักงานปลัดกระทรวงการท่องเที่ยวและกีฬา · เลขที่ 120 หมู่ 3 ศูนย์ราชการเฉลิมพระเกียรติฯ 80 พรรษา อาคาร C ถนนแจ้งวัฒนะ แขวงทุ่งสองห้อง เขตหลักสี่ กรุงเทพมหานคร 10210</address>
+  <div class="footer-contact-row"><a href="tel:021425858">โทร 0-2142-5858</a><a href="mailto:sportsalmanac@mots.go.th">sportsalmanac@mots.go.th</a></div>
  </div>
 </footer>
-<script src="assets/activity-modal.js?v=20260820-2"></script><script src="assets/login-modal.js?v=20260820-7"></script><script src="assets/cinematic.js?v=20261101-5"></script><script src="assets/home.js?v=20261101-95"></script></body></html>
+<script src="assets/activity-modal.js?v=20260820-2"></script><script src="assets/login-modal.js?v=20260820-7"></script><script src="assets/home-data.js?v=20261103-premium-v4-final"></script><script src="assets/home-navigation.js?v=20261103-premium-v4-final"></script><script src="assets/home-premium-map.js?v=20261103-home-details-3"></script><script src="assets/home.js?v=20261103-instant-stats-11"></script><script src="assets/home-motion.js?v=20261103-pointer-light-9"></script></body></html>

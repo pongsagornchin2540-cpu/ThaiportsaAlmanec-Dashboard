@@ -1,0 +1,417 @@
+/* TSA scoped home theme. Performance editorial, backed by the existing service data. */
+.tsa-home{--tsa-navy:#071322;--tsa-blue:#148AEA;--tsa-lime:#BAFF32;--tsa-success:#22C55E;--tsa-mist:#F2F5F7;--tsa-ink:#102034;--tsa-white:#FFFFFF;--tsa-font-display:"Kanit",sans-serif;--tsa-font-body:"Kanit",sans-serif;--tsa-font-english:"Barlow Condensed",sans-serif;--navy:var(--tsa-navy);--navy-deep:var(--tsa-navy);--ink:var(--tsa-ink);--ink-2:var(--tsa-ink);--page:#FFFFFF;--surface:#FFFFFF;--accent:var(--tsa-lime);--blue:var(--tsa-blue);--chip-blue:#EAF5FF;--muted:#17263D;--font-body:var(--tsa-font-body);--font-display:var(--tsa-font-display);--section:120px;--gap:24px;--ease:cubic-bezier(.16,1,.3,1);--r-sm:0px;--r-md:0px;--r-lg:0px;--r-xl:0px}
+html body.tsa-home,html body.tsa-home *{font-family:var(--font-body)!important}
+html body.tsa-home :is(h1,h1 *,h2,h2 *,h3,h3 *,.h-sport b,.h-stats b,.h-date b,.h-footer-name,.nav-primary-link,.h-btn,.h-tabs button){font-family:var(--font-display)!important}
+.tsa-home{font-size:18px;line-height:1.6;background:#fff;color:var(--ink)}
+.tsa-home .h-wrap{width:calc(100% - 64px);max-width:1536px;margin-inline:auto}
+.tsa-home .h-section{padding-block:120px}
+.tsa-home h1,.tsa-home h2,.tsa-home h3{letter-spacing:-.035em;line-height:1.16;text-wrap:balance}
+.tsa-home :is(button,a){-webkit-tap-highlight-color:transparent}
+.tsa-home :is(button,select,.h-btn){min-height:48px}
+.tsa-home .h-btn{border-radius:0;padding:12px 24px;font-size:16px;font-weight:600;box-shadow:none!important;transition:background .18s,transform .18s var(--ease),color .18s}
+.tsa-home .h-btn:active{transform:scale(.97)}
+.tsa-home .h-btn--accent{background:var(--accent);color:var(--ink)}
+.tsa-home .h-btn--outline{background:var(--chip-blue);color:var(--ink);border:0}
+.tsa-home .h-link{font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:6px;color:var(--ink);border:0;white-space:normal}
+.tsa-home .h-link:hover{color:var(--ink);text-decoration-thickness:3px}
+.tsa-home .nav-shell,.tsa-home .nav-shell.is-scrolled{height:72px;min-height:72px;padding-inline:32px;background:var(--navy-deep);border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home .brand img{height:44px}
+.tsa-home .nav-primary-link{padding:11px 12px;font-size:14px;border-radius:0}
+.tsa-home .nav-primary-link[aria-current],.tsa-home .nav-primary-link.active{background:transparent;color:#fff}
+.tsa-home .nav-primary-link[aria-current]:after{background:var(--accent);height:3px;right:12px;left:12px;bottom:3px}
+.tsa-home .nav-actions .login{background:#fff;color:var(--ink);min-height:44px;border-radius:0;padding-inline:22px}
+.tsa-home .mobile-menu{top:72px}
+/* The first screen is two strong masses: the task and a single athlete. */
+.tsa-home .h-hero{background:#fff;overflow:visible}
+.tsa-home .h-hero:before{display:none}
+.tsa-home .h-hero-media{position:absolute;inset:0 0 180px 50%;z-index:-1;will-change:auto;background:var(--chip-blue)}
+.tsa-home .h-hero-media img{object-fit:cover;object-position:50% 28%;animation:none;transform:none}
+.tsa-home .h-hero-inner{padding-block:48px 56px;min-height:720px}
+.tsa-home .h-hero-top{display:block;width:47%;min-width:0}
+.tsa-home .h-hero-copy{width:100%;max-width:none}
+.tsa-home .h-hero-copy h1{font-size:clamp(64px,6.7vw,104px);font-weight:750;line-height:1.1;letter-spacing:-.055em;color:var(--ink);max-width:none;margin:0}
+.hero-line{display:block;overflow:hidden;padding-top:.14em;margin-top:-.14em}
+.hero-line>span{display:block}
+.tsa-home .h-lead{font-size:18px;line-height:1.7;color:var(--ink);margin-top:24px;max-width:39ch}
+.tsa-home .h-search{position:relative;width:47%;margin-top:28px;padding:24px;border:0;border-radius:0;background:var(--gray-50,#F4F7FA);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home .h-tabs{gap:0;margin-bottom:18px}
+.tsa-home .h-tabs button{min-height:44px;border-radius:0;font-size:16px;padding:8px 18px;background:transparent;color:var(--ink);transition:background .18s,color .18s}
+.tsa-home .h-tabs button[aria-pressed=true]{background:var(--navy-deep);color:#fff}
+.tsa-home .h-search-row{display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:16px}
+.tsa-home .h-field{min-width:0;gap:7px}
+.tsa-home .h-field>span:first-child{font-size:14px;color:var(--ink);font-weight:500}
+.tsa-home .h-field input,.tsa-home .h-field select{height:52px;min-height:52px;background:#fff;color:var(--ink);border:1px solid #c9d4df;border-radius:0;font-size:16px;box-shadow:none!important}
+.tsa-home .hero-search-box{box-shadow:none!important;background:transparent;backdrop-filter:none;animation:none} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home .h-search-actions{grid-column:1/-1;display:flex;gap:12px;align-items:center}
+.tsa-home .h-search-actions .h-btn--accent{order:-1;min-width:154px}
+.tsa-home .h-search-actions .h-btn--outline{background:#fff;min-width:150px}
+.tsa-home .h-try{margin-top:14px;gap:7px;font-size:14px;color:var(--ink)}
+.tsa-home .h-try button{font-size:14px;min-height:36px;padding:5px 8px;background:transparent;border-radius:0;color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.tsa-home .hero-search-results{border-radius:0;box-shadow:0 15px 45px #0b173026;background:#fff;z-index:60} /* taste-skill-ignore: genuine floating search results / province overlay. */
+.tsa-home .hero-search-result,.tsa-home .hero-search-result small{font-size:16px;color:var(--ink)}
+.tsa-home .hero-search-result{border-radius:0;min-height:62px}
+/* The national coverage figure is the one that leads this data band. */
+.tsa-home .h-stats-band{margin:0;padding:0;background:var(--navy-deep)}
+.tsa-home .h-stats-band:before,.tsa-home .h-stats-band:after{display:none}
+.tsa-home .h-stats-inner{display:block;min-height:180px}
+.tsa-home .h-stats{grid-template-columns:1.2fr repeat(3,1fr);align-items:center;gap:28px}
+.tsa-home .h-stats>a,.tsa-home .h-stats>a:first-child,.tsa-home .h-stats>a:last-child{min-height:180px;padding:28px 0;border:0;background:transparent;gap:9px}
+.tsa-home .h-stats>a:last-child{order:-1}
+.tsa-home .h-stats b{font-size:44px;font-weight:650;color:#fff;letter-spacing:-.04em;line-height:1}
+.tsa-home .h-stats>a:last-child b{font-size:96px;color:var(--accent)}
+.tsa-home .h-stats span{font-size:16px;line-height:1.5;color:#fff}
+.tsa-home .h-assoc-strip{background:var(--chip-blue);padding-block:22px;border:0}
+.tsa-home .association-chip{border:0;background:transparent;border-radius:0;box-shadow:none;padding:8px 20px}
+.tsa-home .association-chip img{box-shadow:none}
+.tsa-home .association-chip b{font-size:14px;font-weight:500;color:var(--ink)}
+.tsa-home .h-head{margin-bottom:40px;gap:24px;align-items:end}
+.tsa-home .h-head h2,.tsa-home .h-split-intro h2{font-size:48px;font-weight:650;line-height:1.18;letter-spacing:-.04em;color:var(--ink)}
+.tsa-home .h-head p,.tsa-home .h-split-intro p{font-size:18px;line-height:1.65;color:var(--ink);margin-top:20px;max-width:42ch}
+/* Native sticky poster: no scroll hijacking, and no pin on a phone. */
+.tsa-home #sports>.h-wrap{display:grid;grid-template-columns:minmax(270px,.85fr) minmax(0,2fr);gap:64px;align-items:start}
+.tsa-home #sports .h-head{position:sticky;top:120px;display:flex;align-items:start;flex-direction:column;gap:28px;margin:0}
+.tsa-home #sports h2{font-size:clamp(44px,4.5vw,68px);line-height:1.18;font-weight:650;letter-spacing:-.04em}
+.tsa-home #sports .h-head p{font-size:18px;line-height:1.65;margin-top:25px}
+.tsa-home .h-sports{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 24px}
+.tsa-home .h-sport{display:block;position:relative;isolation:auto;min-height:0;padding:0;overflow:hidden;border:0;border-radius:0;background:transparent;color:var(--ink);box-shadow:none;transform:none;transition:none}
+.tsa-home .h-sport:before{display:none}
+.tsa-home .h-sport-bg{position:relative;inset:auto;z-index:auto;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center;transition:transform .6s var(--ease)}
+.tsa-home .h-sport-bg{height:400px;aspect-ratio:auto;object-position:50% 28%}
+.tsa-home .h-sport>span{display:block;padding:17px 0 0}
+.tsa-home .h-sport b{font-size:24px;font-weight:600;line-height:1.3;color:var(--ink)}
+.tsa-home .h-sport small{display:block;margin-top:7px;font-size:16px;color:var(--ink)}
+.tsa-home .h-sport:hover{transform:none;box-shadow:none}
+.tsa-home .h-sport:hover .h-sport-bg{transform:scale(1.025)}
+.tsa-home .h-sport:hover b{text-decoration:underline;text-underline-offset:6px}
+.tsa-home .h-sport{isolation:isolate;z-index:0}.tsa-home .h-sport-bg{z-index:0}.tsa-home .h-sport>span{position:relative;z-index:1}
+/* The map remains a live interface, visually quieter than the poster sequence. */
+.tsa-home #nation{padding:0;background:var(--chip-blue)}
+.tsa-home .h-section--map>.h-wrap{width:100%;max-width:none}
+.tsa-home .h-section--map #map-intro{padding:72px 32px!important;background:var(--chip-blue)!important;color:var(--ink);box-shadow:none!important}
+.tsa-home #map-intro .motion-map-panel{max-width:1536px!important;margin-inline:auto!important;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:20px 48px}
+.tsa-home #map-intro .h-map-copy h2{font-size:48px;color:var(--ink);font-weight:650;line-height:1.18;letter-spacing:-.04em}
+.tsa-home #map-intro .h-map-copy p{font-size:18px;line-height:1.65;color:var(--ink);max-width:46ch;margin-top:18px}
+.tsa-home #map-intro .province-search label{font-size:16px;color:var(--ink)}
+.tsa-home #map-intro .province-search input{height:52px!important;border-radius:0!important;background:#fff!important;color:var(--ink)!important;border-color:#bed3e5!important}
+.tsa-home #map-intro .province-search button{height:52px!important;min-height:52px;border-radius:0!important;background:var(--navy-deep)!important;color:#fff!important}
+.tsa-home #map-intro #hero-map-canvas{height:430px!important;background:transparent!important;border-radius:0!important}
+.tsa-home #map-intro .map-type-legend span{font-size:14px!important;color:var(--ink)!important}
+.tsa-home #map-intro .province-category-network{background:transparent!important;backdrop-filter:none!important;box-shadow:none!important} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home #map-intro .h-bars{background:transparent!important;border:0;box-shadow:none;backdrop-filter:none} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home #map-intro .province-category-network,.tsa-home #map-intro .h-bars,.tsa-home #map-intro .province-category-card{opacity:1!important;visibility:visible!important;animation:none!important;transform:none!important}
+.tsa-home #map-intro .national-facility-total{padding:0 0 28px!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.tsa-home #map-intro .national-facility-total small{font-size:16px!important;color:var(--ink)!important}
+.tsa-home #map-intro .national-facility-total strong{font-size:64px!important;color:var(--ink)!important;line-height:1.2}
+.tsa-home #map-intro .national-facility-total span{font-size:16px!important;color:var(--ink)!important}
+.tsa-home #map-intro .province-category-card{padding:18px 0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none!important} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home #map-intro .province-category-card span,.tsa-home #map-intro .province-category-card strong{font-size:16px!important;color:var(--ink)!important}
+.tsa-home #map-intro .province-category-card:after{width:100%;height:4px;border-radius:0;background:var(--blue);transform:scaleX(var(--bar-scale,0));transform-origin:left;transition:transform .55s var(--ease)}
+.tsa-home #map-intro .h-map-cta{background:var(--navy-deep);color:#fff!important;border:0}
+.tsa-home #map-intro .province-detail{background:#fff!important;color:var(--ink)!important;border:0!important;border-radius:0!important;box-shadow:0 12px 36px #0b17302e!important;backdrop-filter:none!important} /* taste-skill-ignore: genuine floating search results / province overlay. */
+.tsa-home #map-intro .province-map-tooltip{box-shadow:none!important;background:var(--navy-deep);color:#fff;border:0;border-radius:0}
+/* Upcoming events: a large real programme image, then the agenda. */
+.tsa-home .h-pills{gap:8px}
+.tsa-home .h-pills button{border:0;border-radius:0;min-height:48px;background:var(--gray-50,#F4F7FA);color:var(--ink);font-size:16px;padding:10px 18px}
+.tsa-home .h-pills button[aria-pressed=true]{background:var(--navy-deep);color:#fff}
+.tsa-home .h-events{grid-template-columns:1.15fr 1fr;gap:48px}
+.tsa-home .h-feature{border:0;border-radius:0;background:transparent;box-shadow:none!important}
+.tsa-home .h-feature-img{height:360px;border-radius:0;object-fit:cover}
+.tsa-home .h-feature-img--empty:after{background:#0b173040}
+.tsa-home .h-feature-body{padding:24px 0;gap:16px}
+.tsa-home .h-feature h3{font-size:24px;line-height:1.35;font-weight:600;color:var(--ink)}
+.tsa-home .h-tags .h-tag{border:0!important;border-radius:0;padding:0;background:transparent;color:var(--ink);font-size:16px;font-weight:500}
+.tsa-home .h-tags{gap:18px}
+.tsa-home .h-feature-date,.tsa-home .h-feature-place{font-size:16px;color:var(--ink)}
+.tsa-home .h-feature-place em{background:transparent;border-radius:0;padding:0;font-style:normal}
+.tsa-home .h-event-list{gap:16px}
+.tsa-home .h-event{gap:20px;padding:20px 0;background:transparent;border:0;border-radius:0;box-shadow:none!important}
+.tsa-home .h-date{border-radius:0;background:var(--gray-50,#F4F7FA);color:var(--ink);min-width:70px;min-height:80px}
+.tsa-home .h-date b{font-size:32px;line-height:1.1}
+.tsa-home .h-event-text b{font-size:18px;font-weight:600;line-height:1.5}
+.tsa-home .h-event-text small,.tsa-home .h-event-text small .is-sport{font-size:16px;color:var(--ink)}
+/* Venues remain browsable by their existing controls and geolocation. */
+.tsa-home #places{background:var(--gray-50,#F4F7FA)}
+.tsa-home .h-venues{gap:24px;padding-block:0 8px}
+.tsa-home .h-venue{flex-basis:calc((100% - 48px)/3);border:0;border-radius:0;background:transparent;box-shadow:none!important;transform:none!important}
+.tsa-home .h-venue-img{height:270px;border-radius:0}
+.tsa-home .h-venue-body{padding:20px 0;gap:8px}
+.tsa-home .h-venue-body small{font-size:16px;color:var(--ink);font-weight:400}
+.tsa-home .h-venue-body b{font-size:24px;font-weight:600;line-height:1.4}
+.tsa-home .h-venue-body>span{font-size:16px;color:var(--ink)}
+.tsa-home .h-rail-nav button{width:48px;height:48px;border:0;border-radius:0;background:#fff;color:var(--ink);box-shadow:none}
+.tsa-home .h-rail-nav button:hover{background:var(--navy-deep);color:#fff}
+.tsa-home .h-rail-nav button:active{transform:scale(.95)}
+.tsa-home .h-head-actions{gap:16px}
+/* The final programme block is deliberately different from the picture-led sections. */
+.tsa-home #home-learning{background:var(--navy-deep);color:#fff}
+.tsa-home .h-split{grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);gap:80px}
+.tsa-home .h-split-intro{position:sticky;top:120px;align-self:start}
+.tsa-home .h-split-intro h2{font-size:48px;color:#fff}
+.tsa-home .h-split-intro p{color:#fff}
+.tsa-home .h-split-intro .h-link{color:#fff;font-size:16px}
+.tsa-home .h-course{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;color:#fff}
+.tsa-home .h-course h3{font-size:24px;line-height:1.4;color:#fff;font-weight:600}
+.tsa-home .h-course-title{font-size:18px;line-height:1.7;color:#fff;margin:0}
+.tsa-home .h-course .h-tag{padding:0;background:transparent;border:0;border-radius:0;color:#fff;font-size:16px}
+.tsa-home .h-course header{display:flex;flex-direction:column;align-items:start;gap:18px}
+.tsa-home .h-course header{justify-content:flex-start;flex-wrap:nowrap}.tsa-home .h-course h3{flex:0 1 auto;width:100%;height:auto}
+.tsa-home .h-course ol{padding:0;margin-top:32px;border:0;list-style:none}
+.tsa-home .h-course li{border:0;margin:0 0 16px}
+.tsa-home .h-course li a{padding:20px 24px;background:#17263D;color:#fff;transition:background .2s}
+.tsa-home .h-course li a:hover{background:#22354f;color:#fff}
+.tsa-home .h-course li b,.tsa-home .h-course li small{font-size:16px;color:#fff;font-weight:400}
+.tsa-home .h-footer{padding:96px 0 40px;background:#fff;color:var(--ink);border:0}
+.tsa-home #footer.h-footer{padding:96px 0 40px;background:#fff;color:var(--ink);border:0}
+.tsa-home .h-footer-grid{grid-template-columns:1.6fr repeat(3,1fr);gap:48px}
+.tsa-home .h-footer-name{display:block;font-size:clamp(32px,3.1vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.04em;color:var(--ink)!important;margin-bottom:30px}
+.tsa-home .h-footer-name{text-decoration:none!important}
+.tsa-home .h-footer-grid .h-footer-name{font-size:clamp(28px,3.1vw,44px);line-height:1.15;letter-spacing:-.04em}
+.tsa-home .h-footer-grid a,.tsa-home .h-footer-grid p,.tsa-home .h-footer-grid nav b{font-size:16px;color:var(--ink);line-height:1.75}
+.tsa-home .h-footer-grid nav b{margin-bottom:16px;font-weight:600}
+.tsa-home .h-footer-bottom{padding-top:48px;border:0;font-size:14px;color:var(--ink)}
+.tsa-home .h-tag,.tsa-home .h-empty{border-radius:0}
+.tsa-home .rv{opacity:1;transform:none;filter:none}
+.tsa-home :is(.h-sport,.h-feature,.h-event,.h-venue,.h-course){backdrop-filter:none;-webkit-backdrop-filter:none} /* taste-skill-ignore: reset inherited blur to none. */
+.tsa-home *{backdrop-filter:none!important;-webkit-backdrop-filter:none!important} /* taste-skill-ignore: reset inherited blur to none. */
+@media(min-width:1800px){.tsa-home .h-hero-media{right:calc((100% - 1600px)/2);left:50%}.tsa-home .h-hero-inner{padding-top:72px}}
+@media(max-width:1100px){
+ .tsa-home .nav-shell,.tsa-home .nav-shell.is-scrolled{padding-inline:24px}
+ .tsa-home .h-wrap{width:calc(100% - 48px)}
+ .tsa-home .h-hero-copy h1{font-size:70px}
+ .tsa-home .h-search{padding:20px}
+ .tsa-home .h-search-row{grid-template-columns:minmax(0,1fr)}
+ .tsa-home .h-field:nth-child(2){display:flex}
+ .tsa-home .h-search-actions{grid-column:1}
+ .tsa-home #sports>.h-wrap{grid-template-columns:1fr 1.8fr;gap:32px}
+ .tsa-home #sports h2{font-size:48px}
+ .tsa-home .h-sports{gap:32px 18px}
+ .tsa-home #map-intro .motion-map-panel{grid-template-columns:minmax(0,1fr) minmax(0,290px);gap:20px 32px}
+ .tsa-home .h-head h2,.tsa-home .h-split-intro h2,.tsa-home #map-intro .h-map-copy h2{font-size:40px}
+ .tsa-home .h-split{gap:40px}
+ .tsa-home .h-footer-grid{gap:32px;grid-template-columns:1.5fr 1fr 1fr}
+}
+@media(max-width:760px){
+ .tsa-home .h-wrap{width:calc(100% - 40px)}
+ .tsa-home .nav-shell,.tsa-home .nav-shell.is-scrolled{height:64px;min-height:64px;padding-inline:20px}
+ .tsa-home .brand img{height:38px}
+ .tsa-home .mobile-menu{top:64px}
+ .tsa-home .h-section{padding-block:72px}
+ .tsa-home .h-hero-media{position:relative;inset:auto;height:320px;margin-left:35%;margin-top:24px;z-index:auto;overflow:hidden}
+ .tsa-home .h-hero-media img{object-position:50% 20%}
+ .tsa-home .h-hero-inner{display:flex;flex-direction:column;min-height:0;padding-block:0 28px;margin-top:-320px;position:relative;z-index:1}
+ .tsa-home .h-hero-top{width:100%;padding-top:24px;padding-bottom:20px;min-height:320px;display:flex;align-items:start}
+ .tsa-home .h-hero-copy{width:100%;padding-top:0}
+ .tsa-home .h-hero-copy h1{font-size:clamp(52px,11.8vw,76px);line-height:1.16;max-width:100%;margin:0}
+ .tsa-home .h-lead{margin-top:24px;font-size:16px;max-width:19ch;line-height:1.65;background:#fff;padding:12px 8px 12px 0}
+ .tsa-home .h-lead br{display:none}
+ .tsa-home .h-search{width:100%;margin-top:0;padding:18px;background:#F4F7FA}
+ .tsa-home .h-tabs{margin-bottom:16px}
+ .tsa-home .h-tabs button{font-size:16px;padding:8px 12px}
+ .tsa-home .h-field:nth-child(2){display:flex}
+ .tsa-home .h-search-row{grid-template-columns:1fr;gap:16px}
+ .tsa-home .h-search-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .tsa-home .h-search-actions .h-btn{min-width:0;padding-inline:8px;font-size:16px}
+ .tsa-home .h-try{font-size:14px;gap:4px}.tsa-home .h-try button{font-size:14px}
+ .tsa-home .h-stats-band{margin:0;padding:0}
+ .tsa-home .h-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;align-items:start;padding-block:24px}
+ .tsa-home .h-stats>a,.tsa-home .h-stats>a:first-child,.tsa-home .h-stats>a:last-child{min-height:114px;border:0;padding:16px 0;gap:9px}
+ .tsa-home .h-stats b{font-size:32px}.tsa-home .h-stats>a:last-child b{font-size:64px}
+ .tsa-home .h-stats span{font-size:14px;max-width:140px}
+ .tsa-home .association-chip{padding-inline:18px}
+ .tsa-home .h-head{gap:22px;margin-bottom:32px}
+ .tsa-home .h-head h2,.tsa-home .h-split-intro h2,.tsa-home #map-intro .h-map-copy h2{font-size:32px;line-height:1.25}
+ .tsa-home .h-head p,.tsa-home .h-split-intro p,.tsa-home #map-intro .h-map-copy p{font-size:16px;line-height:1.7}
+ .tsa-home #sports>.h-wrap{display:block}
+ .tsa-home #sports .h-head{position:static;display:block;margin-bottom:36px}
+ .tsa-home #sports h2{font-size:40px}
+ .tsa-home #sports h2 br{display:none}
+ .tsa-home #sports .h-head p{font-size:16px;max-width:28ch;margin:20px 0}
+ .tsa-home .h-sports{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 14px}
+ .tsa-home .h-sport b{font-size:18px}
+ .tsa-home .h-sport-bg{height:auto;aspect-ratio:3/4}
+ .tsa-home .h-sport small{font-size:14px;line-height:1.6}
+ .tsa-home .h-sport>span{padding-top:14px}
+ .tsa-home .h-section--map{padding:0}
+ .tsa-home .h-section--map #map-intro{padding:48px 20px!important}
+ .tsa-home #map-intro .motion-map-panel{grid-template-columns:1fr;grid-template-areas:'copy' 'search' 'canvas' 'legend' 'side';gap:22px}
+ .tsa-home #map-intro #hero-map-canvas{height:340px!important}
+ .tsa-home #map-intro .national-facility-total strong{font-size:48px!important}
+ .tsa-home #map-intro .province-detail{max-height:310px;width:calc(100% - 24px)!important;margin:12px}
+ .tsa-home .h-events{grid-template-columns:1fr;gap:28px}
+ .tsa-home .h-feature-img{height:280px}
+ .tsa-home .h-feature h3{font-size:24px}
+ .tsa-home .h-event-text b{font-size:18px}
+ .tsa-home .h-venues{gap:16px}
+ .tsa-home .h-venue{flex-basis:88%}
+ .tsa-home .h-venue-img{height:250px}
+ .tsa-home .h-venue-body b{font-size:20px}
+ .tsa-home .h-head-actions{width:100%;gap:12px}
+ .tsa-home .h-head-actions>.h-btn{font-size:14px;padding-inline:16px}
+ .tsa-home .h-split{display:block}
+ .tsa-home .h-split-intro{position:static;margin-bottom:40px}
+ .tsa-home .h-course h3{font-size:24px}
+ .tsa-home .h-course li a{padding:20px}
+ .tsa-home .h-footer{padding-top:64px}
+ .tsa-home #footer.h-footer{padding-top:64px}
+ .tsa-home .h-footer-grid{grid-template-columns:1fr 1fr;gap:36px 22px}
+ .tsa-home .h-footer-brand{grid-column:1/-1}
+ .tsa-home .h-footer-name{font-size:38px}
+ .tsa-home .h-footer-grid .h-footer-name{font-size:32px}
+ .tsa-home .h-footer-bottom{gap:14px;flex-direction:column;align-items:start}
+}
+@media(prefers-reduced-motion:reduce){.tsa-home *,.tsa-home *:before,.tsa-home *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.tsa-home .hero-line>span{transform:none!important}}
+
+/* MOVE THE NATION: one athletic image, a decisive headline and one search surface. */
+.tsa-home .tsa-home-kicker{font-family:var(--tsa-font-english)!important;font-size:20px;line-height:1.2;font-weight:600;letter-spacing:.08em;margin:0 0 20px;color:inherit}
+.tsa-home .h-hero{background:var(--tsa-navy);color:var(--tsa-white);isolation:isolate}
+.tsa-home .h-hero-inner{position:relative;min-height:0;padding-top:56px;padding-bottom:40px}
+.tsa-home .h-hero-top{width:56%;max-width:none}
+.tsa-home .h-hero-copy h1{font-size:clamp(76px,8.2vw,146px);font-weight:700;line-height:1.08;letter-spacing:-.035em;color:#fff}
+.tsa-home .tsa-home-energy{color:var(--tsa-lime)}
+.tsa-home .h-lead{color:#fff;font-weight:300;margin-top:26px;max-width:36ch}
+.tsa-home .h-hero-media{inset:0 calc((100vw - 100%)/-2) 40px 52%;z-index:-1;overflow:hidden;background:var(--tsa-blue);clip-path:polygon(12% 0,100% 0,100% 100%,0 100%)}
+.tsa-home .h-hero-media picture{display:block;width:100%;height:100%}
+.tsa-home .h-hero-media img{object-position:50% 27%;width:100%;height:100%;object-fit:cover}
+.tsa-home .h-search{width:100%;margin-top:36px;padding:22px 28px;background:#fff;color:var(--tsa-ink)}
+.tsa-home .h-tabs{margin-bottom:16px;gap:8px}
+.tsa-home .h-tabs button{padding-inline:22px;font-weight:500;background:var(--tsa-mist)}
+.tsa-home .h-tabs button[aria-pressed=true]{background:var(--tsa-navy);color:#fff}
+.tsa-home .h-search-row{grid-template-columns:minmax(0,1fr) minmax(160px,.4fr) auto;align-items:end;gap:18px}
+.tsa-home .h-search-actions{grid-column:auto;gap:10px}
+.tsa-home .h-search-actions .h-btn{height:52px;min-width:120px}
+.tsa-home .h-search-actions .h-btn--outline{background:var(--tsa-mist)}
+.tsa-home .h-try{margin-top:8px}
+.tsa-home .h-field input,.tsa-home .h-field select{background:var(--tsa-mist);border:0}
+.tsa-home .h-btn:hover{transform:translateY(-2px)}
+.tsa-home .h-btn--accent:hover{background:#d1ff7a;color:var(--tsa-ink)}
+.tsa-home .h-stats-band{background:var(--tsa-mist);color:var(--tsa-ink)}
+.tsa-home .h-stats-inner{padding-block:12px 22px}
+.tsa-home .h-stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.tsa-home .h-stats>a,.tsa-home .h-stats>a:first-child,.tsa-home .h-stats>a:last-child{min-height:168px;justify-content:center;gap:10px}
+.tsa-home .h-stats b,.tsa-home .h-stats>a:last-child b{font-family:var(--tsa-font-english)!important;font-size:72px;line-height:1;font-weight:700;color:var(--tsa-ink);font-variant-numeric:tabular-nums}
+.tsa-home .h-stats>a:first-child b{color:#0869b9}
+.tsa-home .h-stats span{color:var(--tsa-ink);font-size:16px}
+.tsa-home .h-stats small{font-size:13px;color:#4a5969;line-height:1.4;min-height:18px}
+.tsa-home-data-note{font-size:13px;font-weight:300;margin:0;color:#4a5969}
+/* A lead photograph and supporting frames give sport discovery its hierarchy. */
+.tsa-home #sports>.h-wrap{display:block}
+.tsa-home #sports .h-head{position:static;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:12px 40px;align-items:end;margin-bottom:44px}
+.tsa-home #sports .tsa-home-kicker{grid-column:1/-1;margin:0;color:#0869b9}
+.tsa-home #sports .h-head p{margin:0;max-width:35ch}
+.tsa-home #sports h2{font-size:clamp(44px,4.3vw,68px);line-height:1.15}
+.tsa-home #sports h2 br{display:none}
+.tsa-home .h-sports{grid-template-columns:repeat(6,minmax(0,1fr));gap:32px 24px;align-items:start}
+.tsa-home .h-sport{grid-column:span 3;background:var(--tsa-mist)}
+.tsa-home .h-sport:first-child{grid-row:span 2}
+.tsa-home .h-sport:nth-child(n+4){grid-column:span 2}
+.tsa-home .h-sport-bg{height:220px;aspect-ratio:auto;object-position:50% 30%}
+.tsa-home .h-sport:first-child .h-sport-bg{height:590px;object-position:50% 50%}
+.tsa-home .h-sport:nth-child(n+4) .h-sport-bg{height:330px;object-position:50% 35%}
+.tsa-home .h-sport>span{padding:18px 20px 20px;display:flex;align-items:baseline;justify-content:space-between;gap:10px;background:#fff}
+.tsa-home .h-sport small{margin:0;font-size:14px;white-space:nowrap}
+.tsa-home .h-sport b{font-size:24px}
+.tsa-home .h-sport:hover .h-sport-bg{transform:scale(1.045)}
+.tsa-home .h-sport:hover b{color:#0869b9}
+.tsa-home #events{background:#fff}
+.tsa-home #places{background:var(--tsa-mist)}
+.tsa-home .h-head h2,.tsa-home .h-split-intro h2{font-weight:600}
+.tsa-home .h-feature h3{font-weight:500}
+.tsa-home .h-feature-img,.tsa-home .h-venue-img{aspect-ratio:16/10}
+.tsa-home .h-event{border-bottom:0}
+.tsa-home .h-event:last-of-type{border-bottom:0}
+.tsa-home .h-date{background:var(--tsa-mist)}
+.tsa-home .h-date b{font-family:var(--tsa-font-english)!important;font-size:40px}
+.tsa-home .h-venue-body{background:var(--tsa-mist)}
+.tsa-home .h-venue:hover .h-venue-img{transform:scale(1.04)}
+.tsa-home .h-venue-img{transition:transform .5s var(--ease)}
+.tsa-home .h-venue{overflow:hidden}
+.tsa-home #home-learning{background:#fff;color:var(--tsa-ink)}
+.tsa-home #home-learning :is(h2,h3,p,.h-course-title,.h-link,.h-tag){color:var(--tsa-ink)}
+.tsa-home .h-course{color:var(--tsa-ink)}
+.tsa-home .h-course li a{background:var(--tsa-mist);color:var(--tsa-ink)}
+.tsa-home .h-course li a:hover{background:#e4edf3;color:var(--tsa-ink)}
+.tsa-home .h-course li b,.tsa-home .h-course li small{color:var(--tsa-ink)}
+.tsa-home .tsa-home-map-filters{margin-bottom:24px}
+.tsa-home .tsa-home-map-filters summary{font-size:16px;min-height:48px;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;background:#fff;padding:12px 16px}
+.tsa-home .tsa-home-map-filters[open] summary span{transform:rotate(45deg)}
+.tsa-home #map-intro .national-facility-total{padding-bottom:24px!important}
+.tsa-home #map-intro .h-map-cta{width:100%;font-size:14px}
+.tsa-home-map-note{grid-area:legend;margin:0;font-size:13px;line-height:1.6;color:var(--tsa-ink);align-self:end;padding-top:36px}
+.tsa-home #nation .map-type-legend{padding-bottom:28px}
+.tsa-home .h-assoc-strip{background:var(--tsa-mist);padding-block:48px;border:0}
+.tsa-home-network-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px!important}
+.tsa-home-network-head h2{font-size:32px;font-weight:500;line-height:1.25}
+.tsa-home-network-head .tsa-home-kicker{font-size:18px;color:#0869b9;margin-bottom:12px}
+.tsa-home .association-ticker{mask-image:none;-webkit-mask-image:none}
+.tsa-home .association-ticker-track{animation-duration:42s}
+.tsa-home .association-chip{padding-inline:24px}
+.tsa-home .association-chip img{width:48px;height:48px;object-fit:contain;border-radius:0;background:#fff}
+.tsa-home .association-chip b{max-width:190px;white-space:normal;line-height:1.6}
+.tsa-home .h-assoc-strip:is(:hover,:focus-within) .association-ticker-track,.tsa-home .h-assoc-strip.is-paused .association-ticker-track{animation-play-state:paused}
+.tsa-home #footer.h-footer{background:var(--tsa-navy);color:#fff;padding-top:72px}
+.tsa-home #footer :is(.h-footer-name,.h-footer-grid a,.h-footer-grid p,.h-footer-grid nav b,.h-footer-bottom){color:#fff!important}
+.tsa-home #footer .h-footer-name{font-family:var(--tsa-font-english)!important;font-size:clamp(36px,3.5vw,52px);line-height:.95;letter-spacing:0;font-weight:700}
+.tsa-home .h-footer-bottom{color:#b6c7d5!important}
+.tsa-home-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--tsa-lime);transform:scaleX(0);transform-origin:left;z-index:9999;pointer-events:none}
+.tsa-home :focus-visible{outline:3px solid #0872c7;outline-offset:4px}
+.tsa-home .h-hero :focus-visible,.tsa-home .nav-shell :focus-visible,.tsa-home #footer :focus-visible{outline-color:var(--tsa-lime)}
+@media(min-width:1800px){.tsa-home .h-hero-inner{min-height:0;padding-top:64px}.tsa-home .h-search{margin-top:44px}}
+@media(max-width:1100px){
+ .tsa-home .h-hero-inner{min-height:0}
+ .tsa-home .h-hero-copy h1{font-size:clamp(72px,9vw,100px)}
+ .tsa-home .h-search-row{grid-template-columns:minmax(0,1fr) minmax(140px,.5fr)}
+ .tsa-home .h-search-actions{grid-column:1/-1;justify-content:flex-start}
+ .tsa-home .h-sport>span{align-items:start;flex-direction:column;gap:6px;padding-inline:0}
+ .tsa-home .h-sport:first-child .h-sport-bg{height:620px}
+ .tsa-home #sports .h-head{grid-template-columns:1fr 1fr}
+ .tsa-home #sports .h-head .h-link{grid-column:2}
+ .tsa-home #sports h2{grid-row:span 2}
+ .tsa-home .h-stats{gap:20px}.tsa-home .h-stats b,.tsa-home .h-stats>a:last-child b{font-size:60px}
+}
+@media(max-width:760px){
+ .tsa-home .h-hero-inner{min-height:0;padding-top:24px;padding-bottom:24px;margin-top:0;display:block}
+ .tsa-home .h-hero-top{width:100%;min-height:327px;padding:0;display:block}
+ .tsa-home .h-hero-copy h1{font-size:clamp(49px,12.5vw,78px);line-height:1.08;letter-spacing:-.025em}
+ .tsa-home .h-hero-copy{position:relative;z-index:1}
+ .tsa-home .h-hero-copy .tsa-home-kicker{font-size:16px;margin-bottom:12px}
+ .tsa-home .h-lead{background:transparent;padding:0;margin-top:14px;max-width:29ch;font-size:15px;line-height:1.6;color:#fff}
+ .tsa-home .h-hero-media{position:absolute;inset:197px -20px auto 30%;height:158px;margin:0;z-index:-1;clip-path:polygon(15% 0,100% 0,100% 100%,0 100%)}
+ .tsa-home .h-hero-media img{object-position:50% 15%}
+ .tsa-home .h-search{margin-top:24px;padding:16px;width:100%}
+ .tsa-home .h-tabs{margin-bottom:14px;gap:4px}.tsa-home .h-tabs button{font-size:14px;padding:8px 12px;flex:1}
+ .tsa-home .h-search-row{grid-template-columns:minmax(0,1fr) 106px;gap:12px}
+ .tsa-home .h-field>span:first-child{font-size:13px}
+ .tsa-home .h-field input,.tsa-home .h-field select{font-size:16px;padding-inline:10px;height:48px;min-height:48px}
+ .tsa-home .h-search-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+ .tsa-home .h-search-actions .h-btn{min-width:0;height:48px}
+ .tsa-home .h-try{display:none}
+ .tsa-home .h-stats-inner{padding-top:0;padding-bottom:22px}
+ .tsa-home .h-stats{grid-template-columns:1fr 1fr;gap:0 20px;padding-block:16px}
+ .tsa-home .h-stats>a,.tsa-home .h-stats>a:first-child,.tsa-home .h-stats>a:last-child{min-height:144px;padding:18px 0;gap:8px}
+ .tsa-home .h-stats b,.tsa-home .h-stats>a:last-child b{font-size:56px}
+ .tsa-home .h-stats span{font-size:14px}.tsa-home .h-stats small{font-size:13px;min-height:0}
+ .tsa-home-data-note{font-size:13px}
+ .tsa-home #sports .h-head{display:block;margin-bottom:28px}
+ .tsa-home #sports .tsa-home-kicker{font-size:17px;margin-bottom:16px}
+ .tsa-home #sports h2{font-size:40px}.tsa-home #sports .h-head p{margin-block:18px}
+ .tsa-home .h-sports{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 14px}
+ .tsa-home .h-sport,.tsa-home .h-sport:first-child,.tsa-home .h-sport:nth-child(n+4){grid-column:auto;grid-row:auto}
+ .tsa-home .h-sport:first-child{grid-column:1/-1}
+ .tsa-home .h-sport-bg,.tsa-home .h-sport:nth-child(n+4) .h-sport-bg{height:220px}
+ .tsa-home .h-sport:first-child .h-sport-bg{height:310px;object-position:50% 40%}
+ .tsa-home .h-sport:last-child{grid-column:1/-1}
+ .tsa-home .h-sport:last-child .h-sport-bg{height:240px;object-position:50% 35%}
+ .tsa-home .h-sport b{font-size:20px}.tsa-home .h-sport small{font-size:13px}
+ .tsa-home .h-sport:first-child>span,.tsa-home .h-sport:last-child>span{flex-direction:row;align-items:baseline}
+ .tsa-home .h-sport:last-child small{white-space:normal;max-width:21ch}
+ .tsa-home #map-intro .motion-map-panel{grid-template-areas:'copy' 'search' 'canvas' 'legend' 'side';gap:24px}
+ .tsa-home-map-note{padding-top:42px;font-size:13px}
+ .tsa-home #nation .map-type-legend{padding-bottom:30px}
+ .tsa-home .h-assoc-strip{padding-block:40px}
+ .tsa-home-network-head{align-items:start;flex-direction:column;gap:20px;margin-bottom:24px!important}
+ .tsa-home-network-head h2{font-size:28px}
+ .tsa-home-network-head .h-btn{font-size:14px}
+ .tsa-home #footer.h-footer{padding-top:56px}
+ .tsa-home #footer .h-footer-name{font-size:44px}
+}
+@media(prefers-reduced-motion:reduce){.tsa-home .tsa-home-progress{display:none}.tsa-home .association-ticker-track{animation:none!important;transform:none!important}.tsa-home .association-ticker{overflow-x:auto}.tsa-home .association-ticker-group[aria-hidden=true]{display:none}.tsa-home .h-sport:hover .h-sport-bg,.tsa-home .h-venue:hover .h-venue-img{transform:none}}

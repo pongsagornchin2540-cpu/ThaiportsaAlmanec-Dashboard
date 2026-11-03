@@ -1,0 +1,166 @@
+/* Integration rules for TSA Premium v4. The supplied design overrides earlier Taste defaults. */
+body.tsa-premium{--font-body:var(--font);--font-display:var(--font);--blue:var(--electric);--accent:var(--lime);--tsa-lime:var(--lime);--tsa-ink:var(--ink);--tsa-navy:var(--navy)}
+body.tsa-premium :is(input,select,textarea,button){font-family:var(--font)}
+body.tsa-premium #login-modal{font-family:var(--font)}
+body.tsa-premium [hidden]{display:none!important}
+body.tsa-premium .skip{position:fixed;z-index:9999;top:-80px;left:16px;padding:12px 20px;background:var(--lime);color:var(--ink);border-radius:8px}
+body.tsa-premium .skip:focus{top:12px}
+
+
+
+body.tsa-premium .desktop-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;max-width:none;display:flex;align-items:center;justify-content:center;flex:none;margin:0;padding:0;gap:4px}
+body.tsa-premium .nav-primary-link{font-family:var(--font);font-size:14px;font-weight:400;color:#d7e4f7;padding:8px 12px;border-radius:24px;min-height:44px;display:flex;align-items:center;white-space:nowrap;background:transparent;border:0}
+body.tsa-premium .nav-primary-link[aria-current=page]{color:var(--lime);background:#1a3358}
+body.tsa-premium .nav-primary-link:after{display:none}
+body.tsa-premium .nav-primary-link:hover{color:var(--lime)}
+body.tsa-premium .nav-actions{display:flex;align-items:center;margin-left:auto;gap:12px}
+body.tsa-premium .nav-actions .login{display:inline-flex!important;align-items:center;background:#fff;color:var(--navy);border:0;border-radius:10px;min-height:44px;padding:10px 18px;font-size:14px;white-space:nowrap}
+body.tsa-premium .sport-tile.green{--sport-image:url('premium-v4/sport-football.webp')}
+body.tsa-premium .sport-tile.blue{--sport-image:url('premium-v4/sport-swimming.webp')}
+body.tsa-premium .sport-tile.indigo{--sport-image:url('premium-v4/sport-futsal.webp')}
+body.tsa-premium .sport-tile.orange{--sport-image:url('premium-v4/sport-basketball.webp')}
+body.tsa-premium .sport-tile.violet{--sport-image:url('premium-v4/sport-badminton.webp')}
+body.tsa-premium .sports-section:not(.premium-assets-ready) .sport-visual,body.tsa-premium .courses-section:not(.premium-assets-ready) .courses-bg{background-image:none!important}
+body.tsa-premium .menu-button{border:1px solid #ffffff4d;background:transparent;border-radius:10px;height:44px;width:44px;color:#fff;align-items:center;justify-content:center;gap:5px;flex-direction:column;display:none}
+body.tsa-premium .menu-button i{width:18px;height:2px;background:#fff;display:block}
+body.tsa-premium .mobile-menu{top:72px;max-height:calc(100dvh - 72px);overflow:auto;background:#07172ff8;border-radius:0}
+body.tsa-premium .hero{min-height:0;padding-top:0;overflow:visible;z-index:10}
+body.tsa-premium .hero-visual-clip{position:absolute;inset:0;overflow:hidden;z-index:0;isolation:isolate;pointer-events:none}
+body.tsa-premium .hero-bg{transform:scale(var(--hero-zoom,1));transform-origin:70% 30%;will-change:auto;pointer-events:none}
+body.tsa-premium .hero-bg.is-scroll-zooming{will-change:transform}
+body.tsa-premium .hero-copy h1{font-family:var(--font);text-wrap:initial}
+body.tsa-premium .hero-top{min-height:460px}
+body.tsa-premium #premium-hero-featured{width:min(420px,100%);min-height:112px;margin-top:26px;display:grid;align-content:start}
+body.tsa-premium #premium-hero-featured .featured-alert{margin-top:0;width:100%;max-width:100%;height:112px;min-height:112px}
+body.tsa-premium #premium-hero-featured .alert-info>small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.tsa-premium .hero-stats{min-height:128px}
+body.tsa-premium .featured-alert{min-width:310px;max-width:420px}
+body.tsa-premium .alert-info{min-width:0}
+body.tsa-premium .alert-info>b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+body.tsa-premium .alert-info>small{display:block;white-space:normal;line-height:1.5}
+body.tsa-premium .alert-label svg{width:14px;height:14px}
+body.tsa-premium .search-panel{position:relative;z-index:20;overflow:visible}
+body.tsa-premium .search-tab[aria-pressed=true]{background:var(--lime);color:var(--navy);box-shadow:0 5px 16px #b8f52930}
+body.tsa-premium .search-tab[aria-pressed=false]{background:#edf3fb;color:#3b5881;box-shadow:none}
+body.tsa-premium .search-fields input{min-width:0}
+body.tsa-premium .hero-search-results{position:absolute;z-index:65;top:100%;left:20px;right:20px;max-height:370px;overflow-y:auto;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 42px #06182f33;display:none;padding:8px}
+body.tsa-premium .hero-search-results.open{display:block}
+body.tsa-premium .hero-search-result{display:flex;flex-direction:column;gap:4px;padding:12px 14px;min-height:64px;border-radius:8px;text-align:left}
+body.tsa-premium .hero-search-result:hover,body.tsa-premium .hero-search-result:focus-visible{background:#edf4ff}
+body.tsa-premium .hero-search-result b{font-size:15px;font-weight:500;line-height:1.5}
+body.tsa-premium .hero-search-result small,body.tsa-premium .a-empty{font-size:13px;color:#50688a}
+body.tsa-premium .premium-data-source{font-size:12px;color:#b4c8e3;margin:12px 0 0}
+body.tsa-premium .hero-stat .stat-text small{display:block;font-size:12px;color:#b4c8e3;margin-top:3px;font-weight:300}
+body.tsa-premium .h-empty{font-size:16px;line-height:1.7;padding:20px;grid-column:1/-1}
+body.tsa-premium .section-heading h2{margin-top:0}
+body.tsa-premium .month-filters button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+body.tsa-premium .event-title{margin:0}
+body.tsa-premium .event-featured{min-height:360px}
+body.tsa-premium .event-featured-copy{right:80px}
+body.tsa-premium .event-line-text{min-width:0;flex:1}
+body.tsa-premium .event-line-text b{overflow-wrap:anywhere}
+body.tsa-premium .event-line-date{flex:none}
+body.tsa-premium .venue-grid{display:flex;position:relative;overflow-x:auto;scroll-snap-type:none;scroll-behavior:auto;scrollbar-width:thin;padding-bottom:16px;gap:20px}
+body.tsa-premium .venue-card{flex:0 0 calc((100% - 60px)/4);scroll-snap-align:start;min-width:0}
+body.tsa-premium .venue-img{height:180px;aspect-ratio:auto}
+body.tsa-premium .venue-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+body.tsa-premium .venue-card:hover .venue-img img{transform:scale(1.04)}
+body.tsa-premium .venue-info{min-height:155px}
+body.tsa-premium .venue-info>b{display:block;font-size:16px;line-height:1.5;min-height:48px;font-weight:600}
+body.tsa-premium .venue-info>small{display:block;font-size:13px;margin-top:5px;color:#50688a}
+body.tsa-premium .h-venue-img--empty{height:100%;width:100%;background:#eaf2ff;color:var(--ink);display:grid;place-items:center}
+body.tsa-premium .premium-venue-actions{display:flex;align-items:center;gap:8px}
+body.tsa-premium .premium-rail-button{border:1px solid #d6e1f1;background:#fff;width:44px;min-height:44px;border-radius:50%;color:var(--ink)}
+body.tsa-premium .course-rows{list-style:none;padding:0;margin:0}
+body.tsa-premium .course-rows li{margin:0}
+body.tsa-premium .course-rows li:last-child>a{border-bottom:0}
+body.tsa-premium .course-rows li:not(:last-child)>a{border-bottom:1px solid #d6e1ee}
+body.tsa-premium .course-text small{display:block;line-height:1.6}
+body.tsa-premium .h-courses{display:grid;gap:24px}
+body.tsa-premium .course-panel-head h3{font-size:18px;line-height:1.5}
+body.tsa-premium #training-course-grid{min-width:0}
+body.tsa-premium #training-course-grid .courses-panel{background:#fff;border:1px solid #fff;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 24px 64px #020d2c59,0 8px 24px #020d2c26,inset 0 1px 0 #ffffffcc}
+body.tsa-premium #associations,body.tsa-premium #association-ticker{background:#fff}
+body.tsa-premium .association-ticker{position:relative;inset:auto;transform:none;opacity:1;width:100%;border:0;box-shadow:none;padding:0;background:transparent}
+body.tsa-premium .association-ticker-track{animation-name:assocScroll;animation-duration:70s;animation-timing-function:linear;animation-iteration-count:infinite;display:flex;width:max-content}
+body.tsa-premium .assoc-section.is-paused .association-ticker-track,body.tsa-premium .assoc-section:focus-within .association-ticker-track{animation-play-state:paused}
+body.tsa-premium #associations{padding:16px 0 20px}
+body.tsa-premium .district-list>[role=listitem]{display:contents}
+body.tsa-premium .district-chip{min-height:44px}
+body.tsa-premium .th-map:focus,body.tsa-premium .th-map .province:focus,body.tsa-premium .th-map .district:focus{outline:none}
+body.tsa-premium .th-map .province:focus-visible{fill:#1d5fa8;stroke:var(--lime);stroke-width:2}
+body.tsa-premium .th-map .district:focus-visible{fill:#2a73c4;stroke:var(--lime);stroke-width:2}
+body.tsa-premium .th-map .district.is-active{stroke:var(--lime)}
+body.tsa-premium .th-map .district-label,body.tsa-premium .th-map .district-label.is-active{stroke:none;stroke-width:0;paint-order:normal;filter:none;text-shadow:none;background:none}
+body.tsa-premium .bar-track i{transform:scaleX(1)}
+body.tsa-premium .map-error{grid-column:1/-1;padding:20px;color:#fff}
+body.tsa-premium #footer.footer{background:linear-gradient(180deg,#071729,#091c37);padding:46px 0 24px;color:#c9d7e9}
+body.tsa-premium .h-footer-name{font:800 30px/.95 var(--condensed);color:#fff;display:block;letter-spacing:.01em;margin-bottom:20px}
+body.tsa-premium .h-footer-brand p{font-size:14px;font-weight:300;line-height:1.8;color:#a9bdd5}
+body.tsa-premium .h-footer-contact{display:flex;flex-direction:column;gap:4px}
+body.tsa-premium .tsa-home-progress{position:fixed;inset:0 0 auto;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;z-index:999;pointer-events:none}
+body.tsa-premium :focus-visible{outline:3px solid #0875cb;outline-offset:3px}
+body.tsa-premium :is(#tsa-home-header,.hero,.province-section,.courses-section,.footer) :focus-visible{outline-color:#7cddff}
+@media(max-width:1180px){body.tsa-premium .nav-primary-link{padding-inline:8px;font-size:13px}body.tsa-premium .venue-card{flex-basis:calc((100% - 40px)/3)}}
+@media(max-width:1040px){body.tsa-premium .desktop-nav{display:none}body.tsa-premium .menu-button{display:flex}body.tsa-premium .nav-actions{margin-left:auto}body.tsa-premium .hero-top{min-height:420px}body.tsa-premium .hero-copy{max-width:62%}}
+@media(max-width:930px){body.tsa-premium .hero-top{min-height:0}body.tsa-premium .venue-card{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:690px){
+ 
+ 
+ body.tsa-premium .mobile-menu{top:64px;max-height:calc(100dvh - 64px)}
+ body.tsa-premium .nav-actions{gap:8px}
+ body.tsa-premium .nav-actions .login{font-size:13px;padding-inline:12px}
+ body.tsa-premium .hero-copy{max-width:none}
+ body.tsa-premium .hero-top{min-height:0}
+ body.tsa-premium #premium-hero-featured{min-height:164px;margin-top:22px}
+ body.tsa-premium .hero-stats{min-height:220px}
+ body.tsa-premium .featured-alert{min-width:0;width:100%;padding:10px;gap:10px}
+ body.tsa-premium .alert-info>b{font-size:15px}
+ body.tsa-premium .hero-stats strong{font-size:25px}
+ body.tsa-premium .hero-stat .stat-text span,body.tsa-premium .hero-stat .stat-text small{font-size:12px}
+ body.tsa-premium .hero-stat{align-items:start}
+ body.tsa-premium .premium-data-source{font-size:12px}
+ body.tsa-premium .hero-search-results{left:0;right:0;max-height:300px}
+ body.tsa-premium .event-featured{min-height:340px}
+ body.tsa-premium .event-line{gap:10px;padding:12px}
+ body.tsa-premium .event-line-text b{font-size:15px}
+ body.tsa-premium .event-line-text small{font-size:13px}
+ body.tsa-premium .round-arrow{display:none}
+ body.tsa-premium .venue-card{flex-basis:88%}
+ body.tsa-premium .venue-img{height:210px}
+ body.tsa-premium .premium-venue-actions{width:100%;flex-wrap:wrap}
+ body.tsa-premium .location-pill{margin-left:auto}
+ body.tsa-premium .course-panel-head{gap:10px}
+ body.tsa-premium .course-count{white-space:normal}
+ body.tsa-premium .network-title{flex:1;min-width:0}
+ body.tsa-premium .network-title h2{font-size:17px}
+ body.tsa-premium .network-icon{flex:none}
+ body.tsa-premium .footer-grid{gap:28px}
+}
+@media(prefers-reduced-motion:reduce){body.tsa-premium *,body.tsa-premium *:before,body.tsa-premium *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}body.tsa-premium .association-ticker{overflow-x:auto;mask-image:none}body.tsa-premium .association-ticker-group[aria-hidden=true]{display:none}body.tsa-premium .tsa-home-progress{display:none}body.tsa-premium .sport-tile:hover,body.tsa-premium .venue-card:hover img{transform:none}}
+
+/* Slim footer: horizontal links and optional office address. */
+body.tsa-premium #footer.footer{display:block;background:#0b1730;padding:18px 0 14px;border-top:2px solid #baff19;font-family:var(--font)}
+body.tsa-premium #footer>.container{width:min(var(--container),calc(100% - var(--gutter)*2));margin-inline:auto}
+body.tsa-premium #footer .footer-identity{display:flex;align-items:center;gap:18px}
+body.tsa-premium #footer .footer-logo{display:block;flex:none}
+body.tsa-premium #footer .footer-logo img{display:block;width:80px;height:38px;object-fit:contain}
+body.tsa-premium #footer .footer-identity>span{font-size:13px;color:#b4c7df}
+body.tsa-premium #footer .footer-back{display:inline-flex;align-items:center;gap:8px;margin-left:auto;min-height:36px;font-size:12px;color:#baff19;white-space:nowrap}
+body.tsa-premium #footer .footer-links{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:0 22px;padding:10px 0 8px}
+body.tsa-premium #footer .footer-links a{display:inline-flex;align-items:center;min-height:32px;padding:3px 0;font-size:13px;line-height:1.6;color:#c3d3e8;font-weight:400}
+body.tsa-premium #footer .footer-links a:hover,body.tsa-premium #footer .footer-contact-row a:hover{color:#baff19}
+body.tsa-premium #footer .footer-contact-row{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 22px;color:#b4c7df;font-size:12px;padding:2px 0 0;border:0}
+body.tsa-premium #footer .footer-contact-row>a{line-height:1.8;min-height:28px;display:inline-flex;align-items:center;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){body.tsa-premium [data-venue-clone]{display:none}}
+@media(prefers-reduced-motion:reduce){body.tsa-premium .hero-bg{transform:none!important;will-change:auto}}
+
+body.tsa-premium .province-details-action{display:flex;justify-content:center;align-items:center;padding:8px 0;text-align:center}
+body.tsa-premium .province-details-action .lime-cta{justify-content:center;max-width:100%;line-height:1.7}
+
+body.tsa-premium #footer .footer-office-address{margin:0;padding-top:8px;border-top:1px solid #ffffff24;font-style:normal;font-size:12px;line-height:1.7;color:#a6bcd7}
+body.tsa-premium .province-details-action{flex-direction:column;gap:8px}
+body.tsa-premium .province-map-credit{font-size:11px;line-height:1.6;color:#b4c7df}
+body.tsa-premium .province-map-credit a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:690px){body.tsa-premium #footer .footer-links{display:none}}
+@media(max-width:690px){body.tsa-premium #footer.footer{padding:14px 0 12px}body.tsa-premium #footer .footer-identity{gap:12px}body.tsa-premium #footer .footer-identity>span{display:none}body.tsa-premium #footer .footer-links{gap:0 18px;padding:8px 0}body.tsa-premium #footer .footer-links a{font-size:12px;min-height:34px}body.tsa-premium #footer .footer-contact-row{gap:2px 16px}body.tsa-premium #footer .footer-office-address{font-size:11px;line-height:1.7}}

@@ -1,0 +1,68 @@
+/* Full Hero artwork and lighting; content remains above the visual layers. */
+#motion-hero{min-height:calc(100svh - 72px);--hero-image:url('premium-v4/hero/Hero-01-enhanced.png')}
+#motion-hero .hero-bg{inset:0;height:auto;min-height:0;max-height:none;aspect-ratio:auto;background-size:cover;background-position:52% top}
+#motion-hero .hero-light-effects{
+ position:absolute;inset:0;z-index:0;
+ height:auto;aspect-ratio:auto;min-height:0;max-height:none;
+ overflow:hidden;pointer-events:none;mix-blend-mode:screen;contain:paint;
+}
+#motion-hero .hero-flare{
+ position:absolute;inset:-60%;width:auto;height:auto;
+ background:linear-gradient(135deg,transparent 35%,rgba(105,211,255,.05) 41%,rgba(163,232,255,.24) 46%,rgba(231,250,255,.60) 49%,rgba(250,255,244,.75) 50%,rgba(211,255,176,.32) 52%,rgba(143,224,255,.10) 57%,transparent 65%);
+ opacity:0;filter:none;mix-blend-mode:screen;pointer-events:none;
+ transform:translate3d(-23%,-23%,0);
+ animation:tsaHeroLensSweep 9s cubic-bezier(.35,0,.65,1) 1.5s infinite both;
+}
+#motion-hero .hero-stadium-glow{
+ position:absolute;right:3%;top:24%;width:clamp(120px,22vw,360px);aspect-ratio:1;
+ background:radial-gradient(circle,rgba(236,250,255,.65) 0%,rgba(136,224,255,.28) 28%,rgba(194,255,155,.10) 48%,transparent 72%);
+ filter:blur(12px);opacity:.10;mix-blend-mode:screen;pointer-events:none;
+ animation:tsaHeroStadiumGlow 6.5s ease-in-out 1.5s infinite both;
+}
+#motion-hero .hero-light-particles{position:absolute;inset:0;pointer-events:none}
+#motion-hero .hero-light-particles i{
+ position:absolute;width:3px;height:3px;border-radius:50%;background:#d4f5ff;
+ box-shadow:0 0 8px #98e4ff66;opacity:.06;
+ animation:tsaHeroLightParticle 9s ease-in-out 1.8s infinite both;
+}
+#motion-hero .hero-light-particles i:nth-child(1){left:57%;top:27%}
+#motion-hero .hero-light-particles i:nth-child(2){left:73%;top:62%;width:2px;height:2px;animation-duration:11s;animation-delay:2s}
+#motion-hero .hero-light-particles i:nth-child(3){left:88%;top:34%;background:#d9ffab;animation-duration:10s;animation-delay:2.3s}
+#motion-hero .hero-light-particles i:nth-child(4){left:93%;top:71%;width:2px;height:2px;animation-duration:8.5s;animation-delay:1.6s}
+#motion-hero.hero-effects-paused .hero-light-effects *{animation-play-state:paused}
+#motion-hero .hero-pointer-light{
+ position:absolute;left:0;top:0;width:clamp(420px,45vw,740px);aspect-ratio:1;
+ background:radial-gradient(circle,rgba(223,247,255,.26) 0%,rgba(124,211,255,.17) 22%,rgba(186,255,25,.07) 44%,transparent 70%);
+ opacity:0;transform:translate3d(-1000px,-1000px,0) translate(-50%,-50%);
+ pointer-events:none;transition:opacity .3s ease;mix-blend-mode:screen;
+}
+#motion-hero.is-pointer-lit .hero-pointer-light{opacity:.85;will-change:transform,opacity}
+@media(hover:none),(pointer:coarse){#motion-hero .hero-pointer-light{display:none}}
+@keyframes tsaHeroLensSweep{
+ 0%{transform:translate3d(-23%,-23%,0);opacity:0}
+ 12%{opacity:.10}
+ 35%{opacity:.18}
+ 50%{opacity:.20}
+ 72%{opacity:.16}
+ 90%{opacity:.08}
+ 100%{transform:translate3d(23%,23%,0);opacity:0}
+}
+@keyframes tsaHeroStadiumGlow{
+ 0%,100%{opacity:.10;transform:scale(1)}
+ 50%{opacity:.18;transform:scale(1.05)}
+}
+@keyframes tsaHeroLightParticle{
+ 0%,100%{opacity:.06;transform:translate3d(0,6px,0)}
+ 50%{opacity:.16;transform:translate3d(8px,-18px,0)}
+}
+@media(max-width:690px){
+ #motion-hero{min-height:calc(100svh - 64px);--hero-image-mobile:var(--hero-image)}
+ #motion-hero .hero-bg{background-position:64% top}
+ #motion-hero .hero-flare{filter:none}
+ #motion-hero .hero-stadium-glow{top:16%;right:-8%;width:180px}
+ #motion-hero .hero-light-particles i:nth-child(n+3){display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ #motion-hero .hero-light-effects{display:none!important}
+ #motion-hero .hero-light-effects *{animation:none!important}
+}
